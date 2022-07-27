@@ -36,7 +36,11 @@ Cloud Sync now supports additional sync relationships for Azure Data Lake Storag
 
 https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html[View the list of supported sync relationships].
 
-=== Drag and drop
+=== New ways to set up sync relationships
+
+We've added additional ways to set up sync relationships directly from Cloud Manager's Canvas.
+
+==== Drag and drop
 
 You can now set up a sync relationship from the Canvas by dragging and dropping one working environment on top of another.
 
@@ -44,7 +48,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media
 
 image:screenshot-enable-drag-and-drop.png[A screenshot that shows the Notification Center in Cloud Manager.]
 
-=== Right panel setup
+==== Right panel setup
 
 You can now set up a sync relationship for Azure Blob storage or for Google Cloud Storage by selecting the working environment from the Canvas and then selecting the sync option from the right panel.
 
