@@ -24,7 +24,7 @@ You can now sync data from an NFS server or SMB server to Google Drive. Both "My
 
 <requirements>
 
-link:reference-supported-relationships.html[View the list of supported sync relationships].
+https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html[View the list of supported sync relationships].
 
 === Additional Azure Data Lake Storage Gen2 support
 
@@ -34,7 +34,7 @@ Cloud Sync now supports additional sync relationships for Azure Data Lake Storag
 * IBM Cloud Object Storage to Azure Data Lake Storage Gen2
 * StorageGRID to Azure Data Lake Storage Gen2
 
-link:reference-supported-relationships.html[View the list of supported sync relationships].
+https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html[View the list of supported sync relationships].
 
 === Drag and drop
 
@@ -42,13 +42,15 @@ You can now set up a sync relationship from the Canvas by dragging and dropping 
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-drag-and-drop.png[A screenshot that shows the Notification Center in Cloud Manager.]
 
-This feature is available for all working environments, except for Kubernetes clusters.
+image:screenshot-enable-drag-and-drop.png[A screenshot that shows the Notification Center in Cloud Manager.]
 
 === Right panel setup
 
 You can now set up a sync relationship for Azure Blob storage or for Google Cloud Storage by selecting the working environment from the Canvas and then selecting the sync option from the right panel.
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-panel.png[A screenshot that shows the Notification Center in Cloud Manager.]
+
+image:screenshot-enable-panel.png[A screenshot that shows the Notification Center in Cloud Manager.]
 
 == 3 July 2022
 
@@ -58,7 +60,7 @@ You can now sync data from an NFS server or SMB server to Azure Data Lake Storag
 
 When creating a sync relationship that includes Azure Data Lake, you need to provide Cloud Sync with the storage account connection string. It must be a regular connection string, not a shared access signature (SAS).
 
-link:reference-supported-relationships.html[View the list of supported sync relationships].
+https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html[View the list of supported sync relationships].
 
 === Continuous sync from Google Cloud Storage
 
@@ -80,7 +82,7 @@ The service account associated with your data broker needs the following permiss
 - pubsub.topics.setIamPolicy
 - storage.buckets.update
 
-link:task-creating-relationships.html#settings[Learn more about the Continuous Sync setting].
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings[Learn more about the Continuous Sync setting].
 
 === New Google Cloud region support
 
@@ -112,7 +114,7 @@ Note that the IAM role associated with your data broker will need the following 
 
 These permissions are automatically added to any new data brokers that you create.
 
-link:task-creating-relationships.html#settings[Learn more about the Continuous Sync setting].
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings[Learn more about the Continuous Sync setting].
 
 === Show all ONTAP volumes
 
