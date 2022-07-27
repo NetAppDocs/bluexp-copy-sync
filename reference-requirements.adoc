@@ -173,8 +173,8 @@ To set up the service account, follow the instructions on the following two page
 
 When you edit the OAuth Scopes field, enter the following scopes:
 
-*	https://www.googleapis.com/auth/drive
-*	https://www.googleapis.com/auth/drive.file
+*	\https://www.googleapis.com/auth/drive
+*	\https://www.googleapis.com/auth/drive.file
 
 == NFS server requirements
 
