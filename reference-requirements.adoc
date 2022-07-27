@@ -162,8 +162,8 @@ If the source for a sync relationship is a SnapMirror destination (which is read
 
 When you set up a sync relationship that includes Google Drive, you'll need to provide the following:
 
-* An email address that has access to the Google Drive location where you want to sync data
-* A Google Cloud service account that has permissions to access Google Drive
+* The email address for a user who has access to the Google Drive location where you want to sync data
+* The email address for a Google Cloud service account that has permissions to access Google Drive
 * A private key for the service account
 
 To set up the service account, follow the instructions on the following two pages in Google documentation:
