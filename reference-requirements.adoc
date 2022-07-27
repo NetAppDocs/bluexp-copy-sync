@@ -158,6 +158,31 @@ When setting up a sync relationship, you can choose from Google Cloud buckets in
 
 If the source for a sync relationship is a SnapMirror destination (which is read-only), "read/list" permissions are sufficient to sync data from the source to a target.
 
+== Google Drive
+
+When you set up a sync relationship that includes Google Drive, you'll need to provide the following:
+
+*
+*
+
+
+
+* The IP address of the LIF that's connected to ONTAP S3
+* The access key and secret key that ONTAP is configured to use
+
+https://developers.google.com/admin-sdk/directory/v1/guides/delegation
+
+Can I simply point users to that URL and say to follow the steps in these sections:
+
+	Create the service account and credentials
+	Delegate domain-wide authority to your service account
+
+When you edit the OAuth Scopes field, enter the following scopes:
+
+	https://www.googleapis.com/auth/drive
+	https://www.googleapis.com/auth/drive.file
+
+
 == NFS server requirements
 
 * The NFS server can be a NetApp system or a non-NetApp system.

@@ -16,6 +16,40 @@ summary: Learn what's new in Cloud Sync.
 Learn what's new in Cloud Sync.
 
 // tag::whats-new[]
+== 31 July 2022
+
+=== Google Drive
+
+You can now sync data from an NFS server or SMB server to Google Drive. Both "My Drive" and "Shared Drives" are supported as targets.
+
+<requirements>
+
+link:reference-supported-relationships.html[View the list of supported sync relationships].
+
+=== Additional Azure Data Lake Storage Gen2 support
+
+Cloud Sync now supports additional sync relationships for Azure Data Lake Storage Gen2:
+
+* Amazon S3 to Azure Data Lake Storage Gen2
+* IBM Cloud Object Storage to Azure Data Lake Storage Gen2
+* StorageGRID to Azure Data Lake Storage Gen2
+
+link:reference-supported-relationships.html[View the list of supported sync relationships].
+
+=== Drag and drop
+
+You can now set up a sync relationship from the Canvas by dragging and dropping one working environment on top of another.
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-drag-and-drop.png[A screenshot that shows the Notification Center in Cloud Manager.]
+
+This feature is available for all working environments, except for Kubernetes clusters.
+
+=== Right panel setup
+
+You can now set up a sync relationship for Azure Blob storage or for Google Cloud Storage by selecting the working environment from the Canvas and then selecting the sync option from the right panel.
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-panel.png[A screenshot that shows the Notification Center in Cloud Manager.]
+
 == 3 July 2022
 
 === Support for Azure Data Lake Storage Gen2

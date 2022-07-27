@@ -58,6 +58,7 @@ Cloud Sync enables you to sync data from a source to a target. This is called a 
 * Amazon FSx for ONTAP
 * Amazon S3
 * Azure Blob
+* Azure Data Lake Storage Gen2
 * Azure NetApp Files
 * Box ^1^
 * Cloud Volumes ONTAP
@@ -167,6 +168,7 @@ Cloud Sync enables you to sync data from a source to a target. This is called a 
 * Amazon FSx for ONTAP
 * Amazon S3
 * Azure Blob
+* Azure Data Lake Storage Gen2
 * Azure NetApp Files
 * Box ^1^
 * Cloud Volumes ONTAP
@@ -189,6 +191,7 @@ Cloud Sync enables you to sync data from a source to a target. This is called a 
 * Cloud Volumes ONTAP
 * Cloud Volumes Service
 * Google Cloud Storage
+* Google Drive
 * IBM Cloud Object Storage
 * NFS server
 * On-premises ONTAP cluster
@@ -231,6 +234,7 @@ Cloud Sync enables you to sync data from a source to a target. This is called a 
 * Cloud Volumes ONTAP
 * Cloud Volumes Service
 * Google Cloud Storage
+* Google Drive
 * IBM Cloud Object Storage
 * NFS server
 * On-premises ONTAP cluster
@@ -244,6 +248,7 @@ Cloud Sync enables you to sync data from a source to a target. This is called a 
 * Amazon FSx for ONTAP
 * Amazon S3
 * Azure Blob
+* Azure Data Lake Storage Gen2
 * Azure NetApp Files
 * Box ^1^
 * Cloud Volumes ONTAP
