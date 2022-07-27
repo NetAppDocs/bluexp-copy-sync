@@ -46,15 +46,11 @@ You can now set up a sync relationship from the Canvas by dragging and dropping 
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-drag-and-drop.png[A screenshot that shows the Notification Center in Cloud Manager.]
 
-image:screenshot-enable-drag-and-drop.png[A screenshot that shows the Notification Center in Cloud Manager.]
-
 ==== Right panel setup
 
 You can now set up a sync relationship for Azure Blob storage or for Google Cloud Storage by selecting the working environment from the Canvas and then selecting the sync option from the right panel.
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-panel.png[A screenshot that shows the Notification Center in Cloud Manager.]
-
-image:screenshot-enable-panel.png[A screenshot that shows the Notification Center in Cloud Manager.]
 
 == 3 July 2022
 
