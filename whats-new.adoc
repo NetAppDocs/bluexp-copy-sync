@@ -22,11 +22,11 @@ Learn what's new in Cloud Sync.
 
 You can now sync data from an NFS server or SMB server to Google Drive. Both "My Drive" and "Shared Drives" are supported as targets.
 
-<requirements>
+Before you can create a sync relationship that includes Google Drive, you need to set up a service account that has the required permissions and a private key. https://docs.netapp.com/us-en/cloud-manager-sync/reference-requirements.html#google-drive[Learn more about Google Drive requirements].
 
 https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html[View the list of supported sync relationships].
 
-=== Additional Azure Data Lake Storage Gen2 support
+=== Additional Azure Data Lake support
 
 Cloud Sync now supports additional sync relationships for Azure Data Lake Storage Gen2:
 
