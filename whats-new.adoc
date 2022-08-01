@@ -131,6 +131,7 @@ When you create a sync relationship where Azure Blob is the target, Cloud Sync n
 * On the *Tags/Metadata* page, you can specify Blob index tags to set on the objects that are copied to the Azure Blob container. Previously, you could only specify relationship metadata.
 
 These options are supported when Azure Blob is the target and the source is either Azure Blob or an S3-compatible endpoint (S3, StorageGRID, or IBM Cloud Object Storage).
+// end::whats-new[]
 
 == 1 May 2022
 
@@ -167,7 +168,6 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-data-brokers.html
 You can now filter the contents of the Sync Dashboard to more easily find sync relationships that match a certain status. For example, you can filter on sync relationships that have a failed status
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-filter.png[A screenshot that shows the Filter by sync status option at the top of the dashboard.]
-// end::whats-new[]
 
 == 3 March 2022
 
