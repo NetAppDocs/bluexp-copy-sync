@@ -49,6 +49,7 @@ Cloud Sync supports the following storage types:
 * Cloud Volumes Service
 * Cloud Volumes ONTAP
 * Google Cloud Storage
+* Google Drive
 * IBM Cloud Object Storage
 * On-premises ONTAP cluster
 * ONTAP S3 Storage

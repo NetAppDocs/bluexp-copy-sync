@@ -158,6 +158,24 @@ When setting up a sync relationship, you can choose from Google Cloud buckets in
 
 If the source for a sync relationship is a SnapMirror destination (which is read-only), "read/list" permissions are sufficient to sync data from the source to a target.
 
+== Google Drive
+
+When you set up a sync relationship that includes Google Drive, you'll need to provide the following:
+
+* The email address for a user who has access to the Google Drive location where you want to sync data
+* The email address for a Google Cloud service account that has permissions to access Google Drive
+* A private key for the service account
+
+To set up the service account, follow the instructions in Google documentation:
+
+* https://developers.google.com/admin-sdk/directory/v1/guides/delegation#create_the_service_account_and_credentials[Create the service account and credentials^]
+* https://developers.google.com/admin-sdk/directory/v1/guides/delegation#delegate_domain-wide_authority_to_your_service_account[Delegate domain-wide authority to your service account^]
+
+When you edit the OAuth Scopes field, enter the following scopes:
+
+*	\https://www.googleapis.com/auth/drive
+*	\https://www.googleapis.com/auth/drive.file
+
 == NFS server requirements
 
 * The NFS server can be a NetApp system or a non-NetApp system.
