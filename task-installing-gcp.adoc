@@ -52,7 +52,13 @@ When you deploy the data broker, you need to select a service account that has t
 - resourcemanager.projects.get
 - storage.buckets.get
 - storage.buckets.list
-- storage.objects.*
+- storage.objects.create
+- storage.objects.delete
+- storage.objects.get
+- storage.objects.getIamPolicy
+- storage.objects.list
+- storage.objects.setIamPolicy
+- storage.objects.update
 - iam.serviceAccounts.signJwt
 - pubsub.subscriptions.consume
 - pubsub.subscriptions.create
