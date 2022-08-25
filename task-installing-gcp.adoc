@@ -89,7 +89,7 @@ There are a few ways to create a new data broker. These steps describe how to in
 +
 Complete the steps until you reach the *Data Broker Group* page.
 
-. On the *Data Broker Group* page, click *Create Data Broker* and then select *Microsoft Azure*.
+. On the *Data Broker Group* page, click *Create Data Broker* and then select *Google Cloud Platform*.
 +
 image:screenshot-google.png["A screenshot of the Data Broker page that enables you to choose between an AWS, Azure, Google Cloud, and On-Prem data broker."]
 
