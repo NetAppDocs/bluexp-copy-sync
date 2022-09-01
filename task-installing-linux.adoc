@@ -25,7 +25,7 @@ CentOS Stream is not supported.
 ** Ubuntu Server 20.04 LTS
 ** SUSE Linux Enterprise Server 15 SP1
 +
-The command `yum update all` must be run on the host before you install the data broker.
+The command `yum update` must be run on the host before you install the data broker.
 +
 A Red Hat Enterprise Linux system must be registered with Red Hat Subscription Management. If it is not registered, the system cannot access repositories to update required 3rd party software during installation.
 * *RAM*: 16 GB
