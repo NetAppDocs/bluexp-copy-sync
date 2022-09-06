@@ -16,6 +16,36 @@ summary: Learn what's new in Cloud Sync.
 Learn what's new in Cloud Sync.
 
 // tag::whats-new[]
+== 4 Sept 2022
+
+=== Additional Google Drive support
+
+* Cloud Sync now supports additional sync relationships for Google Drive:
+
+** Google Drive to NFS servers
+** Google Drive to SMB servers
+
+* You can also generate reports for sync relationships that include Google Drive.
++
+https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-reports.html[Learn more about reports].
+
+=== Continuous sync enhancement
+
+You can now enable the Continuous Sync setting on the following types of sync relationships:
+
+* S3 bucket to an NFS server
+* Google Cloud Storage to an NFS server
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings[Learn more about the Continuous Sync setting].
+
+=== Email notifications
+
+You can now receive Cloud Sync notifications by email.
+
+In order to receive the notifications by email, you'll need to enable the *Notifications* setting on the sync relationship and then configure the Alerts and Notification settings in Cloud Manager.
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#setting-up-notifications[Learn how to set up notifications].
+
 == 31 July 2022
 
 === Google Drive
@@ -97,6 +127,7 @@ The Cloud Sync data broker is now supported in the following Google Cloud region
 === New Google Cloud machine type
 
 The default machine type for the data broker in Google Cloud is now n2-standard-4.
+// end::whats-new[]
 
 == 6 June 2022
 
@@ -131,7 +162,6 @@ When you create a sync relationship where Azure Blob is the target, Cloud Sync n
 * On the *Tags/Metadata* page, you can specify Blob index tags to set on the objects that are copied to the Azure Blob container. Previously, you could only specify relationship metadata.
 
 These options are supported when Azure Blob is the target and the source is either Azure Blob or an S3-compatible endpoint (S3, StorageGRID, or IBM Cloud Object Storage).
-// end::whats-new[]
 
 == 1 May 2022
 
