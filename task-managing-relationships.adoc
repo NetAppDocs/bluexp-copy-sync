@@ -96,19 +96,23 @@ In addition, you can also receive notifications by email for sync relationships 
 
 .Steps
 
-. From the *Dashboard*, navigate to the sync relationship and click image:icon-sync-action.png[A screenshot of the button that enables you to take actions on a sync relationship]
+. Modify the settings for a sync relationship:
 
-. Click *Settings*.
+.. From the *Dashboard*, navigate to the sync relationship and click image:icon-sync-action.png[A screenshot of the button that enables you to take actions on a sync relationship]
 
-. Enable *Notifications*.
+.. Click *Settings*.
 
-. Click *Save Settings*.
+.. Enable *Notifications*.
 
-. If you want to receive notifications by email for sync relationships that have the "Failed to Sync" or "Running Continuously" status, click *Settings > Alerts and Notifications Settings*.
+.. Click *Save Settings*.
 
-. Select a user or multiple users and choose the Info notification type.
+. If you want to receive notifications by email for sync relationships that have the "Failed to Sync" or "Running Continuously" status, configure alert and notifications settings:
 
-. Click *Apply*.
+.. Click *Settings > Alerts and Notifications Settings*.
+
+.. Select a user or multiple users and choose the *Info* notification type.
+
+.. Click *Apply*.
 
 .Result
 
