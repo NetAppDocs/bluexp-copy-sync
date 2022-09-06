@@ -40,7 +40,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.htm
 
 === Email notifications
 
-You can now receive notifications by email for sync relationships that have the "Failed to Sync" or "Running Continuously" status.
+You can now receive Cloud Sync notifications by email.
 
 In order to receive the notifications by email, you'll need to enable the *Notifications* setting on the sync relationship and then configure the Alerts and Notification settings in Cloud Manager.
 

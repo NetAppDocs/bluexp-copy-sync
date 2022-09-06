@@ -92,7 +92,7 @@ A *Notifications* setting for each sync relationship enables you to choose wheth
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-notification-center.png[A screenshot that shows the Notification Center in Cloud Manager.]
 
-In addition, you can also receive notifications by email for sync relationships that have the "Failed to Sync" or "Running Continuously" status.
+In addition, you can also receive notifications by email.
 
 .Steps
 
@@ -106,7 +106,7 @@ In addition, you can also receive notifications by email for sync relationships 
 
 .. Click *Save Settings*.
 
-. If you want to receive notifications by email for sync relationships that have the "Failed to Sync" or "Running Continuously" status, configure alert and notifications settings:
+. If you want to receive notifications by email, configure alert and notifications settings:
 
 .. Click *Settings > Alerts and Notifications Settings*.
 
