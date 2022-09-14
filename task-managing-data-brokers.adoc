@@ -223,9 +223,9 @@ Cloud Sync displays a status for each data broker that can help you troubleshoot
 
 . Identify any data brokers that have a status of "Unknown" or "Failed."
 +
-image:screenshot_sync_broker_status.gif[]
+image:screenshot_sync_broker_status.gif[A screenshot of the Cloud Sync status display where a data broker has an "unknown" status.]
 
-. Hover over the image:screenshot_sync_status_icon.gif[] icon to see the failure reason.
+. Hover over the image:screenshot_sync_status_icon.gif[An "info" icon.] icon to see the failure reason.
 
 . Correct the issue.
 +
