@@ -21,6 +21,10 @@ You also have the option to install the data broker on an existing Linux host in
 
 All regions are supported except for the China regions.
 
+== Root privileges
+
+The data broker software automatically runs as root on the Linux host. Running as root is a requirement for data broker operations. For example, to mount shares.
+
 == Networking requirements
 
 * The data broker needs an outbound internet connection so it can poll the Cloud Sync service for tasks over port 443.
