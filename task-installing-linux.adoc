@@ -35,6 +35,10 @@ A Red Hat Enterprise Linux system must be registered with Red Hat Subscription M
 +
 SELinux enforces a policy that blocks data broker software updates and can block the data broker from contacting endpoints required for normal operation.
 
+== Root privileges
+
+The data broker software automatically runs as root on the Linux host. Running as root is a requirement for data broker operations. For example, to mount shares.
+
 == Networking requirements
 
 * The Linux host must have a connection to the source and target.
