@@ -17,13 +17,34 @@ Getting started with the Cloud Sync service includes a few steps.
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Prepare your source and target
 
 [role="quick-margin-para"]
+You should have gotten started with Cloud Manager, which includes logging in, setting up an account, and possibly deploying a Connector and creating working environments.
+
+[role="quick-margin-para"]
+If you want to create sync relationships for any of the following, then you first need to create or discover a working environment:
+
+[role="quick-margin-list"]
+* Amazon FSx for ONTAP
+* Azure NetApp Files
+* Cloud Volumes ONTAP
+* On-prem ONTAP clusters
+
+[role="quick-margin-para"]
+A Connector is required for Cloud Volumes ONTAP and on-prem ONTAP clusters.
+
+[role="quick-margin-list"]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-overview.html[Learn how to get started with Cloud Manager^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[Learn more about Connectors^]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Prepare your source and target
+
+[role="quick-margin-para"]
 Verify that your source and target are supported and set up. The most important requirement is to verify connectivity between the data broker group and the source and target locations.
 
 [role="quick-margin-list"]
 * link:reference-supported-relationships.html[View supported relationships]
 * link:reference-requirements.html[Prepare the source and target]
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Prepare a location for the NetApp data broker
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Prepare a location for the NetApp data broker
 
 [role="quick-margin-para"]
 The NetApp data broker software syncs data from a source to a target (this is called a _sync relationship_). You can run the data broker in AWS, Azure, Google Cloud Platform, or on your premises. A data broker group, which consists of one or more data brokers, needs an outbound internet connection over port 443 so it can communicate with the Cloud Sync service and contact a few other services and repositories. link:reference-networking.html#networking-endpoints[View the list of endpoints].
@@ -37,7 +58,7 @@ Cloud Sync guides you through the installation process when you create a sync re
 * link:task-installing-gcp.html[Review Google Cloud installation]
 * link:task-installing-linux.html[Review Linux host installation]
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Create your first sync relationship
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Create your first sync relationship
 
 [role="quick-margin-para"]
 Log in to https://cloudmanager.netapp.com/[Cloud Manager^], click *Sync*, and then drag and drop your selections for the source and target. Follow the prompts to complete the setup. link:task-creating-relationships.html[Learn more].
