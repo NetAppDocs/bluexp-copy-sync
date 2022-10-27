@@ -29,7 +29,7 @@ If you want to create sync relationships for any of the following, then you firs
 * On-prem ONTAP clusters
 
 [role="quick-margin-para"]
-A Connector is required for Cloud Volumes ONTAP and on-prem ONTAP clusters.
+A Connector is required for Cloud Volumes ONTAP, on-prem ONTAP clusters, and Amazon FSx for ONTAP.
 
 [role="quick-margin-list"]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-overview.html[Learn how to get started with Cloud Manager^]
