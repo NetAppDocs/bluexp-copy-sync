@@ -102,9 +102,13 @@ The SAS must allow access to the Blob service and all resource types (Service, C
 
 image:screenshot_connection_string_sas.gif["Shows a shared access signature, which is available from the Azure portal by selecting a storage account and then clicking Shared access signature."]
 
+NOTE: If you choose to implement a Continuous Sync relationship that includes an Azure Blob container, you can use a regular connection string or SAS connection string. If using a SAS connection string, it must not be set to expire in the near future.
+
 == Azure Data Lake Storage Gen2
 
 When creating a sync relationship that includes Azure Data Lake, you need to provide Cloud Sync with the storage account connection string. It must be a regular connection string, not a shared access signature (SAS).
+
+NOTE: If you choose to implement a Continuous Sync relationship that includes Azure Data Lake, you can use a regular connection string or SAS connection string. If using a SAS connection string, it must not be set to expire in the near future.
 
 == Azure NetApp Files requirement
 
