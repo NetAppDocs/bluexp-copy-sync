@@ -16,6 +16,32 @@ summary: Learn what's new in Cloud Sync.
 Learn what's new in Cloud Sync.
 
 // tag::whats-new[]
+== 30 Oct 2022
+
+=== Continuous sync from Microsoft Azure
+
+The Continuous Sync setting is now supported from a source Azure storage bucket to a cloud storage using an Azure data broker.
+
+After the initial data sync, Cloud Sync listens for changes on the source Azure storage bucket and continuously syncs any changes to the target as they occur. This setting is available when syncing from an Azure storage bucket to Azure Blob storage, CIFS, Google Cloud Storage, IBM Cloud Object Storage, NFS, and StorageGRID.
+
+The Azure data broker needs a custom role and the following permissions to use this setting:
+
+[source,json]
+'Microsoft.Storage/storageAccounts/read',
+'Microsoft.EventGrid/systemTopics/eventSubscriptions/write',
+'Microsoft.EventGrid/systemTopics/eventSubscriptions/read',
+'Microsoft.EventGrid/systemTopics/eventSubscriptions/delete',
+'Microsoft.EventGrid/systemTopics/eventSubscriptions/getFullUrl/action',
+'Microsoft.EventGrid/systemTopics/eventSubscriptions/getDeliveryAttributes/action',
+'Microsoft.EventGrid/systemTopics/read',
+'Microsoft.EventGrid/systemTopics/write',
+'Microsoft.EventGrid/systemTopics/delete',
+'Microsoft.EventGrid/eventSubscriptions/write',
+'Microsoft.Storage/storageAccounts/write'
+
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings[Learn more about the Continuous Sync setting].
+
 == 4 Sept 2022
 
 === Additional Google Drive support
