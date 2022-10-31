@@ -37,7 +37,7 @@ If you need to limit outbound connectivity, see link:reference-networking.html[t
 
 == Permissions required to deploy the data broker in Azure
 
-Ensure that the Azure user account that you use to deploy the data broker has the following permissions.
+Ensure that the Azure user account that you use to deploy the data broker has the following permissions:
 
 [source,json]
 {
@@ -76,12 +76,45 @@ Ensure that the Azure user account that you use to deploy the data broker has th
                     "Microsoft.Network/virtualNetworks/subnets/join/action",
                     "Microsoft.Network/publicIPAddresses/join/action",
                     "Microsoft.Network/networkInterfaces/join/action"
+                    'Microsoft.Storage/storageAccounts/read',
+                    'Microsoft.EventGrid/systemTopics/eventSubscriptions/write',
+                    'Microsoft.EventGrid/systemTopics/eventSubscriptions/read',
+                    'Microsoft.EventGrid/systemTopics/eventSubscriptions/delete',
+                    'Microsoft.EventGrid/systemTopics/eventSubscriptions/getFullUrl/action',
+                    'Microsoft.EventGrid/systemTopics/eventSubscriptions/getDeliveryAttributes/action',
+                    'Microsoft.EventGrid/systemTopics/read',
+                    'Microsoft.EventGrid/systemTopics/write',
+                    'Microsoft.EventGrid/systemTopics/delete',
+                    'Microsoft.EventGrid/eventSubscriptions/write',
+                    'Microsoft.Storage/storageAccounts/write'
+
     ],
     "NotActions": [],
     "AssignableScopes": [],
     "Description": "Azure Data Broker",
     "IsCustom": "true"
 }
+
+Note:
+
+1. The following permissions are only required if you plan to enable the Continuous Sync setting on a sync relationship from Azure to another cloud storage location:
+* 'Microsoft.Storage/storageAccounts/read',
+* 'Microsoft.EventGrid/systemTopics/eventSubscriptions/write',
+* 'Microsoft.EventGrid/systemTopics/eventSubscriptions/read',
+* 'Microsoft.EventGrid/systemTopics/eventSubscriptions/delete',
+* 'Microsoft.EventGrid/systemTopics/eventSubscriptions/getFullUrl/action',
+* 'Microsoft.EventGrid/systemTopics/eventSubscriptions/getDeliveryAttributes/action',
+* 'Microsoft.EventGrid/systemTopics/read',
+* 'Microsoft.EventGrid/systemTopics/write',
+* 'Microsoft.EventGrid/systemTopics/delete',
+* 'Microsoft.EventGrid/eventSubscriptions/write',
+* 'Microsoft.Storage/storageAccounts/write'
+
++
+Additionally, the assignable scope must be set to subscription scope and *not* resource group scope if you plan to implement Continuous Sync in Azure.
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings[Learn more about the Continuous Sync setting].
+
 
 == Authentication method
 
@@ -114,6 +147,8 @@ The form is owned and hosted by Microsoft. Your credentials are not provided to 
 . Choose a location for the data broker and enter basic details about the virtual machine.
 +
 image:screenshot_azure_data_broker.gif["A screenshot of the Azure deployment page that shows the following fields: Subscription, Azure region, VNet, Subnet, VM Name, User Name, Authentication Method, and Resource Group."]
++
+NOTE: If you plan to implement a Continuous Sync relationship, you must assign a custom role to your data broker. This can also be done manually after the broker is created.
 
 . Specify a proxy configuration, if a proxy is required for internet access in the VNet.
 
