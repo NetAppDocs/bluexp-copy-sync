@@ -108,8 +108,6 @@ NOTE: If you choose to implement a Continuous Sync relationship that includes an
 
 When creating a sync relationship that includes Azure Data Lake, you need to provide Cloud Sync with the storage account connection string. It must be a regular connection string, not a shared access signature (SAS).
 
-NOTE: If you choose to implement a Continuous Sync relationship that includes Azure Data Lake, you can use a regular connection string or SAS connection string. If using a SAS connection string, it must not be set to expire in the near future.
-
 == Azure NetApp Files requirement
 
 Use the Premium or Ultra service level when you sync data to or from Azure NetApp Files. You might experience failures and performance issues if the disk service level is Standard.
