@@ -17,11 +17,11 @@ The Cloud Sync capabilities that are available through the web UI are also avail
 
 == Getting started
 
-To get started with the Cloud Sync API, you need to obtain a user token and your Cloud Central account ID. You'll need to add the token and account ID to the Authorization header when making API calls.
+To get started with the Cloud Sync API, you need to obtain a user token and your BlueXP account ID. You'll need to add the token and account ID to the Authorization header when making API calls.
 
 .Steps
 
-. Obtain a user token from NetApp Cloud Central.
+. Obtain a user token from NetApp BlueXP.
 +
 [source,http]
 POST https://netapp-cloud-account.auth0.com/oauth/token
@@ -36,7 +36,7 @@ Body:
               "password": "<user_password>"
 }
 
-. Obtain your Cloud Central account ID.
+. Obtain your BlueXp account ID.
 +
 [source,http]
 GET https://api.cloudsync.netapp.com/api/accounts
@@ -68,7 +68,7 @@ Body: { "name": "databroker1", "type": "AZURE" }
 
 .What should I do when the token expires?
 ****
-The user token from NetApp Cloud Central has an expiration date. To refresh the token, you need to call the API from step 1 again.
+The user token from NetApp BlueXp has an expiration date. To refresh the token, you need to call the API from step 1 again.
 
 The API response includes an "expires_in" field that states when the token expires.
 ****

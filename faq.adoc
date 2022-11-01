@@ -68,7 +68,7 @@ Note the following key points about using Cloud Sync outside of the cloud:
 
 === How do I access Cloud Sync?
 
-Cloud Sync is available from Cloud Manager in the *Sync* tab.
+Cloud Sync is available from the BlueXP website in the *Sync* tab.
 
 === What's a data broker group?
 
