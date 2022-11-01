@@ -14,10 +14,10 @@ summary: Getting started with the Cloud Sync service includes a few steps.
 
 Getting started with the Cloud Sync service includes a few steps.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Log in and set up Cloud Manager
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Log in and set up BlueXP
 
 [role="quick-margin-para"]
-You should have gotten started with Cloud Manager, which includes logging in, setting up an account, and possibly deploying a Connector and creating working environments.
+You should have gotten started with BlueXP, which includes logging in, setting up an account, and possibly deploying a Connector and creating working environments.
 
 [role="quick-margin-para"]
 If you want to create sync relationships for any of the following, then you first need to create or discover a working environment:
@@ -32,7 +32,7 @@ If you want to create sync relationships for any of the following, then you firs
 A Connector is required for Cloud Volumes ONTAP, on-prem ONTAP clusters, and Amazon FSx for ONTAP.
 
 [role="quick-margin-list"]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-overview.html[Learn how to get started with Cloud Manager^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-overview.html[Learn how to get started with BlueXP^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[Learn more about Connectors^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Prepare your source and target
@@ -61,7 +61,7 @@ Cloud Sync guides you through the installation process when you create a sync re
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Create your first sync relationship
 
 [role="quick-margin-para"]
-Log in to https://cloudmanager.netapp.com/[Cloud Manager^], click *Sync*, and then drag and drop your selections for the source and target. Follow the prompts to complete the setup. link:task-creating-relationships.html[Learn more].
+Log in to https://cloudmanager.netapp.com/[BlueXP^], click *Sync*, and then drag and drop your selections for the source and target. Follow the prompts to complete the setup. link:task-creating-relationships.html[Learn more].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Pay for your sync relationships after your free trial ends
 

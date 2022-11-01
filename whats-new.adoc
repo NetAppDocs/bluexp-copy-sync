@@ -68,7 +68,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.htm
 
 You can now receive Cloud Sync notifications by email.
 
-In order to receive the notifications by email, you'll need to enable the *Notifications* setting on the sync relationship and then configure the Alerts and Notification settings in Cloud Manager.
+In order to receive the notifications by email, you'll need to enable the *Notifications* setting on the sync relationship and then configure the Alerts and Notification settings in BlueXP.
 
 https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#setting-up-notifications[Learn how to set up notifications].
 
@@ -94,19 +94,19 @@ https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationshi
 
 === New ways to set up sync relationships
 
-We've added additional ways to set up sync relationships directly from Cloud Manager's Canvas.
+We've added additional ways to set up sync relationships directly from BlueXP's Canvas.
 
 ==== Drag and drop
 
 You can now set up a sync relationship from the Canvas by dragging and dropping one working environment on top of another.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-drag-and-drop.png[A screenshot that shows the Notification Center in Cloud Manager.]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-drag-and-drop.png[A screenshot that shows the Notification Center in BlueXP.]
 
 ==== Right panel setup
 
 You can now set up a sync relationship for Azure Blob storage or for Google Cloud Storage by selecting the working environment from the Canvas and then selecting the sync option from the right panel.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-panel.png[A screenshot that shows the Notification Center in Cloud Manager.]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-panel.png[A screenshot that shows the Notification Center in BlueXP.]
 
 == 3 July 2022
 
@@ -199,9 +199,9 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.htm
 
 === Notifications
 
-A new *Notifications* setting is now available for sync relationships. This setting enables you to choose whether to receive Cloud Sync notifications in Cloud Manager's Notification Center. You can enable notifications for successful data syncs, failed data syncs, and canceled data syncs.
+A new *Notifications* setting is now available for sync relationships. This setting enables you to choose whether to receive Cloud Sync notifications in BlueXP's Notification Center. You can enable notifications for successful data syncs, failed data syncs, and canceled data syncs.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-notification-center.png[A screenshot that shows the Notification Center in Cloud Manager.]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-notification-center.png[A screenshot that shows the Notification Center in BlueXP.]
 
 https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship[Learn more about changing the settings for a sync relationship].
 
@@ -466,9 +466,9 @@ link:task-managing-relationships.html#changing-the-settings-for-a-sync-relations
 
 === Standalone Cloud Sync service is retired
 
-The standalone Cloud Sync service has been retired. You should now access Cloud Sync directly from Cloud Manager where all of the same features and functionality are available.
+The standalone Cloud Sync service has been retired. You should now access Cloud Sync directly from BlueXP where all of the same features and functionality are available.
 
-After logging in to Cloud Manager, you can switch to the Sync tab at the top and view your relationships, just like before.
+After logging in to BlueXP, you can switch to the Sync tab at the top and view your relationships, just like before.
 
 === Google Cloud buckets in different projects
 
