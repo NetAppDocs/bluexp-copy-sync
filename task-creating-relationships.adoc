@@ -160,6 +160,10 @@ Exclude File Extensions:: Specify file extensions to exclude from the sync by ty
 +
 video::video_file_extensions.mp4[width=840, height=240]
 
+Exclude Directory Names:: Specify a maximum of 15 directories to exclude from the sync by typing their name and pressing *Enter*. 
++
+NOTE: The .copy-offload, .snapshot, ~snapshot directories are excluded by default. If you would like to include these in your sync, please contact us.
+
 File Size:: Choose to sync all files regardless of their size or just files that are in a specific size range.
 
 Date Modified:: Choose all files regardless of their last modified date, files modified after a specific date, before a specific date, or between a time range.
