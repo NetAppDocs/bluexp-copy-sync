@@ -93,7 +93,7 @@ https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region[See AWS docum
 | \https://sts.amazonaws.com | To verify AWS credentials when the data broker is deployed in AWS or when it's deployed on your premises and AWS credentials are provided. The data broker contacts this endpoint during deployment, when it's updated, and when it's restarted.
 
 |
-\https://cloudmanager.cloud.netapp.com
+\https://console.bluexp.netapp.com/
 \https://netapp-cloud-account.auth0.com
 
 | To contact Cloud Data Sense when you use Data Sense to select the source files for a new sync relationship.
