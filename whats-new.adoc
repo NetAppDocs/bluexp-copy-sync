@@ -16,6 +16,23 @@ summary: Learn what's new in Cloud Sync.
 Learn what's new in Cloud Sync.
 
 // tag::whats-new[]
+== 11 Dec 2022
+
+=== Filter directories by name
+
+A new *Exclude Directory Names* setting is now available for sync relationships. Users can filter out a maximum of 15 directory names from their sync.
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings[Learn more about the Exclude Directory Names setting].
+
+== Additional Amazon S3 and ONTAP S3 Storage support
+
+Cloud Sync now supports additional sync relationships for AWS S3 and ONTAP S3 Storage:
+
+* AWS S3 to ONTAP S3 Storage
+* ONTAP S3 Storage to AWS S3
+
+https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html[Learn more about supported sync relationships].
+
 == 30 Oct 2022
 
 === Continuous sync from Microsoft Azure
