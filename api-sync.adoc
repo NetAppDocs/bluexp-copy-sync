@@ -36,6 +36,8 @@ Body:
               "password": "<user_password>"
 }
 
+NOTE: If you are using a personal email account with no client ID, you can use the default client ID "QC3AgHk6qdbmC7Yyr82ApBwaaJLwRrNO.”
+
 . Obtain your BlueXp account ID.
 +
 [source,http]
