@@ -16,6 +16,22 @@ summary: Learn what's new in Cloud Sync.
 Learn what's new in Cloud Sync.
 
 // tag::whats-new[]
+== 3 Jan 2023
+
+=== Show data broker local configuration on UI
+
+There is now a *Show Configuration* option that allows users to view the local configuration of each data broker on the UI.
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-data-brokers.html[Learn more about managing data broker groups].
+
+=== Upgrade to Azure and Google Cloud data broker operating system
+
+The operating system for data brokers in Azure and Google Cloud have been upgraded to the Rocky Linux 9.0.
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-azure.html#details-about-the-data-broker-vm[Learn more about the data broker instance in Azure].
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-gcp.html#details-about-the-data-broker-vm-instance[Learn more about the data broker instance in Google Cloud].
+
 == 11 Dec 2022
 
 === Filter directories by name
