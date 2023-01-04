@@ -161,7 +161,7 @@ RAM::
 15 GB
 
 Operating system::
-Red Hat Enterprise Linux 7.7
+Rocky Linux 9.0
 
 Disk size and type::
 20 GB HDD pd-standard
