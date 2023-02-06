@@ -87,6 +87,14 @@ Cloud Sync enables you to sync data from a source to a target. This is called a 
 * SMB server
 * StorageGRID
 
+| Azure Data Lake Gen2
+
+* IBM Cloud Object Storage
+* NFS server
+* ONTAP S3 Storage
+* SMB server
+* StorageGRID
+
 | Azure NetApp Files a|
 
 * Amazon EFS
@@ -201,6 +209,7 @@ Cloud Sync enables you to sync data from a source to a target. This is called a 
 * IBM Cloud Object Storage
 * NFS server
 * On-premises ONTAP cluster
+* ONTAP S3 Storage
 * SMB server
 * StorageGRID
 
@@ -224,6 +233,7 @@ Cloud Sync enables you to sync data from a source to a target. This is called a 
 
 * Amazon S3
 * Google Cloud Storage
+* NFS server
 * SMB server
 * StorageGRID
 * ONTAP S3 Storage
