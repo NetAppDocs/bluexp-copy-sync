@@ -16,6 +16,31 @@ summary: Learn what's new in Cloud Sync.
 Learn what's new in Cloud Sync.
 
 // tag::whats-new[]
+== 5 Feb 2023
+
+=== Additional support for Azure Data Lake Storage Gen2, ONTAP S3 Storage, and NFS
+
+Cloud Sync now supports additional sync relationships for ONTAP S3 Storage and NFS:
+
+* ONTAP S3 Storage to NFS
+* NFS to ONTAP S3 Storage
+
+Cloud Sync also has additional support for Azure Data Lake Storage Gen2 as both a source and target to:
+
+* NFS server
+* SMB server
+* ONTAP S3 Storage
+* StorageGRID
+* IBM Cloud Object Storage
+
+https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html[Learn more about supported sync relationships].
+
+=== Upgrade to Amazon Web Services data broker operating system
+
+The operating system for AWS data brokers has been upgraded to the Amazon Linux 2022.
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-aws.html#details-about-the-data-broker-instance[Learn more about the data broker instance in AWS].
+
 == 3 Jan 2023
 
 === Show data broker local configuration on UI

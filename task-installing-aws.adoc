@@ -112,7 +112,7 @@ RAM::
 16 GB
 
 Operating system::
-Amazon Linux 2
+Amazon Linux 2022
 
 Disk size and type::
 10 GB GP2 SSD
