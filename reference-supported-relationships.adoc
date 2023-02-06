@@ -87,7 +87,7 @@ Cloud Sync enables you to sync data from a source to a target. This is called a 
 * SMB server
 * StorageGRID
 
-| Azure Data Lake Gen2
+| Azure Data Lake Gen2 a|
 
 * IBM Cloud Object Storage
 * NFS server
