@@ -15,6 +15,8 @@ summary: There are two ways to pay for sync relationships after your 14-day free
 [.lead]
 There are two ways to pay for sync relationships after your 14-day free trial ends. The first option is to subscribe from AWS or Azure to pay-as-you-go or to pay annually. The second option is to purchase licenses directly from NetApp.
 
+Licenses should be managed through Cloud Sync or the applicable website and *not* through a digital wallet.
+
 == Marketplace subscription
 
 Subscribing to the Cloud Sync service from AWS or Azure enables you to pay at an hourly rate, or to pay annually. link:task-licensing.html[You can subscribe through either AWS or Azure], depending on where you want to be billed.
