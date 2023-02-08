@@ -12,6 +12,7 @@ summary: There are two ways to pay for sync relationships after your 14-day free
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
 There are two ways to pay for sync relationships after your 14-day free trial ends. The first option is to subscribe from AWS or Azure to pay-as-you-go or to pay annually. The second option is to purchase licenses directly from NetApp.
 
 You can subscribe from either the AWS Marketplace or the Azure Marketplace. You can't subscribe from both.
@@ -20,10 +21,9 @@ You have the option to use licenses from NetApp with a Marketplace subscription.
 
 link:concept-licensing.html[Learn more about how licenses work].
 
-.What if I don't immediately pay after my free trial ends?
-****
-You won't be able to create any additional relationships. Existing relationships are not deleted, but you cannot make any changes to them until you subscribe or enter a license.
-****
+If you don't immediately pay after your free trial ends, you won't be able to create any additional relationships. Existing relationships are not deleted, but you cannot make any changes to them until you subscribe or enter a license. 
+
+Licenses should be managed through Cloud Sync or the applicable website and *not* through a digital wallet.
 
 == [[aws]]Subscribing from AWS
 
@@ -106,7 +106,7 @@ You'll need the serial number for your license and the user name and password fo
 
 == Updating a license
 
-If you extended a Cloud Sync license that you purchased from NetApp, the new expiration date won't update automatically in Cloud Sync. You need to add the license again to refresh the expiration date.
+If you extended a Cloud Sync license that you purchased from NetApp, the new expiration date won't update automatically in Cloud Sync. You need to add the license again to refresh the expiration date. Licenses should be managed through Cloud Sync or the applicable website and *not* through a digital wallet.
 
 .Steps
 
