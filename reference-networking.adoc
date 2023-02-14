@@ -51,7 +51,7 @@ The NetApp data broker requires outbound internet access over port 443 to commun
 
 A data broker contacts the following endpoints:
 
-[cols="38h,62h",options="header"]
+[cols="38,62",options="header"]
 |===
 | Endpoints
 | Purpose
@@ -123,7 +123,8 @@ Where _storage-account_ is the user's source storage account.
 
 |
 https://_storage-account_.queue.core.windows.net 
-\https://management.azure.com/subscriptions/${_subscriptionId_}/resourceGroups/${_resourceGroup_}/providers/Microsoft.EventGrid/*
+\https://management.azure.com/subscriptions/${_subscriptionId_}
+/resourceGroups/${_resourceGroup_}/providers/Microsoft.EventGrid/*
 
 Where _storage-account_ is the user's source storage account, _subscriptionid_ is the is the source subscription ID, and _resourceGroup_ is the source resource group.
 
