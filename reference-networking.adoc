@@ -51,7 +51,7 @@ The NetApp data broker requires outbound internet access over port 443 to commun
 
 A data broker contacts the following endpoints:
 
-[cols="38,62",options="header"]
+[cols="38h,62h",options="header"]
 |===
 | Endpoints
 | Purpose
@@ -95,7 +95,7 @@ https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region[See AWS docum
 https://_storage-account_.blob.core.windows.net
 
 If using Azure Data Lake Gen2:
-https://_storage-account_.dfs.core.windows.net
+\https://_storage-account_.dfs.core.windows.net
 
 Where _storage-account_ is the user's source storage account.
 | To open the proxy to a user's Azure storage account address.
@@ -123,10 +123,9 @@ Where _storage-account_ is the user's source storage account.
 
 |
 https://_storage-account_.queue.core.windows.net 
-Where _storage-account_ is the user's source storage account.
-
 \https://management.azure.com/subscriptions/${_subscriptionId_}/resourceGroups/${_resourceGroup_}/providers/Microsoft.EventGrid/*
-Where _subscriptionid_ is the is the source subscription ID and _resourceGroup_ is the source resource group.
+
+Where _storage-account_ is the user's source storage account, _subscriptionid_ is the is the source subscription ID, and _resourceGroup_ is the source resource group.
 
 | If creating a continuous sync relationship from an Azure storage account.
 
