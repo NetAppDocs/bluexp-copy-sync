@@ -56,7 +56,9 @@ A data broker contacts the following endpoints:
 | Endpoints
 | Purpose
 
-| \https://olcentgbl.trafficmanager.net | To contact a repository for updating CentOS packages for the data broker host. This endpoint is contacted only if you manually install the data broker on a CentOS host.
+| \https://olcentgbl.trafficmanager.net 
+
+| To contact a repository for updating CentOS packages for the data broker host. This endpoint is contacted only if you manually install the data broker on a CentOS host.
 
 |
 \https://rpm.nodesource.com
@@ -64,22 +66,39 @@ A data broker contacts the following endpoints:
 \https://nodejs.org:
 | To contact repositories for updating Node.js, npm, and other 3rd party packages used in development.
 
-| \https://tgz.pm2.io | To access a repository for updating PM2, which is a 3rd party package used to monitor Cloud Sync.
+| \https://tgz.pm2.io 
+
+| To access a repository for updating PM2, which is a 3rd party package used to monitor Cloud Sync.
 
 |
 \https://sqs.us-east-1.amazonaws.com
 \https://kinesis.us-east-1.amazonaws.com
+
 | To contact the AWS services that Cloud Sync uses for operations (queuing files, registering actions, and delivering updates to the data broker).
 
 | \https://s3._region_.amazonaws.com
 
 For example: s3.us-east-2.amazonaws.com:443
 https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region[See AWS documentation for a list of S3 endpoints^]
+
 | To contact Amazon S3 when a sync relationship includes an S3 bucket.
 
-| \https://s3.us-east-1.amazonaws.com
+| \https://s3.amazonaws.com/
 
 | When you download data broker logs from Cloud Sync, the data broker zips its logs directory and uploads the logs to a predefined S3 bucket in the us-east-1 region.
+
+| \https://storage.googleapis.com/
+| To contact Google Cloud when a sync relationship uses a GCP bucket.
+
+| 
+
+https://_storage-account_.blob.core.windows.net
+
+If using Azure Data Lake Gen2:
+https://_storage-account_.dfs.core.windows.net
+
+Where _storage-account_ is the user's source storage account.
+| To open the proxy to a user's Azure storage account address.
 
 |
 \https://cf.cloudsync.netapp.com
@@ -97,6 +116,19 @@ https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region[See AWS docum
 \https://netapp-cloud-account.auth0.com
 
 | To contact Cloud Data Sense when you use Data Sense to select the source files for a new sync relationship.
+
+| \https://pubsub.googleapis.com
+
+| If creating a continuous sync relationship from a Google storage account.
+
+|
+https://_storage-account_.queue.core.windows.net 
+Where _storage-account_ is the user's source storage account.
+
+\https://management.azure.com/subscriptions/${_subscriptionId_}/resourceGroups/${_resourceGroup_}/providers/Microsoft.EventGrid/*
+Where _subscriptionid_ is the is the source subscription ID and _resourceGroup_ is the source resource group.
+
+| If creating a continuous sync relationship from an Azure storage account.
 
 |===
 
