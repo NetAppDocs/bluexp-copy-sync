@@ -95,7 +95,7 @@ https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region[See AWS docum
 https://_storage-account_.blob.core.windows.net
 
 If using Azure Data Lake Gen2:
-\https://_storage-account_.dfs.core.windows.net
+https://_storage-account_.dfs.core.windows.net
 
 Where _storage-account_ is the user's source storage account.
 | To open the proxy to a user's Azure storage account address.
