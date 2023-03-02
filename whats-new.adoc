@@ -16,6 +16,15 @@ summary: Learn what's new in Cloud Sync.
 Learn what's new in Cloud Sync.
 
 // tag::whats-new[]
+== 5 March 2023
+
+=== EBS Encryption for AWS data brokers
+
+You can now encrypt AWS data broker volumes using a KMS key from your account.
+
+[Learn more about creating a data broker in AWS].
+
+
 == 5 Feb 2023
 
 === Additional support for Azure Data Lake Storage Gen2, ONTAP S3 Storage, and NFS
