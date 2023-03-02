@@ -22,7 +22,7 @@ Learn what's new in Cloud Sync.
 
 You can now encrypt AWS data broker volumes using a KMS key from your account.
 
-[Learn more about creating a data broker in AWS].
+https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-aws.html#creating-the-data-broker[Learn more about creating a data broker in AWS].
 
 
 == 5 Feb 2023
