@@ -78,11 +78,11 @@ If you'd rather not provide access keys, click the link at the bottom of the pag
 +
 video::video_cloud_sync.mp4[width=848, height=480]
 
-. If you entered an AWS access key, select a location for the instance, select a key pair, choose whether to enable a public IP address, and then select an existing IAM role, or leave the field blank so Cloud Sync creates the role for you.
+. If you entered an AWS access key, select a location for the instance, select a key pair, choose whether to enable a public IP address, and select an existing IAM role, or leave the field blank so Cloud Sync creates the role for you. You also have the option of encrypting your data broker using a KMS key.
 +
 If you choose your own IAM role, <<iam,you'll need to provide the required permissions>>.
 +
-image:screenshot_aws_data_broker.gif[A screenshot of the information that you need to provide when deploying a data broker in AWS.]
+image:screenshot_aws_data_broker.png[A screenshot of the information that you need to provide when deploying a data broker in AWS.]
 
 . Specify a proxy configuration, if a proxy is required for internet access in the VPC.
 
