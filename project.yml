@@ -1,10 +1,12 @@
 settings:
   name: Cloud Sync
+  harmony_integration: maestro
   platform: cloud
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
+    harmony_enabled: true
   rss_page: "whats-new.html"
 sidebar:
   entries:
@@ -108,3 +110,4 @@ homepage:
           url: https://cloud.netapp.com/blog
         - title: Cloud webinars
           url: https://cloud.netapp.com/events
+
