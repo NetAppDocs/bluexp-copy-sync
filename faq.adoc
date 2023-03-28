@@ -53,9 +53,9 @@ NOTE: Cloud Sync relationships are free for Cloud Volumes Service and Azure NetA
 
 The resource charges are related to the compute and storage costs for running the data broker in the cloud.
 
-=== How is Cloud Sync billed?
+=== How is Cloud Sync billed and how do I manage my subscription?
 
-There are two ways to pay for sync relationships after your 14-day free trial ends. The first option is to subscribe from AWS or Azure, which enables you to pay-as-you-go or to pay annually. The second option is to purchase licenses directly from NetApp.
+There are two ways to pay for sync relationships after your 14-day free trial ends. The first option is to subscribe from AWS or Azure, which enables you to pay-as-you-go or to pay annually. The second option is to purchase licenses directly from NetApp. In each case, your subscription will be managed through your provider marketplace and *not* via the Cloud Sync user interface.
 
 === Can I use Cloud Sync outside the cloud?
 
