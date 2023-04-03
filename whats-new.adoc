@@ -16,6 +16,25 @@ summary: Learn what's new in Cloud Sync.
 Learn what's new in Cloud Sync.
 
 // tag::whats-new[]
+== 2 April 2023
+
+=== Additional support for Azure Data Lake Storage Gen2 relationships
+
+You can now create sync relationships with Azure Data Lake Storage Gen2 as a source and target with the following:
+
+* Azure NetApp Files
+* Amazon FSx for ONTAP
+* Cloud Volumes ONTAP
+* On-Prem ONTAP
+
+https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html[Learn more about supported sync relationships].
+
+=== Filter directories by full path
+
+In addition to filtering directories out by name, you can now filter directories by their full path.
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings[Learn more about the Exclude Directories setting].
+
 == 7 March 2023
 
 === EBS Encryption for AWS data brokers
