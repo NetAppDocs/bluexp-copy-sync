@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: whats-new.html
 keywords: what's new, features, new, release notes, enhancements, fixes
-summary: Learn what's new in Cloud Sync.
+summary: Learn what's new in BlueXP copy and sync.
 ---
 
-= What's new with Cloud Sync
+= What's new with BlueXP copy and sync
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary: Learn what's new in Cloud Sync.
 :imagesdir: ./media/
 
 [.lead]
-Learn what's new in Cloud Sync.
+Learn what's new in BlueXP copy and sync.
 
 // tag::whats-new[]
 == 2 April 2023

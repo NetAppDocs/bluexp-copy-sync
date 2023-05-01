@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-copying-acls.html
 keywords: permissions, access control list, acls, ntfs, cifs, smb, shares, robocopy, copy, transfer, activate, operating system, os, ram, cpu, networking, copy acls to the target
-summary: Cloud Sync can copy access control lists (ACLs) between SMB shares and between an SMB share and object storage (except for ONTAP S3). If needed, you also have the option to manually preserve ACLs between SMB shares by using robocopy.
+summary: BlueXP copy and sync can copy access control lists (ACLs) between SMB shares and between an SMB share and object storage (except for ONTAP S3). If needed, you also have the option to manually preserve ACLs between SMB shares by using robocopy.
 ---
 
 = Copying ACLs from SMB shares
@@ -13,14 +13,14 @@ summary: Cloud Sync can copy access control lists (ACLs) between SMB shares and 
 :imagesdir: ./media/
 
 [.lead]
-Cloud Sync can copy access control lists (ACLs) between SMB shares and between an SMB share and object storage (except for ONTAP S3). If needed, you also have the option to manually preserve ACLs between SMB shares by using robocopy.
+BlueXP copy and sync can copy access control lists (ACLs) between SMB shares and between an SMB share and object storage (except for ONTAP S3). If needed, you also have the option to manually preserve ACLs between SMB shares by using robocopy.
 
 .Choices
 
-* <<Setting up Cloud Sync to copy ACLs from an SMB server,Set up Cloud Sync to automatically copy ACLs>>
+* <<Setting up BlueXP copy and sync to copy ACLs from an SMB server,Set up BlueXP copy and sync to automatically copy ACLs>>
 * <<Manually copying ACLs between SMB shares,Manually copy the ACLs between SMB shares>>
 
-== Setting up Cloud Sync to copy ACLs
+== Setting up BlueXP copy and sync to copy ACLs
 
 Copy ACLs between SMB shares and between SMB shares and object storage by enabling a setting when you create a relationship or after you create a relationship.
 
@@ -30,7 +30,7 @@ This feature works with _any_ type of data broker: the AWS, Azure, Google Cloud 
 
 .Steps for a new relationship
 
-. From Cloud Sync, click *Create New Sync*.
+. From BlueXP copy and sync, click *Create New Sync*.
 
 . Drag and drop an SMB server or object storage as the source and an SMB server or object storage as the target, and click *Continue*.
 
@@ -61,7 +61,7 @@ image:screenshot-sync-tags-metadata.png["A screenshot of the sixth step in the s
 
 .Result
 
-When syncing data, Cloud Sync preserves the ACLs between the source and target.
+When syncing data, BlueXP copy and sync preserves the ACLs between the source and target.
 
 == Manually copying ACLs between SMB shares
 
@@ -75,7 +75,7 @@ You can manually preserve ACLs between SMB shares by using the Windows robocopy 
 +
 You must perform this step before you use robocopy.
 
-. From Cloud Sync, create a new relationship between the source and target SMB shares or sync an existing relationship.
+. From BlueXP copy and sync, create a new relationship between the source and target SMB shares or sync an existing relationship.
 
 . After the data sync is complete, run the following command from the Windows host to sync the ACLs and ownership:
 +

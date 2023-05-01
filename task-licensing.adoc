@@ -23,7 +23,7 @@ link:concept-licensing.html[Learn more about how licenses work].
 
 If you don't immediately pay after your free trial ends, you won't be able to create any additional relationships. Existing relationships are not deleted, but you cannot make any changes to them until you subscribe or enter a license. 
 
-Licenses should be managed through Cloud Sync or the applicable website and *not* through a digital wallet.
+Licenses should be managed through BlueXP copy and sync or the applicable website and *not* through a digital wallet.
 
 == [[aws]]Subscribing from AWS
 
@@ -37,7 +37,7 @@ AWS enables you to pay-as-you-go or to pay annually.
 
 . Click *Subscribe* and then click *Continue*.
 
-. Subscribe from the AWS Marketplace, and then log back in to the Cloud Sync service to complete the registration.
+. Subscribe from the AWS Marketplace, and then log back in to the BlueXP copy and sync service to complete the registration.
 +
 The following video shows the process:
 +
@@ -73,15 +73,15 @@ Select *Monthly* to pay by the hour, or *Yearly* to pay for a year up front.
 
 . When deployment is complete, click the name of the SaaS resource in the notification pop-up.
 
-. Click *Configure Account* to return to Cloud Sync.
+. Click *Configure Account* to return to BlueXP copy and sync.
 +
 The following video shows the process:
 +
 video::video_cloud_sync_registering_azure.mp4[width=848, height=480]
 
-== [[licenses]]Purchasing licenses from NetApp and adding them to Cloud Sync
+== [[licenses]]Purchasing licenses from NetApp and adding them to BlueXP copy and sync
 
-To pay for your sync relationships up front, you must purchase one or more licenses and add them to the Cloud Sync service.
+To pay for your sync relationships up front, you must purchase one or more licenses and add them to the BlueXP copy and sync service.
 
 .What you'll need
 
@@ -106,7 +106,7 @@ You'll need the serial number for your license and the user name and password fo
 
 == Updating a license
 
-If you extended a Cloud Sync license that you purchased from NetApp, the new expiration date won't update automatically in Cloud Sync. You need to add the license again to refresh the expiration date. Licenses should be managed through Cloud Sync or the applicable website and *not* through a digital wallet.
+If you extended a BlueXP copy and sync license that you purchased from NetApp, the new expiration date won't update automatically in BlueXP copy and sync. You need to add the license again to refresh the expiration date. Licenses should be managed through BlueXP copy and sync or the applicable website and *not* through a digital wallet.
 
 .Steps
 
@@ -122,4 +122,4 @@ If you extended a Cloud Sync license that you purchased from NetApp, the new exp
 
 .Result
 
-Cloud Sync updates the existing license with the new expiration date.
+BlueXP copy and sync updates the existing license with the new expiration date.

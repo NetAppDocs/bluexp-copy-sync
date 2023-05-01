@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-installing-linux.html
 keywords: data broker, install, linux, on-prem data broker, on-prem, on prem, on premises, networking, permissions, os, operating system, rhel, red hat, ram, cpu, disk space, install data broker, installing data broker, install a data broker, data broker installation, linux installation, linux operating system, aws access, aws keys, keys, gcp access, aws permissions, gcp permissions, google permissions
-summary: When you create a new data broker, choose the On-Prem Data Broker option to install the data broker software on an on-premises Linux host, or on an existing Linux host in the cloud. Cloud Sync guides you through the installation process, but the requirements and steps are repeated on this page to help you prepare for installation.
+summary: When you create a new data broker, choose the On-Prem Data Broker option to install the data broker software on an on-premises Linux host, or on an existing Linux host in the cloud. BlueXP copy and sync guides you through the installation process, but the requirements and steps are repeated on this page to help you prepare for installation.
 ---
 
 = Installing the data broker on a Linux host
@@ -13,7 +13,7 @@ summary: When you create a new data broker, choose the On-Prem Data Broker optio
 :imagesdir: ./media/
 
 [.lead]
-When you create a new data broker group, choose the On-Prem Data Broker option to install the data broker software on an on-premises Linux host, or on an existing Linux host in the cloud. Cloud Sync guides you through the installation process, but the requirements and steps are repeated on this page to help you prepare for installation.
+When you create a new data broker group, choose the On-Prem Data Broker option to install the data broker software on an on-premises Linux host, or on an existing Linux host in the cloud. BlueXP copy and sync guides you through the installation process, but the requirements and steps are repeated on this page to help you prepare for installation.
 
 == Linux host requirements
 
@@ -134,7 +134,7 @@ The following steps provide details about each possible installation option. Fol
 +
 `curl <URI> -o data_broker_installer.sh -x <proxy_username>:<proxy_password>@<proxy_host>:<proxy_port>`
 +
-URI:: Cloud Sync displays the URI of the installation file on the instructions page, which loads when you follow the prompts to deploy the On-Prem Data Broker. That URI isn't repeated here because the link is generated dynamically and can be used only once. <<Installing the data broker,Follow these steps to obtain the URI from Cloud Sync>>.
+URI:: BlueXP copy and sync displays the URI of the installation file on the instructions page, which loads when you follow the prompts to deploy the On-Prem Data Broker. That URI isn't repeated here because the link is generated dynamically and can be used only once. <<Installing the data broker,Follow these steps to obtain the URI from BlueXP copy and sync>>.
 
 .. Switch to superuser, make the installer executable and install the software:
 +
@@ -162,6 +162,6 @@ AWS keys:: These are the keys for the user that you should have prepared <<Enabl
 
 JSON file:: This is the JSON file that contains a service account key that you should have prepared <<Enabling access to Google Cloud,following these steps>>.
 
-. Once the data broker is available, click *Continue* in Cloud Sync.
+. Once the data broker is available, click *Continue* in BlueXP copy and sync.
 
 . Complete the pages in the wizard to create the new sync relationship.
