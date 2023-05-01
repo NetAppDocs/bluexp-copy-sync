@@ -87,6 +87,8 @@ Ensure that the Azure user account that you use to deploy the data broker has th
                     "Microsoft.EventGrid/systemTopics/delete",
                     "Microsoft.EventGrid/eventSubscriptions/write",
                     "Microsoft.Storage/storageAccounts/write"
+                    "Microsoft.MarketplaceOrdering/offertypes/publishers/offers/plans/agreements/read"
+                    "Microsoft.MarketplaceOrdering/offertypes/publishers/offers/plans/agreements/write"
 
     ],
     "NotActions": [],
