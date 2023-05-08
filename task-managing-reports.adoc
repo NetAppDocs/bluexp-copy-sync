@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-managing-reports.html
-keywords: reports, sync reports, cloud sync reports, report errors, path reports
+keywords: reports, sync reports, BlueXP copy and sync reports, report errors, path reports
 summary: Create and view reports to get information that you can use with the help of NetApp personnel to tune a data broker’s configuration and improve performance.
 ---
 
@@ -20,7 +20,7 @@ Each report provides in-depth details about a path in a sync relationship. For e
 
 == Creating reports
 
-Each time that you create a report, Cloud Sync scans the path and then compiles the details into a report.
+Each time that you create a report, BlueXP copy and sync scans the path and then compiles the details into a report.
 
 .Steps
 
@@ -56,9 +56,9 @@ image:screenshot-sync-download-report.png[A screenshot of the Download pdf optio
 
 == Viewing report errors
 
-The Paths table identifies whether any errors are present in the most recent report. An error identifies an issue that Cloud Sync faced when scanning the path.
+The Paths table identifies whether any errors are present in the most recent report. An error identifies an issue that BlueXP copy and sync faced when scanning the path.
 
-For example, a report might contain permission denied errors. This type of error can affect Cloud Sync's ability to scan the entire set of files and directories.
+For example, a report might contain permission denied errors. This type of error can affect BlueXP copy and sync's ability to scan the entire set of files and directories.
 
 After you view the list of errors, you can then address the issues and run the report again.
 

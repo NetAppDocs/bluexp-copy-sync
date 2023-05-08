@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: reference-networking.html
 keywords: networking, 443, port, ports, port 443, connections, connectivity, path, paths, vpn
-summary: Networking for Cloud Sync includes connectivity between the data broker group and the source and target locations, and an outbound internet connection from data brokers over port 443.
+summary: Networking for BlueXP copy and sync includes connectivity between the data broker group and the source and target locations, and an outbound internet connection from data brokers over port 443.
 ---
 
-= Networking overview for Cloud Sync
+= Networking overview for BlueXP copy and sync
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary: Networking for Cloud Sync includes connectivity between the data broker
 :imagesdir: ./media/
 
 [.lead]
-Networking for Cloud Sync includes connectivity between the data broker group and the source and target locations, and an outbound internet connection from data brokers over port 443.
+Networking for BlueXP copy and sync includes connectivity between the data broker group and the source and target locations, and an outbound internet connection from data brokers over port 443.
 
 == Data broker location
 
@@ -23,15 +23,15 @@ A data broker group consists of one or more data brokers installed in the cloud 
 
 The following image shows a data broker running in the cloud, in either AWS, Google Cloud, or Azure. The source and target can be in any location, as long as there's a connection to the data broker. For example, you might have a VPN connection from your data center to your cloud provider.
 
-NOTE: When Cloud Sync deploys the data broker in AWS, Azure, or Google Cloud, it creates a security group that enables the required outbound communication.
+NOTE: When BlueXP copy and sync deploys the data broker in AWS, Azure, or Google Cloud, it creates a security group that enables the required outbound communication.
 
-image:diagram_networking_cloud.png["A diagram that shows the Cloud Sync service, the data broker running in the cloud, and connections to the source and target."]
+image:diagram_networking_cloud.png["A diagram that shows the BlueXP copy and sync service, the data broker running in the cloud, and connections to the source and target."]
 
 === Data broker on your premises
 
 The following image shows the data broker running on-prem, in a data center. Again, the source and target can be in any location, as long as there's a connection to the data broker.
 
-image:diagram_networking_onprem.png["A diagram that shows the Cloud Sync service, the data broker running on-premises, and connections to the source and target."]
+image:diagram_networking_onprem.png["A diagram that shows the BlueXP copy and sync service, the data broker running on-premises, and connections to the source and target."]
 
 == Networking requirements
 
@@ -39,13 +39,13 @@ image:diagram_networking_onprem.png["A diagram that shows the Cloud Sync service
 +
 For example, if an NFS server is in your data center and a data broker is in AWS, then you need a network connection (VPN or Direct Connect) from your network to the VPC.
 
-* A data broker needs an outbound internet connection so it can poll the Cloud Sync service for tasks over port 443.
+* A data broker needs an outbound internet connection so it can poll the BlueXP copy and sync service for tasks over port 443.
 
 * NetApp recommends configuring the source, target, and data brokers to use a Network Time Protocol (NTP) service. The time difference between the three components should not exceed 5 minutes.
 
 == Networking endpoints
 
-The NetApp data broker requires outbound internet access over port 443 to communicate with the Cloud Sync service and to contact a few other services and repositories. Your local web browser also requires access to endpoints for certain actions. If you need to limit outbound connectivity, refer to the following list of endpoints when configuring your firewall for outbound traffic.
+The NetApp data broker requires outbound internet access over port 443 to communicate with the BlueXP copy and sync service and to contact a few other services and repositories. Your local web browser also requires access to endpoints for certain actions. If you need to limit outbound connectivity, refer to the following list of endpoints when configuring your firewall for outbound traffic.
 
 === Data broker endpoints
 
@@ -68,13 +68,13 @@ A data broker contacts the following endpoints:
 
 | \https://tgz.pm2.io 
 
-| To access a repository for updating PM2, which is a 3rd party package used to monitor Cloud Sync.
+| To access a repository for updating PM2, which is a 3rd party package used to monitor BlueXP copy and sync.
 
 |
 \https://sqs.us-east-1.amazonaws.com
 \https://kinesis.us-east-1.amazonaws.com
 
-| To contact the AWS services that Cloud Sync uses for operations (queuing files, registering actions, and delivering updates to the data broker).
+| To contact the AWS services that BlueXP copy and sync uses for operations (queuing files, registering actions, and delivering updates to the data broker).
 
 | \https://s3._region_.amazonaws.com
 
@@ -85,7 +85,7 @@ https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region[See AWS docum
 
 | \https://s3.amazonaws.com/
 
-| When you download data broker logs from Cloud Sync, the data broker zips its logs directory and uploads the logs to a predefined S3 bucket in the us-east-1 region.
+| When you download data broker logs from BlueXP copy and sync, the data broker zips its logs directory and uploads the logs to a predefined S3 bucket in the us-east-1 region.
 
 | \https://storage.googleapis.com/
 | To contact Google Cloud when a sync relationship uses a GCP bucket.
@@ -103,7 +103,7 @@ Where _storage-account_ is the user's source storage account.
 |
 \https://cf.cloudsync.netapp.com
 \https://repo.cloudsync.netapp.com
-| To contact the Cloud Sync service.
+| To contact the BlueXP copy and sync service.
 
 | \https://support.netapp.com | To contact NetApp support when using a BYOL license for sync relationships.
 

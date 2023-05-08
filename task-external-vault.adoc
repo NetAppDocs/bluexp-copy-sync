@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-external-vault.html
 keywords: hashicorp, vault, credentials, secrets, API
-summary: When you create a sync relationship that requires Amazon S3, Azure, or Google Cloud credentials, you need to specify those credentials through the Cloud Sync user interface or API. An alternative is to set up the data broker to access the credentials directly from an external HashiCorp Vault.
+summary: When you create a sync relationship that requires Amazon S3, Azure, or Google Cloud credentials, you need to specify those credentials through the BlueXP copy and sync user interface or API. An alternative is to set up the data broker to access the credentials directly from an external HashiCorp Vault.
 ---
 
 = Setting up a data broker group to use an external HashiCorp Vault
@@ -12,9 +12,9 @@ summary: When you create a sync relationship that requires Amazon S3, Azure, or 
 :linkattrs:
 :imagesdir: ./media/
 
-When you create a sync relationship that requires Amazon S3, Azure, or Google Cloud credentials, you need to specify those credentials through the Cloud Sync user interface or API. An alternative is to set up the data broker group to access the credentials (or _secrets_) directly from an external HashiCorp Vault.
+When you create a sync relationship that requires Amazon S3, Azure, or Google Cloud credentials, you need to specify those credentials through the BlueXP copy and sync user interface or API. An alternative is to set up the data broker group to access the credentials (or _secrets_) directly from an external HashiCorp Vault.
 
-This feature is supported through the Cloud Sync API with sync relationships that require Amazon S3, Azure, or Google Cloud credentials.
+This feature is supported through the BlueXP copy and sync API with sync relationships that require Amazon S3, Azure, or Google Cloud credentials.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Prepare the vault
 
@@ -33,7 +33,7 @@ Now that everything is set up, you can send an API call to create a sync relatio
 
 == Preparing the vault
 
-You'll need to provide Cloud Sync with the URL to the secrets in your vault. Prepare the vault by setting up those URLs. You need to set up URLs to the credentials for each source and target in the sync relationships that you plan to create.
+You'll need to provide BlueXP copy and sync with the URL to the secrets in your vault. Prepare the vault by setting up those URLs. You need to set up URLs to the credentials for each source and target in the sync relationships that you plan to create.
 
 The URL must be set up as follows:
 
@@ -168,7 +168,7 @@ link:task-installing-gcp.html#permissions-required-for-the-service-account[Learn
 
 Now that everything is set up, you can send an API call to create a sync relationship that uses your vault to get the secrets.
 
-Post the relationship using the Cloud Sync REST API.
+Post the relationship using the BlueXP copy and sync REST API.
 
  Headers:
  Authorization: Bearer <user-token>
