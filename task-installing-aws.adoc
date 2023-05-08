@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-installing-aws.html
 keywords: data broker, install, aws, networking, permissions, regions, install data broker in aws, install in aws, deploy in aws, deploy data broker in aws, cft, template, iam role, use your own iam role, regions, supported regions, networking requirements, port, ports, 443, port 443, ntp, network time protocol, permissions, iam role, iam permissions, aws data broker
-summary: When you create a new data broker, choose the AWS Data Broker option to deploy the data broker software on a new EC2 instance in a VPC. Cloud Sync guides you through the installation process, but the requirements and steps are repeated on this page to help you prepare for installation.
+summary: When you create a new data broker, choose the AWS Data Broker option to deploy the data broker software on a new EC2 instance in a VPC. BlueXP copy and sync guides you through the installation process, but the requirements and steps are repeated on this page to help you prepare for installation.
 ---
 
 = Creating a new data broker in AWS
@@ -13,7 +13,7 @@ summary: When you create a new data broker, choose the AWS Data Broker option to
 :imagesdir: ./media/
 
 [.lead]
-When you create a new data broker group, choose Amazon Web Services to deploy the data broker software on a new EC2 instance in a VPC. Cloud Sync guides you through the installation process, but the requirements and steps are repeated on this page to help you prepare for installation.
+When you create a new data broker group, choose Amazon Web Services to deploy the data broker software on a new EC2 instance in a VPC. BlueXP copy and sync guides you through the installation process, but the requirements and steps are repeated on this page to help you prepare for installation.
 
 You also have the option to install the data broker on an existing Linux host in the cloud or on your premises. link:task-installing-linux.html[Learn more].
 
@@ -27,9 +27,9 @@ The data broker software automatically runs as root on the Linux host. Running a
 
 == Networking requirements
 
-* The data broker needs an outbound internet connection so it can poll the Cloud Sync service for tasks over port 443.
+* The data broker needs an outbound internet connection so it can poll the BlueXP copy and sync service for tasks over port 443.
 +
-When Cloud Sync deploys the data broker in AWS, it creates a security group that enables the required outbound communication. Note that you can configure the data broker to use a proxy server during the installation process.
+When BlueXP copy and sync deploys the data broker in AWS, it creates a security group that enables the required outbound communication. Note that you can configure the data broker to use a proxy server during the installation process.
 +
 If you need to limit outbound connectivity, see link:reference-networking.html[the list of endpoints that the data broker contacts].
 
@@ -41,7 +41,7 @@ The AWS user account that you use to deploy the data broker must have the permis
 
 == [[iam]]Requirements to use your own IAM role with the AWS data broker
 
-When Cloud Sync deploys the data broker, it creates an IAM role for the data broker instance. You can deploy the data broker using your own IAM role, if you prefer. You might use this option if your organization has strict security policies.
+When BlueXP copy and sync deploys the data broker, it creates an IAM role for the data broker instance. You can deploy the data broker using your own IAM role, if you prefer. You might use this option if your organization has strict security policies.
 
 The IAM role must meet the following requirements:
 
@@ -68,7 +68,7 @@ image:screenshot-aws.png["A screenshot of the Data Broker page that enables you 
 
 . Enter a name for the data broker and click *Continue*.
 
-. Enter an AWS access key so Cloud Sync can create the data broker in AWS on your behalf.
+. Enter an AWS access key so BlueXP copy and sync can create the data broker in AWS on your behalf.
 +
 The keys aren't saved or used for any other purposes.
 +
@@ -78,7 +78,7 @@ If you'd rather not provide access keys, click the link at the bottom of the pag
 +
 video::video_cloud_sync.mp4[width=848, height=480]
 
-. If you entered an AWS access key, select a location for the instance, select a key pair, choose whether to enable a public IP address, and select an existing IAM role, or leave the field blank so Cloud Sync creates the role for you. You also have the option of encrypting your data broker using a KMS key.
+. If you entered an AWS access key, select a location for the instance, select a key pair, choose whether to enable a public IP address, and select an existing IAM role, or leave the field blank so BlueXP copy and sync creates the role for you. You also have the option of encrypting your data broker using a KMS key.
 +
 If you choose your own IAM role, <<iam,you'll need to provide the required permissions>>.
 +
@@ -86,7 +86,7 @@ image:screenshot_aws_data_broker.png[A screenshot of the information that you ne
 
 . Specify a proxy configuration, if a proxy is required for internet access in the VPC.
 
-. After the data broker is available, click *Continue* in Cloud Sync.
+. After the data broker is available, click *Continue* in BlueXP copy and sync.
 +
 The following image shows a successfully deployed instance in AWS:
 +
@@ -100,7 +100,7 @@ You have deployed a data broker in AWS and created a new sync relationship. You 
 
 == Details about the data broker instance
 
-Cloud Sync creates a data broker in AWS using the following configuration.
+BlueXP copy and sync creates a data broker in AWS using the following configuration.
 
 Instance type::
 m5n.xlarge when available in the region, otherwise m5.xlarge
