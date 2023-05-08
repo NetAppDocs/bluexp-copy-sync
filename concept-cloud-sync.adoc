@@ -27,7 +27,7 @@ BlueXP copy and sync is a software-as-a-service (SaaS) platform that consists of
 
 The following image shows the relationship between BlueXP copy and sync components:
 
-image:diagram_cloud_sync_overview.gif[Conceptual image that shows data flowing from a source to a target. The data broker software acts as a mediator and polls the BlueXP copy and sync service for tasks.]
+image:diagram_cloud_sync_overview.png[Conceptual image that shows data flowing from a source to a target. The data broker software acts as a mediator and polls the BlueXP copy and sync service for tasks.]
 
 The NetApp data broker software syncs data from a source to a target (this is called a _sync relationship_). You can run the data broker in AWS, Azure, Google Cloud Platform, or on your premises. A data broker group, which consists of one or more data brokers, needs an outbound internet connection over port 443 so it can communicate with the BlueXP copy and sync service and contact a few other services and repositories. link:reference-networking.html[View the list of endpoints].
 

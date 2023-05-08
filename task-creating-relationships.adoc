@@ -154,7 +154,9 @@ If you enable this option, you also need to change a parameter in the local.json
 
 Delete Files on Target:: Choose to delete files from the target location, if they were deleted from the source. The default is to never delete files from the target location.
 
-File Types:: Define the file types to include in each sync: files, directories, and symbolic links.
+File Types:: Define the file types to include in each sync: files, directories, symbolic links, and hard links.
++
+NOTE: Hard links are only available for unsecured NFS to NFS relationships. Users will be limited to one scanner process and one scanner concurrency, and scans must be run from a root directory.
 
 Exclude File Extensions:: Specify file extensions to exclude from the sync by typing the file extension and pressing *Enter*. For example, type _log_ or _.log_ to exclude *.log files. A separator isn't required for multiple extensions. The following video provides a short demo:
 +
