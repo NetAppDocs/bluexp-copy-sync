@@ -22,7 +22,7 @@ Learn what's new in BlueXP copy and sync.
 
 Users can now include hard links for syncs involving unsecured NFS to NFS relationships.
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings[Learn more about the File Types setting].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings[Learn more about the File Types setting].
 
 === Ability to add user certificate for data brokers in secure NFS relationships
 
@@ -32,15 +32,15 @@ Users are now able to set their own certificate for the target data broker when 
 
 Users can now exclude files that were modified up to 365 days before the scheduled sync.
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings[Learn more about the Recently Modified Files setting].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings[Learn more about the Recently Modified Files setting].
 
 === Filter relationships in UI by relationship ID
 
 Those using the RESTful API can now filter relationships using relationship IDs.
 
-https://docs.netapp.com/us-en/cloud-manager-sync/api-sync.html[Learn more about using the RESTful API with BlueXP copy and sync].
+https://docs.netapp.com/us-en/bluexp-copy-sync/api-sync.html[Learn more about using the RESTful API with BlueXP copy and sync].
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings[Learn more about the Exclude Directories setting].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings[Learn more about the Exclude Directories setting].
 
 == 2 April 2023
 
