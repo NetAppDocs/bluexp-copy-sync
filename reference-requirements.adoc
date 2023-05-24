@@ -25,11 +25,11 @@ For example, if an NFS server is in your data center and a data broker is in AWS
 
 == Target directory
 
-When you create a sync relationship, Cloud Sync enables you to select an existing target directory and then optionally create a new folder inside that directory. So be sure that your preferred target directory already exists.
+When you create a sync relationship, BlueXP copy and sync enables you to select an existing target directory and then optionally create a new folder inside that directory. So be sure that your preferred target directory already exists.
 
 == Permissions to read directories
 
-In order to show every directory or folder in a source or target, Cloud Sync needs read permissions on the directory or folder.
+In order to show every directory or folder in a source or target, BlueXP copy and sync needs read permissions on the directory or folder.
 
 NFS:: Permissions must be defined on the source/target with uid/gid on files and directories.
 
@@ -47,7 +47,7 @@ Make sure that your Amazon S3 bucket meets the following requirements.
 
 === Supported data broker locations for Amazon S3
 
-Sync relationships that include S3 storage require a data broker deployed in AWS or on your premises. In either case, Cloud Sync prompts you to associate the data broker with an AWS account during installation.
+Sync relationships that include S3 storage require a data broker deployed in AWS or on your premises. In either case, BlueXP copy and sync prompts you to associate the data broker with an AWS account during installation.
 
 * link:task-installing-aws.html[Learn how to deploy the AWS data broker]
 * link:task-installing-linux.html[Learn how to install the data broker on a Linux host]
@@ -89,7 +89,7 @@ All regions are supported except for the China, US Gov, and US DoD regions.
 
 === Connection string for relationships that include Azure Blob and NFS/SMB
 
-When creating a sync relationship between an Azure Blob container and an NFS or SMB server, you need to provide Cloud Sync with the storage account connection string:
+When creating a sync relationship between an Azure Blob container and an NFS or SMB server, you need to provide BlueXP copy and sync with the storage account connection string:
 
 image:screenshot_connection_string.gif["Shows a connection string, which is available from the Azure portal by selecting a storage account and then clicking Access keys."]
 
@@ -106,7 +106,7 @@ NOTE: If you choose to implement a Continuous Sync relationship that includes an
 
 == Azure Data Lake Storage Gen2
 
-When creating a sync relationship that includes Azure Data Lake, you need to provide Cloud Sync with the storage account connection string. It must be a regular connection string, not a shared access signature (SAS).
+When creating a sync relationship that includes Azure Data Lake, you need to provide BlueXP copy and sync with the storage account connection string. It must be a regular connection string, not a shared access signature (SAS).
 
 == Azure NetApp Files requirement
 
@@ -143,7 +143,7 @@ Make sure that your Google Cloud Storage bucket meets the following requirements
 
 === Supported data broker locations for Google Cloud Storage
 
-Sync relationships that include Google Cloud Storage require a data broker deployed in Google Cloud or on your premises. Cloud Sync guides you through the data broker installation process when you create a sync relationship.
+Sync relationships that include Google Cloud Storage require a data broker deployed in Google Cloud or on your premises. BlueXP copy and sync guides you through the data broker installation process when you create a sync relationship.
 
 * link:task-installing-gcp.html[Learn how to deploy the Google Cloud data broker]
 * link:task-installing-linux.html[Learn how to install the data broker on a Linux host]
@@ -206,7 +206,7 @@ When you set up a sync relationship that includes https://docs.netapp.com/us-en/
 == SMB server requirements
 
 * The SMB server can be a NetApp system or a non-NetApp system.
-*	You need to provide Cloud Sync with credentials that have permissions on the SMB server.
+*	You need to provide BlueXP copy and sync with credentials that have permissions on the SMB server.
 ** For a source SMB server, the following permissions are required: list and read.
 +
 Members of the Backup Operators group are supported with a source SMB server.
@@ -228,8 +228,8 @@ An SMB limitation affects hidden directories and files when syncing data between
 
 The SMB protocol is case-insensitive, which means uppercase and lowercase letters are treated as being the same. This behavior can result in overwritten files and directory copy errors, if a sync relationship includes an SMB server and data already exists on the target.
 
-For example, let's say that there's a file named "a" on the source and a file named "A" on the target. When Cloud Sync copies the file named "a" to the target, file "A" is overwritten by file "a" from the source.
+For example, let's say that there's a file named "a" on the source and a file named "A" on the target. When BlueXP copy and sync copies the file named "a" to the target, file "A" is overwritten by file "a" from the source.
 
-In the case of directories, let's say that there's a directory named "b" on the source and a directory named "B" on the target. When Cloud Sync tries to copy the directory named "b" to the target, Cloud Sync receives an error that says the directory already exists. As a result, Cloud Sync always fails to copy the directory named “b.”
+In the case of directories, let's say that there's a directory named "b" on the source and a directory named "B" on the target. When BlueXP copy and sync tries to copy the directory named "b" to the target, BlueXP copy and sync receives an error that says the directory already exists. As a result, BlueXP copy and sync always fails to copy the directory named “b.”
 
 The best way to avoid this limitation is to ensure that you sync data to an empty directory.

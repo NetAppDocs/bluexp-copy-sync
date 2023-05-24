@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: whats-new.html
 keywords: what's new, features, new, release notes, enhancements, fixes
-summary: Learn what's new in Cloud Sync.
+summary: Learn what's new in BlueXP copy and sync.
 ---
 
-= What's new with Cloud Sync
+= What's new with BlueXP copy and sync
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,9 +13,35 @@ summary: Learn what's new in Cloud Sync.
 :imagesdir: ./media/
 
 [.lead]
-Learn what's new in Cloud Sync.
+Learn what's new in BlueXP copy and sync.
 
 // tag::whats-new[]
+== 8 May 2023
+
+=== Hard link capabilities
+
+Users can now include hard links for syncs involving unsecured NFS to NFS relationships.
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings[Learn more about the File Types setting].
+
+=== Ability to add user certificate for data brokers in secure NFS relationships
+
+Users are now able to set their own certificate for the target data broker when creating a secure NFS relationship. They will need to set a server name and provide a private key and certificate ID when doing so. This feature is available for all data brokers.
+
+=== Extended exclusion period for recently modified files
+
+Users can now exclude files that were modified up to 365 days before the scheduled sync.
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings[Learn more about the Recently Modified Files setting].
+
+=== Filter relationships in UI by relationship ID
+
+Those using the RESTful API can now filter relationships using relationship IDs.
+
+https://docs.netapp.com/us-en/cloud-manager-sync/api-sync.html[Learn more about using the RESTful API with BlueXP copy and sync].
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings[Learn more about the Exclude Directories setting].
+
 == 2 April 2023
 
 === Additional support for Azure Data Lake Storage Gen2 relationships
@@ -43,6 +69,9 @@ You can now encrypt AWS data broker volumes using a KMS key from your account.
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker[Learn more about creating a data broker in AWS].
 
+
+
+// end::whats-new[]
 
 == 5 Feb 2023
 
@@ -239,7 +268,6 @@ The Cloud Sync data broker is now supported in the following Google Cloud region
 === New Google Cloud machine type
 
 The default machine type for the data broker in Google Cloud is now n2-standard-4.
-// end::whats-new[]
 
 == 6 June 2022
 

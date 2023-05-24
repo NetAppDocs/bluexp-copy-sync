@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: reference-supported-relationships.html
 keywords: supported sync relationships, support, supported target, supported source
-summary: Cloud Sync enables you to sync data from a source to a target. This is called a sync relationship. You should understand the supported relationships before you get started.
+summary: BlueXP copy and sync enables you to sync data from a source to a target. This is called a sync relationship. You should understand the supported relationships before you get started.
 ---
 
 = Supported sync relationships
@@ -13,7 +13,7 @@ summary: Cloud Sync enables you to sync data from a source to a target. This is 
 :imagesdir: ./media/
 
 [.lead]
-Cloud Sync enables you to sync data from a source to a target. This is called a sync relationship. You should understand the supported relationships before you get started.
+BlueXP copy and sync enables you to sync data from a source to a target. This is called a sync relationship. You should understand the supported relationships before you get started.
 
 [cols=2*,options="header",cols="20,25"]
 |===
@@ -293,7 +293,7 @@ Notes:
 
 . Box support is available as a preview.
 
-. Sync relationships with this source/target are supported by using the Cloud Sync API only.
+. Sync relationships with this source/target are supported by using the BlueXP copy and sync API only.
 
 . You can choose a specific Azure Blob storage tier when a Blob container is the target:
 +

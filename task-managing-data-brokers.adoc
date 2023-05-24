@@ -115,7 +115,7 @@ image:screenshot_sync_group_edit.gif[A screenshot of the action menu that's avai
 
 .Result
 
-Cloud Sync updates the name of the data broker group.
+BlueXP copy and sync updates the name of the data broker group.
 
 == Set up a unified configuration
 
@@ -137,8 +137,8 @@ Note the following:
 +
 * You can pick and choose which settings to change--you don't need to change all four at once.
 * After a new configuration is sent to a data broker, the data broker automatically restarts and uses the new configuration.
-* It can take up to a minute until this change takes place and is visible in the Cloud Sync interface.
-* If a data broker isn't running, it's configuration won't change because Cloud Sync can't communicate with it. The configuration will change after the data broker restarts.
+* It can take up to a minute until this change takes place and is visible in the BlueXP copy and sync interface.
+* If a data broker isn't running, it's configuration won't change because BlueXP copy and sync can't communicate with it. The configuration will change after the data broker restarts.
 * After you set a unified configuration, any new data brokers will automatically use the new configuration.
 
 == Move data brokers between groups
@@ -169,7 +169,7 @@ image:screenshot_sync_group_remove.png[A screenshot of the action menu that's av
 
 .Result
 
-Cloud Sync moves the data broker to a new or existing data broker group. If there are no other data brokers in the previous group, then Cloud Sync deletes it.
+BlueXP copy and sync moves the data broker to a new or existing data broker group. If there are no other data brokers in the previous group, then BlueXP copy and sync deletes it.
 
 == Update proxy configuration
 
@@ -189,13 +189,13 @@ Update the proxy configuration for a data broker by adding details about a new p
 
 .Result
 
-Cloud Sync updates the data broker to use the proxy configuration for internet access.
+BlueXP copy and sync updates the data broker to use the proxy configuration for internet access.
 
 == View a data broker's configuration
 
 You might want to view details about a data broker to identify things like its host name, IP address, available CPU and RAM, and more.
 
-Cloud Sync provides the following details about a data broker:
+BlueXP copy and sync provides the following details about a data broker:
 
 * Basic information: Instance ID, host name, etc.
 * Network: Region, network, subnet, private IP, etc.
@@ -217,13 +217,13 @@ image:screenshot_sync_data_broker_details.gif[A screenshot of information about 
 
 == Address issues with a data broker
 
-Cloud Sync displays a status for each data broker that can help you troubleshoot issues.
+BlueXP copy and sync displays a status for each data broker that can help you troubleshoot issues.
 
 .Steps
 
 . Identify any data brokers that have a status of "Unknown" or "Failed."
 +
-image:screenshot_sync_broker_status.gif[A screenshot of the Cloud Sync status display where a data broker has an "unknown" status.]
+image:screenshot_sync_broker_status.gif[A screenshot of the BlueXP copy and sync status display where a data broker has an "unknown" status.]
 
 . Hover over the image:screenshot_sync_status_icon.gif[An "info" icon.] icon to see the failure reason.
 
@@ -233,11 +233,11 @@ For example, you might need to simply restart the data broker if it's offline, o
 
 == Remove a data broker from a group
 
-You might remove a data broker from a group if it's no longer needed or if the initial deployment failed. This action only deletes the data broker from Cloud Sync's records. You'll need to manually delete the data broker and any additional cloud resources yourself.
+You might remove a data broker from a group if it's no longer needed or if the initial deployment failed. This action only deletes the data broker from BlueXP copy and sync's records. You'll need to manually delete the data broker and any additional cloud resources yourself.
 
 .Things you should know
 
-* Cloud Sync deletes a group when you remove the last data broker from the group.
+* BlueXP copy and sync deletes a group when you remove the last data broker from the group.
 * You can't remove the last data broker from a group if there is a relationship using that group.
 
 .Steps
@@ -254,13 +254,13 @@ image:screenshot_sync_group_remove.gif[A screenshot of the action menu that's av
 
 .Result
 
-Cloud Sync removes the data broker from the group.
+BlueXP copy and sync removes the data broker from the group.
 
 == Delete a data broker group
 
-If a data broker group no longer manages any sync relationships, you can delete the group, which removes all of the data brokers from Cloud Sync.
+If a data broker group no longer manages any sync relationships, you can delete the group, which removes all of the data brokers from BlueXP copy and sync.
 
-Data brokers that Cloud Sync removes are only deleted from Cloud Sync's records. You'll need to manually delete the data broker instance from your cloud provider and any additional cloud resources.
+Data brokers that BlueXP copy and sync removes are only deleted from BlueXP copy and sync's records. You'll need to manually delete the data broker instance from your cloud provider and any additional cloud resources.
 
 .Steps
 
@@ -274,4 +274,4 @@ image:screenshot_sync_group_add.png[A screenshot of the action menu that's avail
 
 .Result
 
-Cloud Sync removes the data brokers and deletes the group.
+BlueXP copy and sync removes the data brokers and deletes the group.

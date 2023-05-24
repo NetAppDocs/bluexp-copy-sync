@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-installing-gcp.html
 keywords: data broker, install, gcp, google, networking, permissions, regions, install data broker in gcp, install in gcp, deploy in gcp, deploy data broker in gcp, install data broker in google, install in google, deploy in google, deploy data broker in google, networking requirements, port, ports, 443, port 443, ntp, network time protocol, gcp data broker, service account
-summary: When you create a new data broker, choose the Google Cloud Data Broker option to deploy the data broker software on a new virtual machine instance in a VPC. Cloud Sync guides you through the installation process, but the requirements and steps are repeated on this page to help you prepare for installation.
+summary: When you create a new data broker, choose the Google Cloud Data Broker option to deploy the data broker software on a new virtual machine instance in a VPC. BlueXP copy and sync guides you through the installation process, but the requirements and steps are repeated on this page to help you prepare for installation.
 ---
 
 = Creating a new data broker in Google Cloud
@@ -13,7 +13,7 @@ summary: When you create a new data broker, choose the Google Cloud Data Broker 
 :imagesdir: ./media/
 
 [.lead]
-When you create a new data broker group, choose Google Cloud Platform to deploy the data broker software on a new virtual machine instance in a Google Cloud VPC. Cloud Sync guides you through the installation process, but the requirements and steps are repeated on this page to help you prepare for installation.
+When you create a new data broker group, choose Google Cloud Platform to deploy the data broker software on a new virtual machine instance in a Google Cloud VPC. BlueXP copy and sync guides you through the installation process, but the requirements and steps are repeated on this page to help you prepare for installation.
 
 You also have the option to install the data broker on an existing Linux host in the cloud or on your premises. link:task-installing-linux.html[Learn more].
 
@@ -27,9 +27,9 @@ The data broker software automatically runs as root on the Linux host. Running a
 
 == Networking requirements
 
-* The data broker needs an outbound internet connection so it can poll the Cloud Sync service for tasks over port 443.
+* The data broker needs an outbound internet connection so it can poll the BlueXP copy and sync service for tasks over port 443.
 +
-When Cloud Sync deploys the data broker in Google Cloud, it creates a security group that enables the required outbound communication.
+When BlueXP copy and sync deploys the data broker in Google Cloud, it creates a security group that enables the required outbound communication.
 +
 If you need to limit outbound connectivity, see link:reference-networking.html[the list of endpoints that the data broker contacts].
 
@@ -113,9 +113,9 @@ image:screenshot_data_broker_gcp.png[A screenshot that shows the information req
 +
 If a proxy is required for internet access, then the proxy must be in Google Cloud and use the same service account as the data broker.
 
-. Once the data broker is available, click *Continue* in Cloud Sync.
+. Once the data broker is available, click *Continue* in BlueXP copy and sync.
 +
-The instance takes approximately 5 to 10 minutes to deploy. You can monitor the progress from the Cloud Sync service, which automatically refreshes when the instance is available.
+The instance takes approximately 5 to 10 minutes to deploy. You can monitor the progress from the BlueXP copy and sync service, which automatically refreshes when the instance is available.
 
 . Complete the pages in the wizard to create the new sync relationship.
 
@@ -125,7 +125,7 @@ You've deployed a data broker in Google Cloud and created a new sync relationshi
 
 == Providing permissions to use buckets in other Google Cloud projects
 
-When you create a sync relationship and choose Google Cloud Storage as the source or target, Cloud Sync enables you to choose from the buckets that the data broker's service account has permissions to use. By default, this includes the buckets that are in the _same_ project as the data broker service account. But you can choose buckets from _other_ projects if you provide the required permissions.
+When you create a sync relationship and choose Google Cloud Storage as the source or target, BlueXP copy and sync enables you to choose from the buckets that the data broker's service account has permissions to use. By default, this includes the buckets that are in the _same_ project as the data broker service account. But you can choose buckets from _other_ projects if you provide the required permissions.
 
 .Steps
 
@@ -149,7 +149,7 @@ When you set up a sync relationship, you can now choose that bucket as the sourc
 
 == Details about the data broker VM instance
 
-Cloud Sync creates a data broker in Google Cloud using the following configuration.
+BlueXP copy and sync creates a data broker in Google Cloud using the following configuration.
 
 Machine type::
 n2-standard-4
