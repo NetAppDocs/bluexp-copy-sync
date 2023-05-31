@@ -115,7 +115,7 @@ Note:
 +
 Additionally, the assignable scope must be set to subscription scope and *not* resource group scope if you plan to implement Continuous Sync in Azure.
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings[Learn more about the Continuous Sync setting].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings[Learn more about the Continuous Sync setting].
 
 
 == Authentication method
