@@ -20,7 +20,7 @@ Learn what's new in BlueXP copy and sync.
 
 === Support automatic abort by minutes
 
-Active syncs that have not completed can now be aborted after fifteen minutes using the Sync Timeout feature.
+Active syncs that have not completed can now be aborted after fifteen minutes using the *Sync Timeout* feature.
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings[Learn more about the Sync Timeout setting].
 
