@@ -97,7 +97,7 @@ image:screenshot_bucket_setup.gif[This screenshot shows the Bucket Setup page wh
 +
 Schedule:: Choose a recurring schedule for future syncs or turn off the sync schedule. You can schedule a relationship to sync data as often as every 1 minute.
 
-Sync Timeout:: Define whether BlueXP copy and sync should cancel a data sync if the sync hasn't completed in the specified number of hours or days.
+Sync Timeout:: Define whether BlueXP copy and sync should cancel a data sync if the sync hasn't completed in the specified number of minutes,hours, or days.
 
 Notifications:: Enables you to choose whether to receive BlueXP copy and sync notifications in BlueXP's Notification Center. You can enable notifications for successful data syncs, failed data syncs, and canceled data syncs.
 
