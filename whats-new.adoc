@@ -16,6 +16,20 @@ summary: Learn what's new in BlueXP copy and sync.
 Learn what's new in BlueXP copy and sync.
 
 // tag::whats-new[]
+== 11 June 2023
+
+=== Support automatic abort by minutes
+
+Active syncs that have not completed can now be aborted after fifteen minutes using the *Sync Timeout* feature.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings[Learn more about the Sync Timeout setting].
+
+=== Copy access time metadata
+
+In relationships including a file system, the *Copy for Objects* feature now copies access time metadata.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings[Learn more about the Copy For Objects setting].
+
 == 8 May 2023
 
 === Hard link capabilities
@@ -61,6 +75,9 @@ In addition to filtering directories out by name, you can now filter directories
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings[Learn more about the Exclude Directories setting].
 
+
+// end::whats-new[]
+
 == 7 March 2023
 
 === EBS Encryption for AWS data brokers
@@ -70,8 +87,6 @@ You can now encrypt AWS data broker volumes using a KMS key from your account.
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker[Learn more about creating a data broker in AWS].
 
 
-
-// end::whats-new[]
 
 == 5 Feb 2023
 
