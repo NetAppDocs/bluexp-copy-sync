@@ -102,6 +102,9 @@ You have deployed a data broker in AWS and created a new sync relationship. You 
 
 BlueXP copy and sync creates a data broker in AWS using the following configuration.
 
+Node.js compatibility::
+v20
+
 Instance type::
 m5n.xlarge when available in the region, otherwise m5.xlarge
 
