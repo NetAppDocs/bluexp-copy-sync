@@ -20,26 +20,26 @@ BlueXP copy and sync can copy access control lists (ACLs) between SMB shares and
 * <<Setting up BlueXP copy and sync to copy ACLs from an SMB server,Set up BlueXP copy and sync to automatically copy ACLs>>
 * <<Manually copying ACLs between SMB shares,Manually copy the ACLs between SMB shares>>
 
-== Setting up BlueXP copy and sync to copy ACLs
+== Set up BlueXP copy and sync to copy ACLs
 
 Copy ACLs between SMB shares and between SMB shares and object storage by enabling a setting when you create a relationship or after you create a relationship.
 
-.What you'll need
+.Before you begin
 
 This feature works with _any_ type of data broker: the AWS, Azure, Google Cloud Platform, or on-prem data broker. The on-prem data broker can run link:task-installing-linux.html[any supported operating system].
 
 .Steps for a new relationship
 
-. From BlueXP copy and sync, click *Create New Sync*.
+. From BlueXP copy and sync, select *Create New Sync*.
 
 . Drag and drop an SMB server or object storage as the source and an SMB server or object storage as the target, and click *Continue*.
 
 . On the *SMB Server* page:
-.. Enter a new SMB server or select an existing server and click *Continue*.
+.. Enter a new SMB server or select an existing server and select *Continue*.
 .. Enter credentials for the SMB server.
-.. Select *Copy Access Control Lists to the target* and click *Continue*.
+.. Choose to either *Copy only files*, *Copy only ACL*, or *Copy files and ACL* and select *Continue*.
 +
-image:screenshot_acl_support.gif[A screenshot that shows the option to enable Copy Access Control Lists to the target.]
+image:screenshot_acl_support.png[A screenshot that shows the option to enable Copy Access Control Lists to the target.]
 
 . Follow the remaining prompts to create the sync relationship.
 +
@@ -51,19 +51,19 @@ image:screenshot-sync-tags-metadata.png["A screenshot of the sixth step in the s
 
 .Steps for an existing relationship
 
-. Hover over the sync relationship and click the action menu.
+. Hover over the sync relationship and select the action menu.
 
-. Click *Settings*.
+. Select *Settings*.
 
-. Select *Copy Access Control Lists to the target*.
+. Choose to either *Copy only files*, *Copy only ACL*, or *Copy files and ACL* and select *Continue*.
 
-. Click *Save Settings*.
+. Select *Save Settings*.
 
 .Result
 
 When syncing data, BlueXP copy and sync preserves the ACLs between the source and target.
 
-== Manually copying ACLs between SMB shares
+== Manually copy ACLs between SMB shares
 
 You can manually preserve ACLs between SMB shares by using the Windows robocopy command.
 

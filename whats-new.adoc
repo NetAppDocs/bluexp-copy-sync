@@ -16,6 +16,27 @@ summary: Learn what's new in BlueXP copy and sync.
 Learn what's new in BlueXP copy and sync.
 
 // tag::whats-new[]
+== 9 July 2023
+
+=== Remove multiple sync relationships at once
+
+Users are now able to delete more than one sync relationship at a time in the UI.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#deleting-relationships[Learn more about deleting sync relelationships.]
+
+=== Copy only ACL
+
+Users now have additional options for copying ACL information in CIF and NFS relationships. When creating or managing a sync relationship, you can copy files only, copy ACL information only, or copy files and ACL information.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships[Learn more about creating sync relationships.]
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship[Learn more about managing sync relationships.]
+
+
+=== Updated to Node.js 20
+
+Copy and sync has updated to Node.js 20. All available data brokers will be updated. Operation systems incompatible with this update cannot be installed, and incompatible existing systems may experience performance issues. 
+
+
 == 11 June 2023
 
 === Support automatic abort by minutes
@@ -56,6 +77,8 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/api-sync.html[Learn more about us
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings[Learn more about the Exclude Directories setting].
 
+// end::whats-new[]
+
 == 2 April 2023
 
 === Additional support for Azure Data Lake Storage Gen2 relationships
@@ -76,7 +99,6 @@ In addition to filtering directories out by name, you can now filter directories
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings[Learn more about the Exclude Directories setting].
 
 
-// end::whats-new[]
 
 == 7 March 2023
 
