@@ -28,8 +28,7 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#
 
 Users now have additional options for copying ACL information in CIF and NFS relationships. When creating or managing a sync relationship, you can copy files only, copy ACL information only, or copy files and ACL information.
 
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships[Learn more about creating sync relationships.]
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship[Learn more about managing sync relationships.]
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-copying-acls.html[Learn more about copying ACLs.]
 
 
 === Updated to Node.js 20
