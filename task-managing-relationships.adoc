@@ -32,7 +32,7 @@ Rather than wait for the next scheduled sync, you can press a button to immediat
 
 BlueXP copy and sync starts the data sync process for the relationship.
 
-== Accelerating sync performance
+== Accelerate sync performance
 
 Accelerate the performance of a sync relationship by adding an additional data broker to the group that manages the relationship. The additional data broker must be a _new_ data broker.
 
@@ -64,7 +64,7 @@ You want to accelerate the performance of relationship 1 so you add a new data b
 
 BlueXP copy and sync adds the new data broker to the group. The performance of the next data sync should be accelerated.
 
-== Updating credentials
+== Updatecredentials
 
 You can update the data broker with the latest credentials of the source or target in an existing sync relationship. Updating the credentials can help if your security policies require you to update credentials on a periodic basis.
 
@@ -86,7 +86,7 @@ If you entered a domain when you created the sync relationship, but you don't en
 
 BlueXP copy and sync updates the credentials on the data broker. It can take up 10 minutes until the data broker starts using the updated credentials for data syncs.
 
-== Setting up notifications
+== Set up notifications
 
 A *Notifications* setting for each sync relationship enables you to choose whether to receive BlueXP copy and sync notifications in BlueXP's Notification Center. You can enable notifications for successful data syncs, failed data syncs, and canceled data syncs.
 
@@ -118,7 +118,7 @@ In addition, you can also receive notifications by email.
 
 You'll now receive BlueXP copy and sync notifications in BlueXP's Notification Center, with a few notifications arriving by email, if you configured that option.
 
-== Changing the settings for a sync relationship
+== Change the settings for a sync relationship
 
 Modify settings that define how source files and folders are synced and maintained in the target location.
 
@@ -187,7 +187,7 @@ Date Modified:: Choose all files regardless of their last modified date, files m
 
 Date Created:: When an SMB server is the source, this setting enables you to sync files that were created after a specific date, before a specific date, or between a specific time range.
 
-ACL - Access Control List:: Copy ACLs from an SMB server by enabling a setting when you create a relationship or after you create a relationship.
+ACL - Access Control List:: Copy ACLs only, files only, or ACLs and files from an SMB server by enabling a setting when you create a relationship or after you create a relationship.
 
 . Click *Save Settings*.
 
@@ -195,16 +195,30 @@ ACL - Access Control List:: Copy ACLs from an SMB server by enabling a setting w
 
 BlueXP copy and sync modifies the sync relationship with the new settings.
 
-== Deleting relationships
+== Delete relationships
 
 You can delete a sync relationship, if you no longer need to sync data between the source and target. This action doesn't delete the data broker group (or the individual data broker instances) and it does not delete data from the target.
 
+=== Option 1: Delete a single sync relationship
+
 .Steps
 
-. From the *Dashboard*, navigate to the sync relationship and click image:icon-sync-action.png[A screenshot of the button that enables you to take actions on a sync relationship]
+. From the *Dashboard*, navigate to the sync relationship and select image:icon-sync-action.png[A screenshot of the button that enables you to take actions on a sync relationship]
 
 . Click *Delete* and then click *Delete* again to confirm.
 
 .Result
 
 BlueXP copy and sync deletes the sync relationship.
+
+=== Option 2: Delete multiple sync relationships
+
+.Steps
+
+. From the *Dashboard*, navigate to the "Create New Sync" button and select image:icon-sync-action.png[A screenshot of the button that enables you to take actions on a sync relationship]
+
+. Select the sync relationships you want to delete, dcick *Delete* and then click *Delete* again to confirm.
+
+.Result
+
+BlueXP copy and sync deletes the sync relationships.

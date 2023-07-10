@@ -17,6 +17,7 @@ When you create a new data broker group, choose the On-Prem Data Broker option t
 
 == Linux host requirements
 
+* *Node.js compatibility*: v20
 * *Operating system*:
 ** CentOS 8.0 and 8.5
 +
