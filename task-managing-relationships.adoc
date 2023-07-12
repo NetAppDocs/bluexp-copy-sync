@@ -22,9 +22,9 @@ Rather than wait for the next scheduled sync, you can press a button to immediat
 
 .Steps
 
-. From the *Dashboard*, navigate to the sync relationship and click image:icon-sync-action.png[A screenshot of the button that enables you to take actions on a sync relationship]
+. From the *Dashboard*, navigate to the sync relationship and select image:icon-sync-action.png[A screenshot of the button that enables you to take actions on a sync relationship]
 
-. Click *Sync Now* and then click *Sync* to confirm.
+. Select *Sync Now* and then select *Sync* to confirm.
 //+
 //image:screenshot_dashboard_actions.gif[This screenshot shows the actions that you can perform on a sync relationship.]
 
@@ -52,9 +52,9 @@ You want to accelerate the performance of relationship 1 so you add a new data b
 
 . Ensure that at least one of the existing data brokers in the relationship are online.
 
-. From the *Dashboard*, navigate to the sync relationship and click image:icon-sync-action.png[A screenshot of the button that enables you to take actions on a sync relationship]
+. From the *Dashboard*, navigate to the sync relationship and select image:icon-sync-action.png[A screenshot of the button that enables you to take actions on a sync relationship]
 
-. Click *Accelerate*.
+. Select *Accelerate*.
 //+
 //image:screenshot_accelerate.gif[A screenshot of BlueXP copy and sync that shows the action menu for a sync relationship. Accelerate is highlighted with the mouse pointer.]
 
@@ -72,11 +72,11 @@ Updating credentials is supported with any source or target that BlueXP copy and
 
 .Steps
 
-. From the *Sync Dashboard*, go to a sync relationship that requires credentials and then click *Update Credentials*.
+. From the *Sync Dashboard*, go to a sync relationship that requires credentials and then select *Update Credentials*.
 +
 image:screenshot_sync_update_credentials.png[A screenshot that shows the Update Credentials option on the Sync Relationships page just under the name of the source or target.]
 
-. Enter the credentials and click *Update*.
+. Enter the credentials and select *Update*.
 +
 A note about SMB servers: if the domain is new, then you'll need to specify it when you update the credentials. If the domain hasn't changed, then you don't need to enter it again.
 +
@@ -98,21 +98,21 @@ In addition, you can also receive notifications by email.
 
 . Modify the settings for a sync relationship:
 
-.. From the *Dashboard*, navigate to the sync relationship and click image:icon-sync-action.png[A screenshot of the button that enables you to take actions on a sync relationship]
+.. From the *Dashboard*, navigate to the sync relationship and select image:icon-sync-action.png[A screenshot of the button that enables you to take actions on a sync relationship]
 
-.. Click *Settings*.
+.. Select *Settings*.
 
 .. Enable *Notifications*.
 
-.. Click *Save Settings*.
+.. Select *Save Settings*.
 
 . If you want to receive notifications by email, configure alert and notifications settings:
 
-.. Click *Settings > Alerts and Notifications Settings*.
+.. Select *Settings > Alerts and Notifications Settings*.
 
 .. Select a user or multiple users and choose the *Info* notification type.
 
-.. Click *Apply*.
+.. Select *Apply*.
 
 .Result
 
@@ -122,9 +122,9 @@ You'll now receive BlueXP copy and sync notifications in BlueXP's Notification C
 
 Modify settings that define how source files and folders are synced and maintained in the target location.
 
-. From the *Dashboard*, navigate to the sync relationship and click image:icon-sync-action.png[A screenshot of the button that enables you to take actions on a sync relationship]
+. From the *Dashboard*, navigate to the sync relationship and select image:icon-sync-action.png[A screenshot of the button that enables you to take actions on a sync relationship]
 
-. Click *Settings*.
+. Select *Settings*.
 
 . Modify any of the settings.
 +
@@ -189,7 +189,7 @@ Date Created:: When an SMB server is the source, this setting enables you to syn
 
 ACL - Access Control List:: Copy ACLs only, files only, or ACLs and files from an SMB server by enabling a setting when you create a relationship or after you create a relationship.
 
-. Click *Save Settings*.
+. Select *Save Settings*.
 
 .Result
 
@@ -205,7 +205,7 @@ You can delete a sync relationship, if you no longer need to sync data between t
 
 . From the *Dashboard*, navigate to the sync relationship and select image:icon-sync-action.png[A screenshot of the button that enables you to take actions on a sync relationship]
 
-. Click *Delete* and then click *Delete* again to confirm.
+. Select *Delete* and then select *Delete* again to confirm.
 
 .Result
 
@@ -217,7 +217,7 @@ BlueXP copy and sync deletes the sync relationship.
 
 . From the *Dashboard*, navigate to the "Create New Sync" button and select image:icon-sync-action.png[A screenshot of the button that enables you to take actions on a sync relationship]
 
-. Select the sync relationships you want to delete, dcick *Delete* and then click *Delete* again to confirm.
+. Select the sync relationships you want to delete, select *Delete* and then select *Delete* again to confirm.
 
 .Result
 

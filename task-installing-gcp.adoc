@@ -87,17 +87,17 @@ There are a few ways to create a new data broker. These steps describe how to in
 
 .Steps
 
-. Click *Create New Sync*.
+. Select *Create New Sync*.
 
-. On the *Define Sync Relationship* page, choose a source and target and click *Continue*.
+. On the *Define Sync Relationship* page, choose a source and target and select *Continue*.
 +
 Complete the steps until you reach the *Data Broker Group* page.
 
-. On the *Data Broker Group* page, click *Create Data Broker* and then select *Google Cloud Platform*.
+. On the *Data Broker Group* page, select *Create Data Broker* and then select *Google Cloud Platform*.
 +
 image:screenshot-google.png["A screenshot of the Data Broker page that enables you to choose between an AWS, Azure, Google Cloud, and On-Prem data broker."]
 
-. Enter a name for the data broker and click *Continue*.
+. Enter a name for the data broker and select *Continue*.
 
 . If you're prompted, log in with your Google account.
 +
@@ -113,7 +113,7 @@ image:screenshot_data_broker_gcp.png[A screenshot that shows the information req
 +
 If a proxy is required for internet access, then the proxy must be in Google Cloud and use the same service account as the data broker.
 
-. Once the data broker is available, click *Continue* in BlueXP copy and sync.
+. Once the data broker is available, select *Continue* in BlueXP copy and sync.
 +
 The instance takes approximately 5 to 10 minutes to deploy. You can monitor the progress from the BlueXP copy and sync service, which automatically refreshes when the instance is available.
 
@@ -131,17 +131,17 @@ When you create a sync relationship and choose Google Cloud Storage as the sourc
 
 . Open the Google Cloud Platform console and load the Cloud Storage service.
 
-. Click the name of the bucket that you'd like to use as a source or target in a sync relationship.
+. Select the name of the bucket that you'd like to use as a source or target in a sync relationship.
 
-. Click *Permissions*.
+. Select *Permissions*.
 
-. Click *Add*.
+. Select *Add*.
 
 . Enter the name of the data broker's service account.
 
 . Select a role that provides <<Permissions required for the service account,the same permissions as shown above>>.
 
-. Click *Save*.
+. Select *Save*.
 
 .Result
 

@@ -31,11 +31,11 @@ AWS enables you to pay-as-you-go or to pay annually.
 
 .Steps to pay-as-you-go
 
-. Click *Sync > Licensing*.
+. Select *Sync > Licensing*.
 
 . Select *AWS*
 
-. Click *Subscribe* and then click *Continue*.
+. Select *Subscribe* and then select *Continue*.
 
 . Subscribe from the AWS Marketplace, and then log back in to the BlueXP copy and sync service to complete the registration.
 +
@@ -47,9 +47,9 @@ video::video_cloud_sync_registering.mp4[width=848, height=480]
 
 . https://aws.amazon.com/marketplace/pp/B06XX5V3M2[Go to the AWS Marketplace page^].
 
-. Click *Continue to Subscribe*.
+. Select *Continue to Subscribe*.
 
-. Select your contract options and click *Create contract*.
+. Select your contract options and then select *Create contract*.
 
 == [[azure]]Subscribing from Azure
 
@@ -61,19 +61,19 @@ An Azure user account that has Contributor or Owner permissions in the relevant 
 
 .Steps
 
-. Click *Sync > Licensing*.
+. Select *Sync > Licensing*.
 
 . Select *Azure*.
 
-. Click *Subscribe* and then click *Continue*.
+. Select *Subscribe* and then select *Continue*.
 
-. In the Azure portal, click *Create*, select your options, and click *Subscribe*.
+. In the Azure portal, select *Create*, select your options, and then select *Subscribe*.
 +
 Select *Monthly* to pay by the hour, or *Yearly* to pay for a year up front.
 
-. When deployment is complete, click the name of the SaaS resource in the notification pop-up.
+. When deployment is complete, select the name of the SaaS resource in the notification pop-up.
 
-. Click *Configure Account* to return to BlueXP copy and sync.
+. Select *Configure Account* to return to BlueXP copy and sync.
 +
 The following video shows the process:
 +
@@ -91,18 +91,18 @@ You'll need the serial number for your license and the user name and password fo
 
 . Purchase a license by mailto:ng-cloudsync-contact@netapp.com?subject=Cloud%20Sync%20Service%20-%20BYOL%20License%20Purchase%20Request[contacting NetApp].
 
-. In BlueXP, click *Sync > Licensing*.
+. In BlueXP, select *Sync > Licensing*.
 
-. Click *Add License* and add the required information:
+. Select *Add License* and add the required information:
 
 .. Enter the serial number.
 
 .. Select the NetApp Support Site account that is associated with the license that you're adding:
 +
 * If your account was already added to BlueXP, select it from the drop-down list.
-* If your account wasn't added yet, click *Add NSS Credentials*, enter the user name and password, click *Register*, and then select it from the drop-down list.
+* If your account wasn't added yet, select *Add NSS Credentials*, enter the user name and password, select *Register*, and then select it from the drop-down list.
 
-.. Click *Add*.
+.. Select *Add*.
 
 == Updating a license
 
@@ -110,15 +110,15 @@ If you extended a BlueXP copy and sync license that you purchased from NetApp, t
 
 .Steps
 
-. In BlueXP, click *Sync > Licensing*.
+. In BlueXP, select *Sync > Licensing*.
 
-. Click *Add License* and add the required information:
+. Select *Add License* and add the required information:
 
 .. Enter the serial number.
 
 .. Select the NetApp Support Site account that is associated with the license that you're adding.
 
-.. Click *Add*.
+.. Select *Add*.
 
 .Result
 

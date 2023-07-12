@@ -38,7 +38,7 @@ If you want to create sync relationships for any of the following, then you firs
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html[Adding existing Cloud Volumes ONTAP systems^]
 * https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html[Discovering ONTAP clusters^]
 
-. Click *Canvas*.
+. Select *Canvas*.
 
 . Select a working environment that matches any of the types listed above.
 
@@ -52,7 +52,7 @@ image:screenshot_sync_we.gif[A screenshot that shows the actions available from 
 
 Use these steps to sync data to or from a supported storage type other than Amazon FSx for ONTAP, Azure NetApp Files, Cloud Volumes ONTAP, or on-prem ONTAP clusters. The steps below provide an example that shows how to set up a sync relationship from an NFS server to an S3 bucket.
 
-. In BlueXP, click *Sync*.
+. In BlueXP, select *Sync*.
 
 . On the *Define Sync Relationship* page, choose a source and target.
 +
@@ -71,20 +71,20 @@ For more details, refer to the following pages:
 * link:task-installing-gcp.html[Create a data broker in Google Cloud]
 * link:task-installing-linux.html[Installing the data broker on a Linux host]
 
-. After you install the data broker, click *Continue*.
+. After you install the data broker, select *Continue*.
 +
 image:screenshot-data-broker-group.png[This screenshot shows a successfully deployed instance. The interface shows details about the instance including AWS networking.]
 
 . [[filter]]On the *Directories* page, select a top-level directory or subdirectory.
 +
-If BlueXP copy and sync is unable to retrieve the exports, click *Add Export Manually* and enter the name of an NFS export.
+If BlueXP copy and sync is unable to retrieve the exports, select *Add Export Manually* and enter the name of an NFS export.
 +
 NOTE: If you want to sync more than one directory on the NFS server, then you must create additional sync relationships after you are done.
 
 . On the *AWS S3 Bucket* page, select a bucket:
 +
 * Drill down to select an existing folder within the bucket or to select a new folder that you create inside the bucket.
-* Click *Add to the list* to select an S3 bucket that is not associated with your AWS account. link:reference-requirements.html#s3[Specific permissions must be applied to the S3 bucket].
+* Select *Add to the list* to select an S3 bucket that is not associated with your AWS account. link:reference-requirements.html#s3[Specific permissions must be applied to the S3 bucket].
 
 . On the *Bucket Setup* page, set up the bucket:
 +
@@ -178,7 +178,7 @@ image:screenshot_relationship_tags.png[A screenshot that shows the the Tags/Meta
 +
 TIP: This same feature is available when syncing data to StorageGRID and IBM Cloud Object Storage. For Azure and Google Cloud Storage, only the metadata option is available.
 
-. Review the details of the sync relationship and then click *Create Relationship*.
+. Review the details of the sync relationship and then select *Create Relationship*.
 
 *Result*
 
