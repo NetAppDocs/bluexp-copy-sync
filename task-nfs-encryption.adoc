@@ -76,7 +76,7 @@ Create a new sync relationship between two NFS servers or between Azure NetApp F
 
 .Steps
 
-. Click *Create New Sync*.
+. Select *Create New Sync*.
 
 . Drag and drop *NFS Server* to the source and target locations or *Azure NetApp Files* to the source and target locations and select *Yes* to enable data-in-flight encryption.
 
@@ -96,7 +96,7 @@ Note the following:
 
 .. *Directories*: Choose the directories that you want to sync by selecting all directories, or by drilling down and selecting a subdirectory.
 +
-Click *Filter Source Objects* to modify settings that define how source files and folders are synced and maintained in the target location.
+Select *Filter Source Objects* to modify settings that define how source files and folders are synced and maintained in the target location.
 +
 image:screenshot_directories.gif["A screenshot showing the option to select a top-level directory, drill down, and select the Filter Source Objects option."]
 
@@ -114,10 +114,10 @@ image:screenshot_nfs_encryption_listener.gif["A screenshot showing the option to
 
 .. *Settings*: Define how source files and folders are synced and maintained in the target location.
 
-.. *Review*: Review the details of the sync relationship and then click *Create Relationship*.
+.. *Review*: Review the details of the sync relationship and then select *Create Relationship*.
 +
 image:screenshot_nfs_encryption_review.gif["A screenshot showing the review screen. It shows the NFS servers, data brokers, and networking information about each."]
 
 .Result
 
-BlueXP copy and sync starts creating the new sync relationship. When it's done, click *View in Dashboard* to view details about the new relationship.
+BlueXP copy and sync starts creating the new sync relationship. When it's done, select *View in Dashboard* to view details about the new relationship.

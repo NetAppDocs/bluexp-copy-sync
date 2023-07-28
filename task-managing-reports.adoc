@@ -24,13 +24,13 @@ Each time that you create a report, BlueXP copy and sync scans the path and then
 
 .Steps
 
-. Click *Sync > Reports*.
+. Select *Sync > Reports*.
 +
 The paths (source or target) in each of your sync relationships display in a table.
 
-. In the *Reports Actions* column, go to a specific path and click *Create*, or click the action menu and select *Create New*.
+. In the *Reports Actions* column, go to a specific path and select *Create*, or select the action menu and select *Create New*.
 
-. When the report is ready, click the action menu and select *View*.
+. When the report is ready, select the action menu and select *View*.
 +
 Here's a sample report for a file system path.
 +
@@ -46,13 +46,13 @@ You can download a report in PDF so that you can view it offline or share it.
 
 .Steps
 
-. Click *Sync > Reports*.
+. Select *Sync > Reports*.
 
-. In the *Reports Actions* column, click the action menu and select *View*.
+. In the *Reports Actions* column, select the action menu and select *View*.
 
-. In the top right of the report, click the action menu and select *Download pdf*.
+. In the top right of the report, select the action menu and select *Download pdf*.
 +
-image:screenshot-sync-download-report.png[A screenshot of the Download pdf option that appears after you click the action menu in a report.]
+image:screenshot-sync-download-report.png[A screenshot of the Download pdf option that appears after you select the action menu in a report.]
 
 == Viewing report errors
 
@@ -64,11 +64,11 @@ After you view the list of errors, you can then address the issues and run the r
 
 .Steps
 
-. Click *Sync > Reports*.
+. Select *Sync > Reports*.
 
 . In the *Errors* column, identify whether any errors are present in a report.
 
-. If errors are present, click the arrow next to the number of errors.
+. If errors are present, select the arrow next to the number of errors.
 +
 image:screenshot_sync_report_errors.gif[A screenshot of the Paths table that shows the number of errors and a small clickable arrow in the Errors column.]
 
@@ -82,8 +82,8 @@ You might delete a report of it contained an error that you fixed, or if the rep
 
 .Steps
 
-. Click *Sync > Reports*.
+. Select *Sync > Reports*.
 
-. In the *Reports Actions* column, click the action menu for a path and select *Delete last report* or *Delete all reports*.
+. In the *Reports Actions* column, select the action menu for a path and select *Delete last report* or *Delete all reports*.
 
 . Confirm that you want to delete the report or reports.

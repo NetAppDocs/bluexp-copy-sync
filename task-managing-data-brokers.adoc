@@ -55,7 +55,7 @@ There are several ways to create a new data broker:
 +
 link:task-creating-relationships.html[Learn how to create a new data broker when creating a sync relationship].
 
-* From the *Manage Data Brokers* page by clicking *Add New Data Broker* which creates the data broker in a new group
+* From the *Manage Data Brokers* page by selecting *Add New Data Broker* which creates the data broker in a new group
 
 * From the *Manage Data Brokers* page by creating a new data broker in an existing group
 
@@ -69,9 +69,9 @@ For example, if a group includes an AWS data broker, then you can create an AWS 
 
 .Steps to create a data broker in a new group
 
-. Click *Sync > Manage Data Brokers*.
+. Select *Sync > Manage Data Brokers*.
 
-. Click *Add New Data Broker*.
+. Select *Add New Data Broker*.
 
 . Follow the prompts to create the data broker.
 +
@@ -84,9 +84,9 @@ For help, refer to the following pages:
 
 .Steps to create a data broker in an existing group
 
-. Click *Sync > Manage Data Brokers*.
+. Select *Sync > Manage Data Brokers*.
 
-. Click the action menu and select *Add Data Broker*.
+. Select the action menu and select *Add Data Broker*.
 +
 image:screenshot_sync_group_add.png[A screenshot of the action menu that's available for each individual data broker in a group.]
 
@@ -105,13 +105,13 @@ Change the name of a data broker group at any time.
 
 .Steps
 
-. Click *Sync > Manage Data Brokers*.
+. Select *Sync > Manage Data Brokers*.
 
-. Click the action menu and select *Edit Group Name*.
+. Select the action menu and select *Edit Group Name*.
 +
 image:screenshot_sync_group_edit.gif[A screenshot of the action menu that's available for each individual data broker in a group.]
 
-. Enter a new name and click *Save*.
+. Enter a new name and select *Save*.
 
 .Result
 
@@ -125,13 +125,13 @@ We don't recommend changing the configuration on your own. You should consult wi
 
 .Steps
 
-. Click *Manage Data Brokers*.
+. Select *Manage Data Brokers*.
 
-. Click the Settings icon for a data broker group.
+. Select the Settings icon for a data broker group.
 +
 image:screenshot_sync_group_settings.png[A screenshot that shows the Settings icon for a data broker group.]
 
-. Change the settings as needed and then click *Unify Configuration*.
+. Change the settings as needed and then select *Unify Configuration*.
 +
 Note the following:
 +
@@ -155,17 +155,17 @@ For example, if a data broker is no longer managing a sync relationship, you can
 
 .Steps
 
-. Click *Sync > Manage Data Brokers*.
+. Select *Sync > Manage Data Brokers*.
 
-. Click image:screenshot_sync_group_expand.gif[A screenshot of the button that enables you to expand the list of data brokers in a group.] to expand the list of data brokers in a group.
+. Select image:screenshot_sync_group_expand.gif[A screenshot of the button that enables you to expand the list of data brokers in a group.] to expand the list of data brokers in a group.
 
-. Click the action menu for a data broker and select *Move Data Broker*.
+. Select the action menu for a data broker and select *Move Data Broker*.
 +
 image:screenshot_sync_group_remove.png[A screenshot of the action menu that's available for each individual data broker group.]
 
 . Create a new data broker group or select an existing data broker group.
 
-. Click *Move*.
+. Select *Move*.
 
 .Result
 
@@ -177,15 +177,15 @@ Update the proxy configuration for a data broker by adding details about a new p
 
 .Steps
 
-. Click *Sync > Manage Data Brokers*.
+. Select *Sync > Manage Data Brokers*.
 
-. Click image:screenshot_sync_group_expand.gif[A screenshot of the button that enables you to expand the list of data brokers in a group.] to expand the list of data brokers in a group.
+. Select image:screenshot_sync_group_expand.gif[A screenshot of the button that enables you to expand the list of data brokers in a group.] to expand the list of data brokers in a group.
 
-. Click the action menu for a data broker and select *Edit Proxy Configuration*.
+. Select the action menu for a data broker and select *Edit Proxy Configuration*.
 
 . Specify details about the proxy: host name, port number, user name, and password.
 
-. Click *Update*.
+. Select *Update*.
 
 .Result
 
@@ -207,11 +207,11 @@ TIP: The scanner scans the source and target and decides what should be copied. 
 
 .Steps
 
-. Click *Sync > Manage Data Brokers*.
+. Select *Sync > Manage Data Brokers*.
 
-. Click image:screenshot_sync_group_expand.gif[A screenshot of the button that enables you to expand the list of data brokers in a group.] to expand the list of data brokers in a group.
+. Select image:screenshot_sync_group_expand.gif[A screenshot of the button that enables you to expand the list of data brokers in a group.] to expand the list of data brokers in a group.
 
-. Click image:screenshot_sync_group_expand.gif[A screenshot of the button that enables you to expand details about a data broker.] to view details about a data broker.
+. Select image:screenshot_sync_group_expand.gif[A screenshot of the button that enables you to expand details about a data broker.] to view details about a data broker.
 +
 image:screenshot_sync_data_broker_details.gif[A screenshot of information about a data broker.]
 
@@ -242,15 +242,15 @@ You might remove a data broker from a group if it's no longer needed or if the i
 
 .Steps
 
-. Click *Sync > Manage Data Brokers*.
+. Select *Sync > Manage Data Brokers*.
 
-. Click image:screenshot_sync_group_expand.gif[A screenshot of the button that enables you to expand the list of data brokers in a group.] to expand the list of data brokers in a group.
+. Select image:screenshot_sync_group_expand.gif[A screenshot of the button that enables you to expand the list of data brokers in a group.] to expand the list of data brokers in a group.
 
-. Click the action menu for a data broker and select *Remove Data Broker*.
+. Select the action menu for a data broker and select *Remove Data Broker*.
 +
 image:screenshot_sync_group_remove.gif[A screenshot of the action menu that's available for each individual data broker group.]
 
-. Click *Remove Data Broker*.
+. Select *Remove Data Broker*.
 
 .Result
 
@@ -264,13 +264,13 @@ Data brokers that BlueXP copy and sync removes are only deleted from BlueXP copy
 
 .Steps
 
-. Click *Sync > Manage Data Brokers*.
+. Select *Sync > Manage Data Brokers*.
 
-. Click the action menu and select *Delete Group*.
+. Select the action menu and select *Delete Group*.
 +
 image:screenshot_sync_group_add.png[A screenshot of the action menu that's available for each individual data broker in a group.]
 
-. To confirm, enter the name of the group and click *Delete Group*.
+. To confirm, enter the name of the group and select *Delete Group*.
 
 .Result
 

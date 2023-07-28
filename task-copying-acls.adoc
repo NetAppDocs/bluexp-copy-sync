@@ -32,7 +32,7 @@ This feature works with _any_ type of data broker: the AWS, Azure, Google Cloud 
 
 . From BlueXP copy and sync, select *Create New Sync*.
 
-. Drag and drop an SMB server or object storage as the source and an SMB server or object storage as the target, and click *Continue*.
+. Drag and drop an SMB server or object storage as the source and an SMB server or object storage as the target, and select *Continue*.
 
 . On the *SMB Server* page:
 .. Enter a new SMB server or select an existing server and select *Continue*.

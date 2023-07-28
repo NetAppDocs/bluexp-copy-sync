@@ -56,23 +56,23 @@ There are a few ways to create a new data broker. These steps describe how to in
 
 .Steps
 
-. Click *Create New Sync*.
+. Select *Create New Sync*.
 
-. On the *Define Sync Relationship* page, choose a source and target and click *Continue*.
+. On the *Define Sync Relationship* page, choose a source and target and select *Continue*.
 +
 Complete the steps until you reach the *Data Broker Group* page.
 
-. On the *Data Broker Group* page, click *Create Data Broker* and then select *Amazon Web Services*.
+. On the *Data Broker Group* page, select *Create Data Broker* and then select *Amazon Web Services*.
 +
 image:screenshot-aws.png["A screenshot of the Data Broker page that enables you to choose between an AWS, Azure, Google Cloud, and On-Prem data broker."]
 
-. Enter a name for the data broker and click *Continue*.
+. Enter a name for the data broker and select *Continue*.
 
 . Enter an AWS access key so BlueXP copy and sync can create the data broker in AWS on your behalf.
 +
 The keys aren't saved or used for any other purposes.
 +
-If you'd rather not provide access keys, click the link at the bottom of the page to use a CloudFormation template instead. When you use this option, you don't need to provide credentials because you are logging in directly to AWS.
+If you'd rather not provide access keys, select the link at the bottom of the page to use a CloudFormation template instead. When you use this option, you don't need to provide credentials because you are logging in directly to AWS.
 +
 [[cft]]The following video shows how to launch the data broker instance using a CloudFormation template:
 +
@@ -86,7 +86,7 @@ image:screenshot_aws_data_broker.png[A screenshot of the information that you ne
 
 . Specify a proxy configuration, if a proxy is required for internet access in the VPC.
 
-. After the data broker is available, click *Continue* in BlueXP copy and sync.
+. After the data broker is available, select *Continue* in BlueXP copy and sync.
 +
 The following image shows a successfully deployed instance in AWS:
 +
