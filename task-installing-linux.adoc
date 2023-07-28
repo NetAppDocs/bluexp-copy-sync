@@ -95,19 +95,19 @@ You can install a data broker on a Linux host when you create a sync relationshi
 
 .Steps
 
-. Click *Create New Sync*.
+. Select *Create New Sync*.
 
-. On the *Define Sync Relationship* page, choose a source and target and click *Continue*.
+. On the *Define Sync Relationship* page, choose a source and target and select *Continue*.
 +
 Complete the steps until you reach the *Data Broker Group* page.
 
-. On the *Data Broker Group* page, click *Create Data Broker* and then select *On-Prem Data Broker*.
+. On the *Data Broker Group* page, select *Create Data Broker* and then select *On-Prem Data Broker*.
 +
 image:screenshot-on-prem.png["A screenshot of the Data Broker page that enables you to choose between an AWS, Azure, Google Cloud, and On-Prem data broker."]
 +
 NOTE: Even though the option is labeled *_On-Prem_ Data Broker*, it applies to a Linux host on your premises or in the cloud.
 
-. Enter a name for the data broker and click *Continue*.
+. Enter a name for the data broker and select *Continue*.
 +
 The instructions page loads shortly. You'll need to follow these instructions--they include a unique link to download the installer.
 
@@ -164,6 +164,6 @@ AWS keys:: These are the keys for the user that you should have prepared <<Enabl
 
 JSON file:: This is the JSON file that contains a service account key that you should have prepared <<Enabling access to Google Cloud,following these steps>>.
 
-. Once the data broker is available, click *Continue* in BlueXP copy and sync.
+. Once the data broker is available, select *Continue* in BlueXP copy and sync.
 
 . Complete the pages in the wizard to create the new sync relationship.

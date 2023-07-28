@@ -71,7 +71,7 @@ Note the following about the permissions included in the JSON file:
 
 * If a data broker was deployed in AWS using the CloudFormation template, _RoleARN_ should be the ARN of the IAM role created by the template.
 +
-You can find the Role ARN by going to the EC2 console, selecting the data broker instance, and clicking the IAM role from the Description tab. You should then see the Summary page in the IAM console that contains the Role ARN.
+You can find the Role ARN by going to the EC2 console, selecting the data broker instance, and then selecting the IAM role from the Description tab. You should then see the Summary page in the IAM console that contains the Role ARN.
 +
 image:screenshot_iam_role_arn.gif[A screenshot of the AWS IAM console showing a Role ARN.]
 
@@ -91,7 +91,7 @@ All regions are supported except for the China, US Gov, and US DoD regions.
 
 When creating a sync relationship between an Azure Blob container and an NFS or SMB server, you need to provide BlueXP copy and sync with the storage account connection string:
 
-image:screenshot_connection_string.gif["Shows a connection string, which is available from the Azure portal by selecting a storage account and then clicking Access keys."]
+image:screenshot_connection_string.gif["Shows a connection string, which is available from the Azure portal by selecting a storage account and then selecting Access keys."]
 
 If you want to sync data between two Azure Blob containers, then the connection string must include a https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1[shared access signature^] (SAS). You also have the option to use a SAS when syncing between a Blob container and an NFS or SMB server.
 
@@ -100,7 +100,7 @@ The SAS must allow access to the Blob service and all resource types (Service, C
 * For the source Blob container: Read and List
 * For the target Blob container: Read, Write, List, Add, and Create
 
-image:screenshot_connection_string_sas.gif["Shows a shared access signature, which is available from the Azure portal by selecting a storage account and then clicking Shared access signature."]
+image:screenshot_connection_string_sas.gif["Shows a shared access signature, which is available from the Azure portal by selecting a storage account and then selecting Shared access signature."]
 
 NOTE: If you choose to implement a Continuous Sync relationship that includes an Azure Blob container, you can use a regular connection string or SAS connection string. If using a SAS connection string, it must not be set to expire in the near future.
 

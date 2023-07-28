@@ -115,7 +115,7 @@ Where _storage-account_ is the user's source storage account.
 \https://console.bluexp.netapp.com/
 \https://netapp-cloud-account.auth0.com
 
-| To contact Cloud Data Sense when you use Data Sense to select the source files for a new sync relationship.
+| To contact BlueXP classification  when you use classification to select the source files for a new sync relationship.
 
 | \https://pubsub.googleapis.com
 

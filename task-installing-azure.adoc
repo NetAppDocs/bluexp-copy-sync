@@ -130,19 +130,19 @@ There are a few ways to create a new data broker. These steps describe how to in
 
 .Steps
 
-. Click *Create New Sync*.
+. Select *Create New Sync*.
 
-. On the *Define Sync Relationship* page, choose a source and target and click *Continue*.
+. On the *Define Sync Relationship* page, choose a source and target and select *Continue*.
 +
 Complete the steps until you reach the *Data Broker Group* page.
 
-. On the *Data Broker Group* page, click *Create Data Broker* and then select *Microsoft Azure*.
+. On the *Data Broker Group* page, select *Create Data Broker* and then select *Microsoft Azure*.
 +
 image:screenshot-azure.png["A screenshot of the Data Broker page that enables you to choose between an AWS, Azure, Google Cloud, and On-Prem data broker."]
 
-. Enter a name for the data broker and click *Continue*.
+. Enter a name for the data broker and select *Continue*.
 
-. If you're prompted, log in to your Microsoft account. If you're not prompted, click *Log in to Azure*.
+. If you're prompted, log in to your Microsoft account. If you're not prompted, select *Log in to Azure*.
 +
 The form is owned and hosted by Microsoft. Your credentials are not provided to NetApp.
 
@@ -154,11 +154,11 @@ NOTE: If you plan to implement a Continuous Sync relationship, you must assign a
 
 . Specify a proxy configuration, if a proxy is required for internet access in the VNet.
 
-. Click *Continue* and keep the page open until the deployment is complete.
+. Select *Continue* and keep the page open until the deployment is complete.
 +
 The process can take up to 7 minutes.
 
-. In BlueXP copy and sync, click *Continue* once the data broker is available.
+. In BlueXP copy and sync, select *Continue* once the data broker is available.
 
 . Complete the pages in the wizard to create the new sync relationship.
 

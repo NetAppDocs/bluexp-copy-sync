@@ -451,7 +451,7 @@ Creating a sync relationship from SFTP to Amazon S3 is now supported in the user
 
 === Table view enhancement
 
-We redesigned the table view on the Dashboard for ease of use. If you click *More info*, Cloud Sync filters the dashboard to show you more information about that specific relationship.
+We redesigned the table view on the Dashboard for ease of use. If you select *More info*, Cloud Sync filters the dashboard to show you more information about that specific relationship.
 
 image:screenshot-sync-table.png[A screenshot of the table view in the Dashboard.]
 
