@@ -89,6 +89,9 @@ Ensure that the Azure user account that you use to deploy the data broker has th
                     "Microsoft.Storage/storageAccounts/write"
                     "Microsoft.MarketplaceOrdering/offertypes/publishers/offers/plans/agreements/read"
                     "Microsoft.MarketplaceOrdering/offertypes/publishers/offers/plans/agreements/write"
+                    "Microsoft.Network/networkSecurityGroups/securityRules/read",
+        	        "Microsoft.Network/networkSecurityGroups/read",
+
 
     ],
     "NotActions": [],
@@ -99,7 +102,7 @@ Ensure that the Azure user account that you use to deploy the data broker has th
 
 Note:
 
-1. The following permissions are only required if you plan to enable the Continuous Sync setting on a sync relationship from Azure to another cloud storage location:
+. The following permissions are only required if you plan to enable the https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings[Continuous Sync setting] on a sync relationship from Azure to another cloud storage location:
 * 'Microsoft.Storage/storageAccounts/read',
 * 'Microsoft.EventGrid/systemTopics/eventSubscriptions/write',
 * 'Microsoft.EventGrid/systemTopics/eventSubscriptions/read',
@@ -115,8 +118,9 @@ Note:
 +
 Additionally, the assignable scope must be set to subscription scope and *not* resource group scope if you plan to implement Continuous Sync in Azure.
 
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings[Learn more about the Continuous Sync setting].
-
+. The following permissions are only required if you plan to choose your own security for data broker creation:
+* "Microsoft.Network/networkSecurityGroups/securityRules/read"
+* "Microsoft.Network/networkSecurityGroups/read"
 
 == Authentication method
 
@@ -148,7 +152,7 @@ The form is owned and hosted by Microsoft. Your credentials are not provided to 
 
 . Choose a location for the data broker and enter basic details about the virtual machine.
 +
-image:screenshot_azure_data_broker.gif["A screenshot of the Azure deployment page that shows the following fields: Subscription, Azure region, VNet, Subnet, VM Name, User Name, Authentication Method, and Resource Group."]
+image:screenshot_azure_data_broker.png["A screenshot of the Azure deployment page that shows the following fields: Subscription, Azure region, VNet, Subnet, VM Name, User Name, Authentication Method, and Resource Group."]
 +
 NOTE: If you plan to implement a Continuous Sync relationship, you must assign a custom role to your data broker. This can also be done manually after the broker is created.
 

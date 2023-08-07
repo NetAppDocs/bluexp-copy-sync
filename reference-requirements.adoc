@@ -160,6 +160,12 @@ When setting up a sync relationship, you can choose from Google Cloud buckets in
 
 If the source for a sync relationship is a SnapMirror destination (which is read-only), "read/list" permissions are sufficient to sync data from the source to a target.
 
+=== Encrypting a Google Cloud bucket
+
+You can encrypt a target Google Cloud bucket with a customer-managed KMS key or the default, Google-managed key. If the bucket already has a KMS encryption added to it, it will override the default Google-managed encryption.
+
+To add a customer-managed KMS key, you will need to use a data broker with the https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-gcp.html#permissions-required-for-the-service-account[correct permissions], and the key must be in the same region as the bucket.
+
 == Google Drive
 
 When you set up a sync relationship that includes Google Drive, you'll need to provide the following:

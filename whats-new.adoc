@@ -16,6 +16,30 @@ summary: Learn what's new in BlueXP copy and sync.
 Learn what's new in BlueXP copy and sync.
 
 // tag::whats-new[]
+== 6 August 2023
+
+=== Use existing Azure security groups when creating a data broker
+
+Users now have the option to use existing Azure security groups when creating a data broker.
+
+The service account used when creating the data broker must have these permissions:
+
+* "Microsoft.Network/networkSecurityGroups/securityRules/read"
+* "Microsoft.Network/networkSecurityGroups/read"
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html[Learn more about creating a data broker in Azure.]
+
+=== Encrypt data when syncing to Google Storage
+
+Users now have the option to specify a customer-managed encryption key when creating a sync relationship with a Google Storage bucket as the target. You can manually input your key or choose from a list of your keys in a single region. 
+
+The service account used when creating the data broker must have these permissions:
+
+* cloudkms.cryptoKeys.list
+* cloudkms.keyRings.list
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#google-cloud-storage-bucket-requirements[Learn more about Google Cloud Storage bucket requirements.]
+
 == 9 July 2023
 
 === Remove multiple sync relationships at once
@@ -50,6 +74,8 @@ In relationships including a file system, the *Copy for Objects* feature now cop
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings[Learn more about the Copy For Objects setting].
 
+// end::whats-new[]
+
 == 8 May 2023
 
 === Hard link capabilities
@@ -76,7 +102,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/api-sync.html[Learn more about us
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings[Learn more about the Exclude Directories setting].
 
-// end::whats-new[]
 
 == 2 April 2023
 
