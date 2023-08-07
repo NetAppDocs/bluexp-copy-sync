@@ -168,6 +168,8 @@ If you enable this option, you also need to change a parameter in the local.json
 }
 }
 }
++
+After updating the local.json file, you should do a restart: `pm2 restart all`.
 
 Delete Files on Target:: Choose to delete files from the target location, if they were deleted from the source. The default is to never deletes files from the target location.
 

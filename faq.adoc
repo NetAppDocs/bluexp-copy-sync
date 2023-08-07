@@ -194,6 +194,8 @@ BlueXP copy and sync cannot encrypt SMB data itself.
 
 * When an Amazon S3 bucket is the target in a sync relationship, you can choose whether to enable data encryption using AWS KMS encryption or AES-256 encryption.
 
+* When a Google Storage bucket is the target in a sync relationship, you can choose whether to use the default, Google-managed encryption key or your own KMS key.
+
 == Permissions
 
 The following questions relate to data permissions.

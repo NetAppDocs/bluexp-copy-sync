@@ -74,12 +74,16 @@ When you deploy the data broker, you need to select a service account that has t
 - pubsub.topics.list
 - pubsub.topics.setIamPolicy
 - storage.buckets.update
+- cloudkms.cryptoKeys.list
+- cloudkms.keyRings.list
 
 Notes:
 
 . The "iam.serviceAccounts.signJwt" permission is required only if you're planning to set up the data broker to use an external HashiCorp vault.
 
 . The "pubsub.*" and "storage.buckets.update" permissions are required only if you plan to enable the Continuous Sync setting on a sync relationship from Google Cloud Storage to another cloud storage location. link:task-creating-relationships.html#settings[Learn more about the Continuous Sync option].
+
+. The "cloudkms.cryptoKeys.list" and "cloudkms.keyRings.list" permissions are required only if you plan to use a customer-managed KMS key on a target Google Cloud Storage bucket.
 
 == Creating the data broker
 
