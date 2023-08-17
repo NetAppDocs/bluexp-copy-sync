@@ -113,7 +113,6 @@ If you enable this setting, it affects other features as follows:
 * The following settings are reverted to their default values: Sync Timeout, Recently Modified Files, and Date Modified.
 * If S3 is the source, filter by size will be active only on copy events (not on delete events).
 * After the relationship is created, you can only accelerate or delete the relationship. You can't abort syncs, modify settings, or view reports.
-
 +
 It is possible to create a Continuous Sync relationship with an external bucket. To do so, follow these steps:
 +
