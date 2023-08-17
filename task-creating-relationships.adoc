@@ -114,6 +114,28 @@ If you enable this setting, it affects other features as follows:
 * If S3 is the source, filter by size will be active only on copy events (not on delete events).
 * After the relationship is created, you can only accelerate or delete the relationship. You can't abort syncs, modify settings, or view reports.
 
++
+It is possible to create a Continuous Sync relationship with an external bucket. To do so, follow these steps:
++
+.. Go to the Google Cloud console for the external bucket's project.
+.. Go to *Cloud Storage*->*Settings*->*Settings*->*Cloud Storage Service Account*.
+.. Update the local.json file:
++
+{
+"protocols": {
+    "gcp": {
+        "storage-account-email": <storage account email>
+        }
+    }
+}
++
+.. Restart the data broker:
+... sudo pm2 stop all
+... sudo pm2 start all
+.. Create a Continuous Sync relationship with the relevant external bucket.
++
+NOTE: A data broker used to create a continuous sync relationship with an external bucket will not be able to create another Continuous Sync relationship with a bucket in its project.
+
 Compare By:: Choose whether BlueXP copy and sync should compare certain attributes when determining whether a file or directory has changed and should be synced again.
 +
 Even if you uncheck these attributes, BlueXP copy and sync still compares the source to the target by checking the paths, file sizes, and file names. If there are any changes, then it syncs those files and directories.
