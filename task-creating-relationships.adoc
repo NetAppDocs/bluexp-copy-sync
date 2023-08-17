@@ -117,15 +117,16 @@ If you enable this setting, it affects other features as follows:
 It is possible to create a Continuous Sync relationship with an external bucket. To do so, follow these steps:
 +
 .. Go to the Google Cloud console for the external bucket's project.
-.. Go to *Cloud Storage*->*Settings*->*Settings*->*Cloud Storage Service Account*.
+.. Go to *Cloud Storage > Settings > Settings > Cloud Storage Service Account*.
 .. Update the local.json file:
 +
+[source,json]
 {
 "protocols": {
     "gcp": {
         "storage-account-email": <storage account email>
-        }
-    }
+}
+}
 }
 +
 .. Restart the data broker:
