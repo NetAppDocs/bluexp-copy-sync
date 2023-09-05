@@ -158,6 +158,8 @@ NOTE: If you plan to implement a Continuous Sync relationship, you must assign a
 
 . Specify a proxy configuration, if a proxy is required for internet access in the VNet.
 
+. Select *Continue*. If you would like to add S3 permissions to your data broker, enter your AWS access and secret keys.
+
 . Select *Continue* and keep the page open until the deployment is complete.
 +
 The process can take up to 7 minutes.

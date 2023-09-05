@@ -16,6 +16,21 @@ summary: Learn what's new in BlueXP copy and sync.
 Learn what's new in BlueXP copy and sync.
 
 // tag::whats-new[]
+== 3 September 2023
+
+=== Exclude files by regex
+
+Users now have the option to exclude files using regex.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships[Learn more about the *Exclude File Extensions* feature.]
+
+=== Add S3 keys when creating Azure data broker
+
+Users may now add AWS S3 access keys and secret keys when creating an Azure data broker. 
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creating-the-data-broker[Learn more about creating a data broker in Azure.]
+
+
 == 6 August 2023
 
 === Use existing Azure security groups when creating a data broker
