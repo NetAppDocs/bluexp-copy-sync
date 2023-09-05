@@ -182,11 +182,9 @@ File Types:: Define the file types to include in each sync: files, directories, 
 +
 NOTE: Hard links are only available for unsecured NFS to NFS relationships. Users will be limited to one scanner process and one scanner concurrency, and scans must be run from a root directory.
 
-Exclude File Extensions:: Specify file extensions to exclude from the sync by typing the file extension and pressing *Enter*. For example, type _log_ or _.log_ to exclude *.log files. A separator isn't required for multiple extensions. The following video provides a short demo:
+Exclude File Extensions:: Specify the regex or file extensions to exclude from the sync by typing the file extension and pressing *Enter*. For example, type _log_ or _.log_ to exclude *.log files. A separator isn't required for multiple extensions. The following video provides a short demo:
 +
 video::video_file_extensions.mp4[width=840, height=240]
-+
-Users can also exclude files by regex. To do so, follow the same steps as above.
 +
 NOTE: Regex, or regular expressions, differ from wildcards or glob expressions. This feature *only* works with regex.
 
