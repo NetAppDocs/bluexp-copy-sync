@@ -109,7 +109,10 @@ Where _storage-account_ is the user's source storage account.
 
 | \https://fedoraproject.org | To install 7z on the data broker virtual machine during installation and updates. 7z is needed to send AutoSupport messages to NetApp technical support.
 
-| \https://sts.amazonaws.com | To verify AWS credentials when the data broker is deployed in AWS or when it's deployed on your premises and AWS credentials are provided. The data broker contacts this endpoint during deployment, when it's updated, and when it's restarted.
+|
+\https://sts.amazonaws.com
+\https://sts.us-east-1.amazonaws.com
+| To verify AWS credentials when the data broker is deployed in AWS or when it's deployed on your premises and AWS credentials are provided. The data broker contacts this endpoint during deployment, when it's updated, and when it's restarted.
 
 |
 \https://console.bluexp.netapp.com/
