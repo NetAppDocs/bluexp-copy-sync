@@ -22,7 +22,7 @@ When you create a new data broker group, choose the On-Prem Data Broker option t
 ** CentOS 8.0 and 8.5
 +
 CentOS Stream is not supported.
-** Red Hat Enterprise Linux 8.0 and 8.5
+** Red Hat Enterprise Linux 8.0, 8.5, and 8.8
 ** Rocky Linux 9
 ** Ubuntu Server 20.04 LTS
 ** SUSE Linux Enterprise Server 15 SP1
