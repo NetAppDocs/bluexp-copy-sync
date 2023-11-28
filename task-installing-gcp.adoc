@@ -156,7 +156,7 @@ When you set up a sync relationship, you can now choose that bucket as the sourc
 BlueXP copy and sync creates a data broker in Google Cloud using the following configuration.
 
 Node.js compatibility::
-v20
+v21.2.0
 
 Machine type::
 n2-standard-4
