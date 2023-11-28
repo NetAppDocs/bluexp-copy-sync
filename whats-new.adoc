@@ -16,6 +16,26 @@ summary: Learn what's new in BlueXP copy and sync.
 Learn what's new in BlueXP copy and sync.
 
 // tag::whats-new[]
+== 26 November 2023
+
+=== Cold storage class support for Azure Blob
+
+The cold storage Azure Blob tier is now available when creating a sync relationship.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html[Learn more about creating a sync relationship.]
+
+=== Support for Tel Aviv region in AWS data brokers
+
+Tel Aviv is now a supported region when creating a data broker in AWS.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker[Learn more about creating a data broker in AWS].
+
+
+=== Update to node version for data brokers
+
+All new data brokers will now use node version 21.2.0. Data brokers that are not compatible with this update, such as CentOS 7.0 and Ubuntu Server 18.0, will no longer work with BlueXP copy and sync.
+
+
 == 3 September 2023
 
 === Exclude files by regex
@@ -55,6 +75,8 @@ The service account used when creating the data broker must have these permissio
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#google-cloud-storage-bucket-requirements[Learn more about Google Cloud Storage bucket requirements.]
 
+// end::whats-new[]
+
 == 9 July 2023
 
 === Remove multiple sync relationships at once
@@ -89,7 +111,6 @@ In relationships including a file system, the *Copy for Objects* feature now cop
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings[Learn more about the Copy For Objects setting].
 
-// end::whats-new[]
 
 == 8 May 2023
 
