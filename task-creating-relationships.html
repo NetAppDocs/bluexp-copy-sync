@@ -1,0 +1,1880 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="at-element-marker">
+  <title>Create sync relationships | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Create sync relationships | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html" />
+	<meta property="og:description" content="When you create a sync relationship, the BlueXP copy and sync service copies files from the source to the target. After the initial copy, the service syncs a..." />
+  <meta property="og:image" content="https://docs.netapp.com/us-en/bluexp-copy-sync/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="When you create a sync relationship, the BlueXP copy and sync service copies files from the source to the target. After the initial copy, the service syncs a...">
+  <meta name="keywords" content=" sync, relationship, create, tags, settings, create a relationship, creating relationships, bucket setup, tags"><!-- Icons -->
+  <link rel="icon" href="/us-en/bluexp-copy-sync/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/us-en/bluexp-copy-sync/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/us-en/bluexp-copy-sync/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/us-en/bluexp-copy-sync/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/us-en/bluexp-copy-sync/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-copy-sync/task-creating-relationships.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-copy-sync/task-creating-relationships.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-copy-sync/task-creating-relationships.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-copy-sync/task-creating-relationships.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-copy-sync/task-creating-relationships.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-copy-sync/task-creating-relationships.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-copy-sync/task-creating-relationships.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-copy-sync/task-creating-relationships.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/us-en/bluexp-copy-sync/js/na-search.js'></script><script src='/us-en/bluexp-copy-sync/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/us-en/bluexp-copy-sync/js/custom-dropdown.js'></script>
+  <script src='/us-en/bluexp-copy-sync/js/FileSaver.min.js'></script>
+  <script src='/us-en/bluexp-copy-sync/js/jszip-utils.min.js'></script>
+  <script src='/us-en/bluexp-copy-sync/js/jszip.min.js'></script><script src='/us-en/bluexp-copy-sync/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/us-en/bluexp-copy-sync/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/">
+                <image id="ie-header-logo" src="/us-en/bluexp-copy-sync/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">Docs</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/us-en/bluexp-copy-sync/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">English</span>
+                    <img src="/us-en/bluexp-copy-sync/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/us-en/bluexp-copy-sync/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-copy-sync/task-creating-relationships.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-copy-sync/task-creating-relationships.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-copy-sync/task-creating-relationships.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-copy-sync/task-creating-relationships.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-copy-sync/task-creating-relationships.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-copy-sync/task-creating-relationships.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-copy-sync/task-creating-relationships.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-copy-sync/task-creating-relationships.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/us-en/bluexp-copy-sync/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">All NetApp</span>
+                    <img src="/us-en/bluexp-copy-sync/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/us-en/bluexp-copy-sync/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">Support</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">Knowledge Base</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">Training</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/us-en/bluexp-copy-sync/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/us-en/bluexp-copy-sync/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">All docs</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">Cloud docs</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/us-en/bluexp-copy-sync/">-->
+      BlueXP copy and sync
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/us-en/bluexp-copy-sync/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/us-en/bluexp-copy-sync/search.html" 
+        data-type="widget"
+        data-placeholder="Search documentation"
+        data-no-results-found="No results were found for {query}"
+        data-did-you-mean="Search for {suggestion}."
+        data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?"
+        data-results-found="{hitCount} results found"
+        data-error-message="An error occurred. Please try again."
+        data-error-reset="Reset search"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP copy and sync docs"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/bluexp-copy-sync/index.html">
+        BlueXP copy and sync docs
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Release notes"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-copy-sync/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-copy-sync/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Release notes</div>-->
+         Release notes
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="What's new"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-copy-sync/whats-new.html">
+        What's new
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Limitations"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/reference-limitations.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-copy-sync/reference-limitations.html">
+        Limitations
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Get started"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-copy-sync/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-copy-sync/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Get started</div>-->
+         Get started
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Learn about BlueXP copy and sync"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/concept-cloud-sync.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-copy-sync/concept-cloud-sync.html">
+        Learn about BlueXP copy and sync
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Quick start"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/task-quick-start.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-copy-sync/task-quick-start.html">
+        Quick start
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="View supported sync relationships"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/reference-supported-relationships.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-copy-sync/reference-supported-relationships.html">
+        View supported sync relationships
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Prepare the source and target"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/reference-requirements.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-copy-sync/reference-requirements.html">
+        Prepare the source and target
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Prepare networking"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/reference-networking.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-copy-sync/reference-networking.html">
+        Prepare networking
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Install a data broker"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-copy-sync/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-copy-sync/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Install a data broker</div>-->
+         Install a data broker
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Install in AWS"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/task-installing-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-copy-sync/task-installing-aws.html">
+        Install in AWS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Install in Azure"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/task-installing-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-copy-sync/task-installing-azure.html">
+        Install in Azure
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Install in Google Cloud"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/task-installing-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-copy-sync/task-installing-gcp.html">
+        Install in Google Cloud
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Install on a Linux host"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/task-installing-linux.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-copy-sync/task-installing-linux.html">
+        Install on a Linux host
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Use BlueXP copy and sync"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-copy-sync/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-copy-sync/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Use BlueXP copy and sync</div>-->
+         Use BlueXP copy and sync
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Sync data between a source and target"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-copy-sync/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-copy-sync/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Sync data between a source and target</div>-->
+         Sync data between a source and target
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Create a sync relationship"
+      data-li-level="3#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/task-creating-relationships.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-copy-sync/task-creating-relationships.html">
+        Create a sync relationship
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Copy ACLs from an SMB share"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/task-copying-acls.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-copy-sync/task-copying-acls.html">
+        Copy ACLs from an SMB share
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Encrypt NFS data in flight"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/task-nfs-encryption.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-copy-sync/task-nfs-encryption.html">
+        Encrypt NFS data in flight
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Use secrets from HashiCorp Vault"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/task-external-vault.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/bluexp-copy-sync/task-external-vault.html">
+        Use secrets from HashiCorp Vault
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Set up licensing"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/task-licensing.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-copy-sync/task-licensing.html">
+        Set up licensing
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage sync relationships"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/task-managing-relationships.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-copy-sync/task-managing-relationships.html">
+        Manage sync relationships
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage data brokers"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/task-managing-data-brokers.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-copy-sync/task-managing-data-brokers.html">
+        Manage data brokers
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="View reports to tune your configuration"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/task-managing-reports.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-copy-sync/task-managing-reports.html">
+        View reports to tune your configuration
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Uninstall a data broker"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/task-uninstalling.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-copy-sync/task-uninstalling.html">
+        Uninstall a data broker
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Automate with the REST API"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/api-sync.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/bluexp-copy-sync/api-sync.html">
+        Automate with the REST API
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Concepts"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-copy-sync/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-copy-sync/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Concepts</div>-->
+         Concepts
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Licensing"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/concept-licensing.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-copy-sync/concept-licensing.html">
+        Licensing
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Data privacy"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/concept-privacy.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-copy-sync/concept-privacy.html">
+        Data privacy
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="FAQ"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/faq.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-copy-sync/faq.html">
+        FAQ
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Knowledge and support"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/bluexp-copy-sync/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/bluexp-copy-sync/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Knowledge and support</div>-->
+         Knowledge and support
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Register for support"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/task-support-registration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-copy-sync/task-support-registration.html">
+        Register for support
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Get help"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/task-get-help.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/bluexp-copy-sync/task-get-help.html">
+        Get help
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Legal notices"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-creating-relationships.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/bluexp-copy-sync/legal-notices.html">
+        Legal notices
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/us-en/bluexp-copy-sync"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/us-en/bluexp-copy-sync"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">Create sync relationships</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2024-02-12 19:58:01 +0000">02/12/2024</time>
+        
+    
+    
+        <span>Contributors
+            <a target="_blank" class="ext-link-indicator" href="https://github.com/netapp-ivanad"><img  class="avatar avatar-small" alt="netapp-ivanad" width="20" height="20" src="https://avatars.githubusercontent.com/u/76115643?v=4" style="border-radius: 50%;"/></a>
+        
+            <a target="_blank" class="ext-link-indicator" href="https://github.com/netapp-bcammett"><img  class="avatar avatar-small" alt="netapp-bcammett" width="20" height="20" src="https://avatars.githubusercontent.com/u/18287750?v=4" style="border-radius: 50%;"/></a>
+        
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/us-en/bluexp-copy-sync/images/discuss-sm.svg" alt="" class="github-icon" />Suggest changes</span>
+        <img src="/us-en/bluexp-copy-sync/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/us-en/bluexp-copy-sync/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-copy-sync/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html&page-title=Create sync relationships" class="page-nav-contribute-link" role="button">Request doc changes</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-copy-sync/blob/main/task-creating-relationships.adoc" class="page-nav-contribute-link" role="button">Edit this page</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >Learn how to contribute</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/us-en/bluexp-copy-sync/images/pdf-icon.png" alt="" width="16" height="16"/>PDFs<img src="/us-en/bluexp-copy-sync/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/us-en/bluexp-copy-sync/pdfs/fullsite-sidebar/BlueXP_copy_and_sync_documentation.pdf" >
+                    <img src="/us-en/bluexp-copy-sync/images/pdf-icon.png" alt="" width="16" height="16"/>PDF of this doc site</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-copy-sync/pdfs/sidebar/Release_notes.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-copy-sync/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Release notes
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-copy-sync/pdfs/sidebar/Get_started.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-copy-sync/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Get started
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-copy-sync/pdfs/sidebar/Install_a_data_broker.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-copy-sync/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Install a data broker
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-copy-sync/pdfs/sidebar/Use_BlueXP_copy_and_sync.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-copy-sync/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Use BlueXP copy and sync
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-copy-sync/pdfs/sidebar/Sync_data_between_a_source_and_target.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-copy-sync/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Sync data between a source and target
+          </a>
+          
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-copy-sync/pdfs/sidebar/Concepts.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-copy-sync/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Concepts
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/bluexp-copy-sync/pdfs/sidebar/Knowledge_and_support.pdf" 
+            
+          >
+            <img src="/us-en/bluexp-copy-sync/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Knowledge and support
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/us-en/bluexp-copy-sync/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>Collection of separate PDF docs<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>When you create a sync relationship, the BlueXP copy and sync service copies files from the source to the target. After the initial copy, the service syncs any changed data every 24 hours.</p>
+</div>
+<div class="paragraph">
+<p>Before you can create some types of sync relationships, you'll first need to create a working environment in BlueXP.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="create-sync-relationships-for-specific-types-of-working-environments">Create sync relationships for specific types of working environments</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you want to create sync relationships for any of the following, then you first need to create or discover the working environment:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Amazon FSx for ONTAP</p>
+</li>
+<li>
+<p>Azure NetApp Files</p>
+</li>
+<li>
+<p>Cloud Volumes ONTAP</p>
+</li>
+<li>
+<p>On-prem ONTAP clusters</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Create or discover the working environment.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/task-getting-started-fsx.html" target="_blank" rel="noopener">Create an Amazon FSx for ONTAP working environment</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html" target="_blank" rel="noopener">Setting up and discovering Azure NetApp Files</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html" target="_blank" rel="noopener">Launching Cloud Volumes ONTAP in AWS</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html" target="_blank" rel="noopener">Launching Cloud Volumes ONTAP in Azure</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html" target="_blank" rel="noopener">Launching Cloud Volumes ONTAP in Google Cloud</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html" target="_blank" rel="noopener">Adding existing Cloud Volumes ONTAP systems</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html" target="_blank" rel="noopener">Discovering ONTAP clusters</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Select <strong>Canvas</strong>.</p>
+</li>
+<li>
+<p>Select a working environment that matches any of the types listed above.</p>
+</li>
+<li>
+<p>Select the action menu next to Sync.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_sync_we.gif" alt="A screenshot that shows the actions available from the Sync menu after selecting a working environment."></span></p>
+</div>
+</li>
+<li>
+<p>Select <strong>Sync data from this location</strong> or <strong>Sync data to this location</strong> and follow the prompts to set up the sync relationship.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="create-other-types-of-sync-relationships">Create other types of sync relationships</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Use these steps to sync data to or from a supported storage type other than Amazon FSx for ONTAP, Azure NetApp Files, Cloud Volumes ONTAP, or on-prem ONTAP clusters. The steps below provide an example that shows how to set up a sync relationship from an NFS server to an S3 bucket.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In BlueXP, select <strong>Sync</strong>.</p>
+</li>
+<li>
+<p>On the <strong>Define Sync Relationship</strong> page, choose a source and target.</p>
+<div class="paragraph">
+<p>The following steps provide an example of how to create a sync relationship from an NFS server to an S3 bucket.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_nfs_to_s3.png" alt="A screenshot that shows NFS as a source and S3 as a target in a new sync relationship."></span></p>
+</div>
+</li>
+<li>
+<p>On the <strong>NFS Server</strong> page, enter the IP address or fully qualified domain name of the NFS server that you want to sync to AWS.</p>
+</li>
+<li>
+<p>On the <strong>Data Broker Group</strong> page, follow the prompts to create a data broker virtual machine in AWS, Azure, or Google Cloud Platform, or to install the data broker software an existing Linux host.</p>
+<div class="paragraph">
+<p>For more details, refer to the following pages:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="task-installing-aws.html">Create a data broker in AWS</a></p>
+</li>
+<li>
+<p><a href="task-installing-azure.html">Create a data broker in Azure</a></p>
+</li>
+<li>
+<p><a href="task-installing-gcp.html">Create a data broker in Google Cloud</a></p>
+</li>
+<li>
+<p><a href="task-installing-linux.html">Installing the data broker on a Linux host</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>After you install the data broker, select <strong>Continue</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-data-broker-group.png" alt="This screenshot shows a successfully deployed instance. The interface shows details about the instance including AWS networking."></span></p>
+</div>
+</li>
+<li>
+<p><a id="filter"></a>On the <strong>Directories</strong> page, select a top-level directory or subdirectory.</p>
+<div class="paragraph">
+<p>If BlueXP copy and sync is unable to retrieve the exports, select <strong>Add Export Manually</strong> and enter the name of an NFS export.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-copy-sync/images/note.svg" alt="Note">
+</td>
+<td class="content">
+If you want to sync more than one directory on the NFS server, then you must create additional sync relationships after you are done.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>On the <strong>AWS S3 Bucket</strong> page, select a bucket:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Drill down to select an existing folder within the bucket or to select a new folder that you create inside the bucket.</p>
+</li>
+<li>
+<p>Select <strong>Add to the list</strong> to select an S3 bucket that is not associated with your AWS account. <a href="reference-requirements.html#s3">Specific permissions must be applied to the S3 bucket</a>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>On the <strong>Bucket Setup</strong> page, set up the bucket:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Choose whether to enable S3 bucket encryption and then select an AWS KMS key, enter the ARN of a KMS key, or select AES-256 encryption.</p>
+</li>
+<li>
+<p>Select an S3 storage class. <a href="reference-supported-relationships.html#storage-classes">View the supported storage classes</a>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_bucket_setup.gif" alt="This screenshot shows the Bucket Setup page which enables you to choose Yes or No for encryption and to select a specific S3 storage class for the synced data."></span></p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a id="settings"></a>On the <strong>Settings</strong> page, define how source files and folders are synced and maintained in the target location:</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Schedule</dt>
+<dd>
+<p>Choose a recurring schedule for future syncs or turn off the sync schedule. You can schedule a relationship to sync data as often as every 1 minute.</p>
+</dd>
+<dt class="hdlist1">Sync Timeout</dt>
+<dd>
+<p>Define whether BlueXP copy and sync should cancel a data sync if the sync hasn't completed in the specified number of minutes,hours, or days.</p>
+</dd>
+<dt class="hdlist1">Notifications</dt>
+<dd>
+<p>Enables you to choose whether to receive BlueXP copy and sync notifications in BlueXP's Notification Center. You can enable notifications for successful data syncs, failed data syncs, and canceled data syncs.</p>
+</dd>
+<dt class="hdlist1">Retries</dt>
+<dd>
+<p>Define the number of times that BlueXP copy and sync should retry to sync a file before skipping it.</p>
+</dd>
+<dt class="hdlist1">Continuous Sync</dt>
+<dd>
+<p>After the initial data sync, BlueXP copy and sync listens for changes on the source S3 bucket or Google Cloud Storage bucket and continuously syncs any changes to the target as they occur. There's no need to rescan the source at scheduled intervals.</p>
+<div class="paragraph">
+<p>This setting is available only when creating a sync relationship and when you sync data from an S3 bucket or Google Cloud Storage to Azure Blob storage, CIFS, Google Cloud Storage, IBM Cloud Object Storage, NFS, S3, and StorageGRID <strong>or</strong> from Azure Blob storage to Azure Blob storage, CIFS, Google Cloud Storage, IBM Cloud Object Storage, NFS, and StorageGRID.</p>
+</div>
+<div class="paragraph">
+<p>If you enable this setting, it affects other features as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The sync schedule is disabled.</p>
+</li>
+<li>
+<p>The following settings are reverted to their default values: Sync Timeout, Recently Modified Files, and Date Modified.</p>
+</li>
+<li>
+<p>If S3 is the source, filter by size will be active only on copy events (not on delete events).</p>
+</li>
+<li>
+<p>After the relationship is created, you can only accelerate or delete the relationship. You can't abort syncs, modify settings, or view reports.</p>
+<div class="paragraph">
+<p>It is possible to create a Continuous Sync relationship with an external bucket. To do so, follow these steps:</p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Go to the Google Cloud console for the external bucket's project.</p>
+</li>
+<li>
+<p>Go to <strong>Cloud Storage &gt; Settings &gt; Cloud Storage Service Account</strong>.</p>
+</li>
+<li>
+<p>Update the local.json file:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+"protocols": {
+    "gcp": {
+        "storage-account-email": &lt;storage account email&gt;
+}
+}
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Restart the data broker:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>sudo pm2 stop all</p>
+</li>
+<li>
+<p>sudo pm2 start all</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Create a Continuous Sync relationship with the relevant external bucket.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-copy-sync/images/note.svg" alt="Note">
+</td>
+<td class="content">
+A data broker used to create a continuous sync relationship with an external bucket will not be able to create another Continuous Sync relationship with a bucket in its project.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Compare By</dt>
+<dd>
+<p>Choose whether BlueXP copy and sync should compare certain attributes when determining whether a file or directory has changed and should be synced again.</p>
+<div class="paragraph">
+<p>Even if you uncheck these attributes, BlueXP copy and sync still compares the source to the target by checking the paths, file sizes, and file names. If there are any changes, then it syncs those files and directories.</p>
+</div>
+<div class="paragraph">
+<p>You can choose to enable or disable BlueXP copy and sync from comparing the following attributes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>mtime</strong>: The last modified time for a file. This attribute isn't valid for directories.</p>
+</li>
+<li>
+<p><strong>uid</strong>, <strong>gid</strong>, and <strong>mode</strong>: Permission flags for Linux.</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Copy for Objects</dt>
+<dd>
+<p>Enable this option to copy object storage metadata and tags. If a user changes the metadata on the source, BlueXP copy and sync copies this object in the next sync, but if a user changes the tags on the source (and not the data itself), BlueXP copy and sync doesn't copy the object in the next sync.</p>
+<div class="paragraph">
+<p>You can't edit this option after you create the relationship.</p>
+</div>
+<div class="paragraph">
+<p>Copying tags is supported with sync relationships that include Azure Blob or an S3-compatible endpoint (S3, StorageGRID, or IBM Cloud Object Storage) as the target.</p>
+</div>
+<div class="paragraph">
+<p>Copying metadata is supported with "cloud-to-cloud" relationships between any of the following endpoints:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>AWS S3</p>
+</li>
+<li>
+<p>Azure Blob</p>
+</li>
+<li>
+<p>Google Cloud Storage</p>
+</li>
+<li>
+<p>IBM Cloud Object Storage</p>
+</li>
+<li>
+<p>StorageGRID</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Recently Modified Files</dt>
+<dd>
+<p>Choose to exclude files that were recently modified prior to the scheduled sync.</p>
+</dd>
+<dt class="hdlist1">Delete Files on Source</dt>
+<dd>
+<p>Choose to delete files from the source location after BlueXP copy and sync copies the files to the target location. This option includes the risk of data loss because the source files are deleted after they're copied.</p>
+<div class="paragraph">
+<p>If you enable this option, you also need to change a parameter in the local.json file on the data broker. Open the file and update it as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+"workers":{
+"transferrer":{
+"delete-on-source": true
+}
+}
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>After updating the local.json file, you should do a restart: <code>pm2 restart all</code>.</p>
+</div>
+</dd>
+<dt class="hdlist1">Delete Files on Target</dt>
+<dd>
+<p>Choose to delete files from the target location, if they were deleted from the source. The default is to never delete files from the target location.</p>
+</dd>
+<dt class="hdlist1">File Types</dt>
+<dd>
+<p>Define the file types to include in each sync: files, directories, symbolic links, and hard links.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-copy-sync/images/note.svg" alt="Note">
+</td>
+<td class="content">
+Hard links are only available for unsecured NFS to NFS relationships. Users will be limited to one scanner process and one scanner concurrency, and scans must be run from a root directory.
+</td>
+</tr>
+</table>
+</div>
+</dd>
+<dt class="hdlist1">Exclude File Extensions</dt>
+<dd>
+<p>Specify the regex or file extensions to exclude from the sync by typing the file extension and pressing <strong>Enter</strong>. For example, type <em>log</em> or <em>.log</em> to exclude *.log files. A separator isn't required for multiple extensions. The following video provides a short demo:</p>
+<div class="videoblock">
+<div class="content">
+<video src="./media/video_file_extensions.mp4" width="840" height="240" controls>
+Your browser does not support the video tag.
+</video>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-copy-sync/images/note.svg" alt="Note">
+</td>
+<td class="content">
+Regex, or regular expressions, differ from wildcards or glob expressions. This feature <strong>only</strong> works with regex.
+</td>
+</tr>
+</table>
+</div>
+</dd>
+<dt class="hdlist1">Exclude Directories</dt>
+<dd>
+<p>Specify a maximum of 15 regex or directories to exclude from the sync by typing their name or directory full path and pressing <strong>Enter</strong>. The .copy-offload, .snapshot, ~snapshot directories are excluded by default.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-copy-sync/images/note.svg" alt="Note">
+</td>
+<td class="content">
+Regex, or regular expressions, differ from wildcards or glob expressions. This feature <strong>only</strong> works with regex.
+</td>
+</tr>
+</table>
+</div>
+</dd>
+<dt class="hdlist1">File Size</dt>
+<dd>
+<p>Choose to sync all files regardless of their size or just files that are in a specific size range.</p>
+</dd>
+<dt class="hdlist1">Date Modified</dt>
+<dd>
+<p>Choose all files regardless of their last modified date, files modified after a specific date, before a specific date, or between a time range.</p>
+</dd>
+<dt class="hdlist1">Date Created</dt>
+<dd>
+<p>When an SMB server is the source, this setting enables you to sync files that were created after a specific date, before a specific date, or between a specific time range.</p>
+</dd>
+<dt class="hdlist1">ACL - Access Control List</dt>
+<dd>
+<p>Copy ACLs only, files only, or ACLs and files from an SMB server by enabling a setting when you create a relationship or after you create a relationship.</p>
+</dd>
+</dl>
+</div>
+</li>
+<li>
+<p>On the <strong>Tags/Metadata</strong> page, choose whether to save a key-value pair as a tag on all files transferred to the S3 bucket or to assign a metadata key-value pair on all files.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_relationship_tags.png" alt="A screenshot that shows the the Tags/Metadata page when creating a sync relationship to Amazon S3."></span></p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-copy-sync/images/tip.svg" alt="Tip">
+</td>
+<td class="content">
+This same feature is available when syncing data to StorageGRID and IBM Cloud Object Storage. For Azure and Google Cloud Storage, only the metadata option is available.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Review the details of the sync relationship and then select <strong>Create Relationship</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Result</strong></p>
+</div>
+<div class="paragraph">
+<p>BlueXP copy and sync starts syncing data between the source and target.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="create-sync-relationships-from-bluexp-classification">Create sync relationships from BlueXP classification</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>BlueXP copy and sync is integrated with BlueXP classification. From within BlueXP classification, you can select the source files that you'd like to sync to a target location using BlueXP copy and sync.</p>
+</div>
+<div class="paragraph">
+<p>After you initiate a data sync from BlueXP classification, all of the source information is contained in a single step and only requires you to enter a few key details. You then choose the target location for the new sync relationship.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-sync-data-sense.png" alt="A screenshot that shows the BlueXP classification Integration page that appears after starting a new sync directly from BlueXP classification."></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-target-system" target="_blank" rel="noopener">Learn how to start a sync relationship from BlueXP classification</a>.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/us-en/bluexp-copy-sync/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/us-en/bluexp-copy-sync/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">On this page</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Terms of use</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy policy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie policy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie settings</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">Send feedback about this page</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/us-en/bluexp-copy-sync/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/us-en/bluexp-copy-sync/js/prism.js'></script>
+      <script type="text/javascript" src='/us-en/bluexp-copy-sync/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/us-en/bluexp-copy-sync/js/ie-tabbed-blocks.js'></script>
+    <script src='/us-en/bluexp-copy-sync/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
