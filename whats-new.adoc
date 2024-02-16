@@ -16,6 +16,14 @@ summary: Learn what's new in BlueXP copy and sync.
 Learn what's new in BlueXP copy and sync.
 
 // tag::whats-new[]
+== 11 February 2024
+
+=== Filter directories by regex
+
+Users now have the option to filter directories using regex.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships[Learn more about the *Exclude Directories* feature.]
+
 == 26 November 2023
 
 === Cold storage class support for Azure Blob
@@ -50,6 +58,7 @@ Users may now add AWS S3 access keys and secret keys when creating an Azure data
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creating-the-data-broker[Learn more about creating a data broker in Azure.]
 
+// end::whats-new[]
 
 == 6 August 2023
 
@@ -75,7 +84,6 @@ The service account used when creating the data broker must have these permissio
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#google-cloud-storage-bucket-requirements[Learn more about Google Cloud Storage bucket requirements.]
 
-// end::whats-new[]
 
 == 9 July 2023
 
