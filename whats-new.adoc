@@ -16,6 +16,14 @@ summary: Learn what's new in BlueXP copy and sync.
 Learn what's new in BlueXP copy and sync.
 
 // tag::whats-new[]
+== 8 April 2024
+
+=== Support for RHEL 8.9
+
+The data broker is now supported on hosts running Red Hat Enterprise Linux 8.9.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#linux-host-requirements[View Linux host requirements].
+
 == 11 February 2024
 
 === Filter directories by regex
@@ -38,11 +46,11 @@ Tel Aviv is now a supported region when creating a data broker in AWS.
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker[Learn more about creating a data broker in AWS].
 
-
 === Update to node version for data brokers
 
 All new data brokers will now use node version 21.2.0. Data brokers that are not compatible with this update, such as CentOS 7.0 and Ubuntu Server 18.0, will no longer work with BlueXP copy and sync.
 
+// end::whats-new[]
 
 == 3 September 2023
 
@@ -57,8 +65,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 Users may now add AWS S3 access keys and secret keys when creating an Azure data broker. 
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creating-the-data-broker[Learn more about creating a data broker in Azure.]
-
-// end::whats-new[]
 
 == 6 August 2023
 
@@ -84,7 +90,6 @@ The service account used when creating the data broker must have these permissio
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#google-cloud-storage-bucket-requirements[Learn more about Google Cloud Storage bucket requirements.]
 
-
 == 9 July 2023
 
 === Remove multiple sync relationships at once
@@ -99,11 +104,9 @@ Users now have additional options for copying ACL information in CIF and NFS rel
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-copying-acls.html[Learn more about copying ACLs.]
 
-
 === Updated to Node.js 20
 
 Copy and sync has updated to Node.js 20. All available data brokers will be updated. Operation systems incompatible with this update cannot be installed, and incompatible existing systems may experience performance issues. 
-
 
 == 11 June 2023
 
@@ -118,7 +121,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 In relationships including a file system, the *Copy for Objects* feature now copies access time metadata.
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings[Learn more about the Copy For Objects setting].
-
 
 == 8 May 2023
 
@@ -146,7 +148,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/api-sync.html[Learn more about us
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings[Learn more about the Exclude Directories setting].
 
-
 == 2 April 2023
 
 === Additional support for Azure Data Lake Storage Gen2 relationships
@@ -166,8 +167,6 @@ In addition to filtering directories out by name, you can now filter directories
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings[Learn more about the Exclude Directories setting].
 
-
-
 == 7 March 2023
 
 === EBS Encryption for AWS data brokers
@@ -175,8 +174,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 You can now encrypt AWS data broker volumes using a KMS key from your account.
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker[Learn more about creating a data broker in AWS].
-
-
 
 == 5 Feb 2023
 

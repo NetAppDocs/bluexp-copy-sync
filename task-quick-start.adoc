@@ -12,6 +12,7 @@ summary: Getting started with the BlueXP copy and sync service includes a few st
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
 Getting started with the BlueXP copy and sync service includes a few steps.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Log in and set up BlueXP

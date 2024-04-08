@@ -12,6 +12,7 @@ summary: When you create a sync relationship that requires Amazon S3, Azure, or 
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
 When you create a sync relationship that requires Amazon S3, Azure, or Google Cloud credentials, you need to specify those credentials through the BlueXP copy and sync user interface or API. An alternative is to set up the data broker group to access the credentials (or _secrets_) directly from an external HashiCorp Vault.
 
 This feature is supported through the BlueXP copy and sync API with sync relationships that require Amazon S3, Azure, or Google Cloud credentials.
