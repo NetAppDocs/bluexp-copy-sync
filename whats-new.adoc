@@ -18,7 +18,7 @@ Learn what's new in BlueXP copy and sync.
 // tag::whats-new[]
 == 8 April 2024
 
-=== RHEL 8.9
+=== Support for RHEL 8.9
 
 The data broker is now supported on hosts running Red Hat Enterprise Linux 8.9.
 

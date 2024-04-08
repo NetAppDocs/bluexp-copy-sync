@@ -12,6 +12,7 @@ summary: If your business has strict security policies, sync data between NFS se
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
 If your business has strict security policies, you can sync NFS data using data-in-flight encryption. This feature is supported from an NFS server to another NFS server and from Azure NetApp Files to Azure NetApp Files.
 
 For example, you might want to sync data between two NFS servers that are in different networks. Or you might need to securely transfer data on Azure NetApp Files across subnets or regions.
