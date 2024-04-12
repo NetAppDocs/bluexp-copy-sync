@@ -6,7 +6,6 @@ summary: Create and view reports to get information that you can use with the he
 ---
 
 = Creating and viewing reports to tune your configuration
-:toc: macro
 :hardbreaks:
 :nofooter:
 :icons: font
