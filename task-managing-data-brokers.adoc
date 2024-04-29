@@ -6,7 +6,6 @@ summary: A data broker syncs data from a source location to a target location. A
 ---
 
 = Manage data broker groups
-:toc: macro
 :hardbreaks:
 :nofooter:
 :icons: font

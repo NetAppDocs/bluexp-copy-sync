@@ -6,7 +6,6 @@ summary: You can manage sync relationships at any time by immediately syncing da
 ---
 
 = Managing sync relationships
-:toc: macro
 :hardbreaks:
 :nofooter:
 :icons: font
