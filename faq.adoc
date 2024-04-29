@@ -217,6 +217,8 @@ BlueXP copy and sync automatically copies NFS permissions between NFS servers as
 
 == Object storage metadata
 
+=== What kinds of sync relationships preserve object storage metadata?
+
 BlueXP copy and sync copies object storage metadata from the source to the target for the following types of sync relationships:
 
 * Amazon S3 -> Amazon S3 ^1^
@@ -234,6 +236,10 @@ BlueXP copy and sync copies object storage metadata from the source to the targe
 * IBM Cloud Object Storage -> IBM Cloud Object Storage
 
 ^1^ For these sync relationships, you need to link:task-creating-relationships.html[enable the Copy for Objects setting when you create the sync relationship].
+
+=== What kinds of metadata are replicated during syncs where NFS or SMB are the source?
+
+Metadata such as user ID, modification time, access time, and GID are replicated by default. Users may opt into replicating ACL from CIFs by marking it as required when creating a sync relationship.
 
 == Performance
 
