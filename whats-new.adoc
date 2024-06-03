@@ -16,6 +16,10 @@ summary: Learn what's new in BlueXP copy and sync.
 Learn what's new in BlueXP copy and sync.
 
 // tag::whats-new[]
+== 2 June 2024
+
+The BlueXP copy and sync service was updated to fix a few bugs. The data broker was also updated to apply security updates. The new data broker version is 1.0.52.
+
 == 8 April 2024
 
 === Support for RHEL 8.9
@@ -31,6 +35,8 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#linux-
 Users now have the option to filter directories using regex.
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships[Learn more about the *Exclude Directories* feature.]
+
+// end::whats-new[]
 
 == 26 November 2023
 
@@ -49,8 +55,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating
 === Update to node version for data brokers
 
 All new data brokers will now use node version 21.2.0. Data brokers that are not compatible with this update, such as CentOS 7.0 and Ubuntu Server 18.0, will no longer work with BlueXP copy and sync.
-
-// end::whats-new[]
 
 == 3 September 2023
 
