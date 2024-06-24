@@ -32,7 +32,7 @@ BlueXP copy and sync enables you to sync data from a source to a target. This is
 * Google Cloud Storage
 * IBM Cloud Object Storage
 * NFS server
-* On-premises ONTAP cluster
+* On-premises ONTAP cluster (NFS or SMB)
 * SMB server
 * StorageGRID
 
@@ -49,7 +49,7 @@ BlueXP copy and sync enables you to sync data from a source to a target. This is
 * Google Cloud Storage
 * IBM Cloud Object Storage
 * NFS server
-* On-premises ONTAP cluster
+* On-premises ONTAP cluster (NFS or SMB)
 * SMB server
 * StorageGRID
 
@@ -67,7 +67,7 @@ BlueXP copy and sync enables you to sync data from a source to a target. This is
 * Google Cloud Storage
 * IBM Cloud Object Storage
 * NFS server
-* On-premises ONTAP cluster
+* On-premises ONTAP cluster (NFS or SMB)
 * ONTAP S3 Storage
 * SMB server
 * StorageGRID
@@ -84,7 +84,7 @@ BlueXP copy and sync enables you to sync data from a source to a target. This is
 * Google Cloud Storage
 * IBM Cloud Object Storage
 * NFS server
-* On-premises ONTAP cluster
+* On-premises ONTAP cluster (NFS or SMB)
 * SMB server
 * StorageGRID
 
@@ -113,7 +113,7 @@ BlueXP copy and sync enables you to sync data from a source to a target. This is
 * Google Cloud Storage
 * IBM Cloud Object Storage
 * NFS server
-* On-premises ONTAP cluster
+* On-premises ONTAP cluster (NFS or SMB)
 * SMB server
 * StorageGRID
 
@@ -141,7 +141,7 @@ BlueXP copy and sync enables you to sync data from a source to a target. This is
 * Google Cloud Storage
 * IBM Cloud Object Storage
 * NFS server
-* On-premises ONTAP cluster
+* On-premises ONTAP cluster (NFS or SMB)
 * SMB server
 * StorageGRID
 
@@ -157,7 +157,7 @@ BlueXP copy and sync enables you to sync data from a source to a target. This is
 * Google Cloud Storage
 * IBM Cloud Object Storage
 * NFS server
-* On-premises ONTAP cluster
+* On-premises ONTAP cluster (NFS or SMB)
 * SMB server
 * StorageGRID
 
@@ -173,7 +173,7 @@ BlueXP copy and sync enables you to sync data from a source to a target. This is
 * Google Cloud Storage
 * IBM Cloud Object Storage
 * NFS server
-* On-premises ONTAP cluster
+* On-premises ONTAP cluster (NFS or SMB)
 * ONTAP S3 Storage
 * SMB server
 * StorageGRID
@@ -197,7 +197,7 @@ BlueXP copy and sync enables you to sync data from a source to a target. This is
 * Google Cloud Storage
 * IBM Cloud Object Storage
 * NFS server
-* On-premises ONTAP cluster
+* On-premises ONTAP cluster (NFS or SMB)
 * SMB server
 * StorageGRID
 
@@ -215,12 +215,12 @@ BlueXP copy and sync enables you to sync data from a source to a target. This is
 * Google Drive
 * IBM Cloud Object Storage
 * NFS server
-* On-premises ONTAP cluster
+* On-premises ONTAP cluster (NFS or SMB)
 * ONTAP S3 Storage
 * SMB server
 * StorageGRID
 
-| On-prem ONTAP cluster a|
+| On-premises ONTAP cluster (NFS or SMB) a|
 
 * Amazon EFS
 * Amazon FSx for ONTAP
@@ -233,7 +233,7 @@ BlueXP copy and sync enables you to sync data from a source to a target. This is
 * Google Cloud Storage
 * IBM Cloud Object Storage
 * NFS server
-* On-premises ONTAP cluster
+* On-premises ONTAP cluster (NFS or SMB)
 * SMB server
 * StorageGRID
 
@@ -263,7 +263,7 @@ BlueXP copy and sync enables you to sync data from a source to a target. This is
 * Google Drive
 * IBM Cloud Object Storage
 * NFS server
-* On-premises ONTAP cluster
+* On-premises ONTAP cluster (NFS or SMB)
 * ONTAP S3 Storage
 * SMB server
 * StorageGRID
@@ -282,7 +282,7 @@ BlueXP copy and sync enables you to sync data from a source to a target. This is
 * Google Cloud Storage
 * IBM Cloud Object Storage
 * NFS server
-* On-premises ONTAP cluster
+* On-premises ONTAP cluster (NFS or SMB)
 * ONTAP S3 Storage
 * SMB server
 * StorageGRID
