@@ -44,6 +44,8 @@ sidebar:
       entries:
         - title: Sync data between a source and target
           entries:
+            - title: Prepare a data broker to sync data between object storage
+              url: /task-prepare-object-storage.html
             - title: Create a sync relationship
               url: /task-creating-relationships.html
             - title: Copy ACLs from an SMB share

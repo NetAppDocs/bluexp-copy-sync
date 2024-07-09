@@ -33,7 +33,7 @@ You want to accelerate the performance of relationship 1 so you add a new data b
 
 === Number of data brokers in a group
 
-In many cases, a single data broker can meet the performance requirements for a sync relationship. If it doesn’t, you can accelerate sync performance by adding additional data brokers to the group. But you should first check other factors that can impact sync performance. link:faq.html#how-many-data-brokers-are-required-in-a-group[Learn more about how to determine when multiple data brokers are required].
+In many cases, a single data broker can meet the performance requirements for a sync relationship. If it doesn't, you can accelerate sync performance by adding additional data brokers to the group. But you should first check other factors that can impact sync performance. link:faq.html#how-many-data-brokers-are-required-in-a-group[Learn more about how to determine when multiple data brokers are required].
 
 == Security recommendations
 
