@@ -27,7 +27,7 @@ The data broker group that you use to sync data from object storage to object st
 
 . From BlueXP copy and sync, select *Manage Data Brokers*.
 
-. Select image:icon-settings.png[A screenshot of the settings icon].
+. Select image:icon-settings.png[A screenshot of the settings icon]
 
 . Update the scanner configuration:
 
@@ -39,3 +39,7 @@ The data broker group that you use to sync data from object storage to object st
 .Result
 
 BlueXP copy and sync updates the configuration of the data broker group.
+
+.What's next?
+
+You can now create the sync relationship between object storage using the data broker group that you just configured.
