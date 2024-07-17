@@ -63,7 +63,7 @@ You want to accelerate the performance of relationship 1 so you add a new data b
 
 BlueXP copy and sync adds the new data broker to the group. The performance of the next data sync should be accelerated.
 
-== Updatecredentials
+== Update credentials
 
 You can update the data broker with the latest credentials of the source or target in an existing sync relationship. Updating the credentials can help if your security policies require you to update credentials on a periodic basis.
 
