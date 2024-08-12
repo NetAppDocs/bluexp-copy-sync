@@ -136,7 +136,7 @@ The following steps provide details about each possible installation option. Fol
 +
 `curl <URI> -o data_broker_installer.sh -x <proxy_username>:<proxy_password>@<proxy_host>:<proxy_port>`
 +
-URI:: BlueXP copy and sync displays the URI of the installation file on the instructions page, which loads when you follow the prompts to deploy the On-Prem Data Broker. That URI isn't repeated here because the link is generated dynamically and can be used only once. <<Installing the data broker,Follow these steps to obtain the URI from BlueXP copy and sync>>.
+URI:: BlueXP copy and sync displays the URI of the installation file on the instructions page, which loads when you follow the prompts to deploy the On-Prem Data Broker. That URI isn't repeated here because the link is generated dynamically and can be used only once. <<Install the data broker,Follow these steps to obtain the URI from BlueXP copy and sync>>.
 
 .. Switch to superuser, make the installer executable and install the software:
 +
@@ -160,9 +160,9 @@ chmod +x data_broker_installer.sh
 chmod +x data_broker_installer.sh
 ./data_broker_installer.sh -a <aws_access_key> -s <aws_secret_key> -g <absolute_path_to_the_json_file> -h <proxy_host> -p <proxy_port> -u <proxy_username> -w <proxy_password>`
 +
-AWS keys:: These are the keys for the user that you should have prepared <<Enabling access to AWS,following these steps>>. The AWS keys are stored on the data broker, which runs in your on-premises or cloud network. NetApp doesn't use the keys outside of the data broker.
+AWS keys:: These are the keys for the user that you should have prepared <<Enable access to AWS,following these steps>>. The AWS keys are stored on the data broker, which runs in your on-premises or cloud network. NetApp doesn't use the keys outside of the data broker.
 
-JSON file:: This is the JSON file that contains a service account key that you should have prepared <<Enabling access to Google Cloud,following these steps>>.
+JSON file:: This is the JSON file that contains a service account key that you should have prepared <<Enable access to Google Cloud,following these steps>>.
 
 . Once the data broker is available, select *Continue* in BlueXP copy and sync.
 
