@@ -5,7 +5,7 @@ keywords: data broker, install, gcp, google, networking, permissions, regions, i
 summary: When you create a new data broker, choose the Google Cloud Data Broker option to deploy the data broker software on a new virtual machine instance in a VPC. BlueXP copy and sync guides you through the installation process, but the requirements and steps are repeated on this page to help you prepare for installation.
 ---
 
-= Creating a new data broker in Google Cloud
+= Create a new data broker in Google Cloud
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -85,7 +85,7 @@ Notes:
 
 . The "cloudkms.cryptoKeys.list" and "cloudkms.keyRings.list" permissions are required only if you plan to use a customer-managed KMS key on a target Google Cloud Storage bucket.
 
-== Creating the data broker
+== Create the data broker
 
 There are a few ways to create a new data broker. These steps describe how to install a data broker in Google Cloud when you create a sync relationship.
 
@@ -127,7 +127,7 @@ The instance takes approximately 5 to 10 minutes to deploy. You can monitor the 
 
 You've deployed a data broker in Google Cloud and created a new sync relationship. You can use this data broker with additional sync relationships.
 
-== Providing permissions to use buckets in other Google Cloud projects
+== Provide permissions to use buckets in other Google Cloud projects
 
 When you create a sync relationship and choose Google Cloud Storage as the source or target, BlueXP copy and sync enables you to choose from the buckets that the data broker's service account has permissions to use. By default, this includes the buckets that are in the _same_ project as the data broker service account. But you can choose buckets from _other_ projects if you provide the required permissions.
 

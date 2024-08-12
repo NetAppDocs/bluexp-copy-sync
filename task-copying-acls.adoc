@@ -5,7 +5,7 @@ keywords: permissions, access control list, acls, ntfs, cifs, smb, shares, roboc
 summary: BlueXP copy and sync can copy access control lists (ACLs) between SMB shares and between an SMB share and object storage (except for ONTAP S3). If needed, you also have the option to manually preserve ACLs between SMB shares by using robocopy.
 ---
 
-= Copying ACLs from SMB shares
+= Copy ACLs from SMB shares
 :hardbreaks:
 :nofooter:
 :icons: font

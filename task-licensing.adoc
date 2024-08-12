@@ -5,7 +5,7 @@ keywords: license, subscription, registering, subscribing, subscribing in aws, s
 summary: There are two ways to pay for sync relationships after your 14-day free trial ends. The first option is to pay-as-you-go. The second option is to purchase licenses directly from NetApp.
 ---
 
-= Paying for sync relationships after your free trial ends
+= Pay for sync relationships after your free trial ends
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -25,7 +25,7 @@ If you don't immediately pay after your free trial ends, you won't be able to cr
 
 Licenses should be managed through BlueXP copy and sync or the applicable website and *not* through a digital wallet.
 
-== [[aws]]Subscribing from AWS
+== [[aws]]Subscribe from AWS
 
 AWS enables you to pay-as-you-go or to pay annually.
 
@@ -51,7 +51,7 @@ video::video_cloud_sync_registering.mp4[width=848, height=480]
 
 . Select your contract options and then select *Create contract*.
 
-== [[azure]]Subscribing from Azure
+== [[azure]]Subscribe from Azure
 
 Azure enables you to pay-as-you-go or to pay annually.
 
@@ -79,7 +79,7 @@ The following video shows the process:
 +
 video::video_cloud_sync_registering_azure.mp4[width=848, height=480]
 
-== [[licenses]]Purchasing licenses from NetApp and adding them to BlueXP copy and sync
+== [[licenses]]Purchase licenses from NetApp and adding them to BlueXP copy and sync
 
 To pay for your sync relationships up front, you must purchase one or more licenses and add them to the BlueXP copy and sync service.
 
@@ -104,7 +104,7 @@ You'll need the serial number for your license and the user name and password fo
 
 .. Select *Add*.
 
-== Updating a license
+== Update a license
 
 If you extended a BlueXP copy and sync license that you purchased from NetApp, the new expiration date won't update automatically in BlueXP copy and sync. You need to add the license again to refresh the expiration date. Licenses should be managed through BlueXP copy and sync or the applicable website and *not* through a digital wallet.
 

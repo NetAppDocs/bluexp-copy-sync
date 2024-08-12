@@ -5,7 +5,7 @@ keywords: data broker, install, linux, on-prem data broker, on-prem, on prem, on
 summary: When you create a new data broker, choose the On-Prem Data Broker option to install the data broker software on an on-premises Linux host, or on an existing Linux host in the cloud. BlueXP copy and sync guides you through the installation process, but the requirements and steps are repeated on this page to help you prepare for installation.
 ---
 
-= Installing the data broker on a Linux host
+= Install the data broker on a Linux host
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -51,7 +51,7 @@ The data broker software automatically runs as root on the Linux host. Running a
 
 * NetApp recommends configuring the source, target, and data broker to use a Network Time Protocol (NTP) service. The time difference between the three components should not exceed 5 minutes.
 
-== Enabling access to AWS
+== Enable access to AWS
 
 If you plan to use the data broker with a sync relationship that includes an S3 bucket, then you should prepare the Linux host for AWS access. When you install the data broker, you'll need to provide AWS keys for an AWS user that has programmatic access and specific permissions.
 
@@ -67,7 +67,7 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html[View AWS i
 +
 Be sure to copy the AWS keys because you need to specify them when you install the data broker software.
 
-== Enabling access to Google Cloud
+== Enable access to Google Cloud
 
 If you plan to use the data broker with a sync relationship that includes a Google Cloud Storage bucket, then you should prepare the Linux host for Google Cloud access. When you install the data broker, you'll need to provide a key for a service account that has specific permissions.
 
@@ -85,11 +85,11 @@ NOTE: When you create a key, the file gets generated and downloaded to your mach
 
 . Save the JSON file to the Linux host.
 
-== Enabling access to Microsoft Azure
+== Enable access to Microsoft Azure
 
 Access to Azure is defined per relationship by providing a storage account and a connection string in the Sync Relationship wizard.
 
-== Installing the data broker
+== Install the data broker
 
 You can install a data broker on a Linux host when you create a sync relationship.
 
