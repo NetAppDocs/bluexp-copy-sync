@@ -5,7 +5,7 @@ keywords: data broker, install, aws, networking, permissions, regions, install d
 summary: When you create a new data broker, choose the AWS Data Broker option to deploy the data broker software on a new EC2 instance in a VPC. BlueXP copy and sync guides you through the installation process, but the requirements and steps are repeated on this page to help you prepare for installation.
 ---
 
-= Creating a new data broker in AWS
+= Create a new data broker in AWS
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -50,7 +50,7 @@ The IAM role must meet the following requirements:
 
 Follow the steps below to specify the IAM role when deploying the data broker.
 
-== Creating the data broker
+== Create the data broker
 
 There are a few ways to create a new data broker. These steps describe how to install a data broker in AWS when creating a sync relationship.
 

@@ -135,7 +135,7 @@ https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-ser
 ** Transferrer Processes Limit
 
 +
-link:task-managing-data-brokers.html#define-a-unified-configuration-for-a-data-broker-group[Learn how to define a unified configuration for a data broker group^].
+link:task-managing-data-brokers.html#set-up-a-unified-configuration[Learn how to define a unified configuration for a data broker group^].
 
 == [[google]]Google Cloud Storage bucket requirements
 
