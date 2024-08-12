@@ -5,7 +5,7 @@ keywords: data broker, install, azure, networking, permissions, regions, install
 summary: When you create a new data broker, choose the Azure Data Broker option to deploy the data broker software on a new virtual machine in a VNet. BlueXP copy and sync guides you through the installation process, but the requirements and steps are repeated on this page to help you prepare for installation.
 ---
 
-= Creating a new data broker in Azure
+= Create a new data broker in Azure
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -128,7 +128,7 @@ When you deploy the data broker, you'll need to choose an authentication method 
 
 For help with creating a key pair, refer to https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys[Azure Documentation: Create and use an SSH public-private key pair for Linux VMs in Azure^].
 
-== Creating the data broker
+== Create the data broker
 
 There are a few ways to create a new data broker. These steps describe how to install a data broker in Azure when you create a sync relationship.
 

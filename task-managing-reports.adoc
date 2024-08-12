@@ -5,7 +5,7 @@ keywords: reports, sync reports, BlueXP copy and sync reports, report errors, pa
 summary: Create and view reports to get information that you can use with the help of NetApp personnel to tune a data broker’s configuration and improve performance.
 ---
 
-= Creating and viewing reports to tune your configuration
+= Create and view reports to tune your configuration
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -17,7 +17,7 @@ Create and view reports to get information that you can use with the help of Net
 
 Each report provides in-depth details about a path in a sync relationship. It will include how many directories, files, and symbolic links there are, the distribution of file size, how deep and wide the directories are, modify time, and access time. This differs from sync statics, which are available from the dashboard after https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html[successfully creating and completing a sync].
 
-== Creating reports
+== Create reports
 
 Each time that you create a report, BlueXP copy and sync scans the path and then compiles the details into a report.
 
@@ -39,7 +39,7 @@ And here's a sample report for object storage.
 +
 image:screenshot_sync_report_object.gif[A report that shows the number of path items, objects size, modify time, and storage class.]
 
-== Downloading reports
+== Download reports
 
 You can download a report in PDF so that you can view it offline or share it.
 
@@ -53,7 +53,7 @@ You can download a report in PDF so that you can view it offline or share it.
 +
 image:screenshot-sync-download-report.png[A screenshot of the Download pdf option that appears after you select the action menu in a report.]
 
-== Viewing report errors
+== View report errors
 
 The Paths table identifies whether any errors are present in the most recent report. An error identifies an issue that BlueXP copy and sync faced when scanning the path.
 
@@ -75,7 +75,7 @@ image:screenshot_sync_report_errors.gif[A screenshot of the Paths table that sho
 +
 After you resolve the issue, the error shouldn't appear the next time that you run the report.
 
-== Deleting reports
+== Delete reports
 
 You might delete a report of it contained an error that you fixed, or if the report is related to a sync relationship that you removed.
 

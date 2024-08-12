@@ -15,13 +15,13 @@ summary: The BlueXP copy and sync capabilities that are available through the we
 [.lead]
 The BlueXP copy and sync capabilities that are available through the web UI are also available through the RESTful API.
 
-== Getting started
+== Get started
 
 To get started with the BlueXP copy and sync API, you need to obtain a user token and your BlueXP account ID. You'll need to add the token and account ID to the Authorization header when making API calls.
 
 .Steps
 
-. Obtain a user token from NetApp BlueXP.
+. Obtain a user token from BlueXP.
 +
 [source,http]
 POST https://netapp-cloud-account.auth0.com/oauth/token
@@ -35,10 +35,10 @@ Body:
               "grant_type": "password",
               "password": "<user_password>"
 }
-
++
 NOTE: If you are using a personal email account with no client ID, you can use the default client ID "QC3AgHk6qdbmC7Yyr82ApBwaaJLwRrNO.”
 
-. Obtain your BlueXp account ID.
+. Obtain your BlueXP account ID.
 +
 [source,http]
 GET https://api.cloudsync.netapp.com/api/accounts
@@ -68,18 +68,13 @@ Content-Type: application/json
 x-account-id: <accountId>
 Body: { "name": "databroker1", "type": "AZURE" }
 
-.What should I do when the token expires?
-****
-The user token from NetApp BlueXp has an expiration date. To refresh the token, you need to call the API from step 1 again.
+.What's next?
+
+The user token from BlueXP has an expiration date. To refresh the token, you need to call the API from step 1 again.
 
 The API response includes an "expires_in" field that states when the token expires.
-****
 
-== API reference
-
-Documentation for each BlueXP copy and sync API is available from https://api.cloudsync.netapp.com/docs.
-
-== Using list APIs
+== Use list APIs
 
 List APIs are asynchronous APIs, so the result does not return immediately (for example: `GET /data-brokers/{id}/list-nfs-export-folders` and `GET /data-brokers/{id}/list-s3-buckets`). The only response from the server is HTTP status 202. To get the actual result, you must use the `GET /messages/client` API.
 
@@ -166,3 +161,7 @@ The result is an array of messages. Inside each message is a payload object, whi
         "id": "5802"
     }
 ]
+
+== API reference
+
+Documentation for each BlueXP copy and sync API is available from https://api.cloudsync.netapp.com/docs.

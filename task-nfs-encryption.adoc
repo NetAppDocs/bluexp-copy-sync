@@ -5,7 +5,7 @@ keywords: encryption, in flight, data in flight, in-flight, data-in-flight, nfs,
 summary: If your business has strict security policies, sync data between NFS servers in different networks using data-in-flight encryption.
 ---
 
-= Syncing NFS data using data-in-flight encryption
+= Sync NFS data using data-in-flight encryption
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -39,7 +39,7 @@ Here's how in-flight encryption works:
 
 . After the initial copy, the service syncs any changed data every 24 hours. If there is data to sync, the process starts with the initiator opening an encrypted connection with the other data broker.
 +
-If you prefer to sync data more frequently, link:task-managing-relationships.html#changing-the-settings-for-a-sync-relationship[you can change the schedule after you create the relationship].
+If you prefer to sync data more frequently, link:task-managing-relationships.html#change-the-settings-for-a-sync-relationship[you can change the schedule after you create the relationship].
 
 == Supported NFS versions
 
@@ -71,7 +71,7 @@ If you have not yet deployed a data broker, review the data broker requirements.
 ** link:task-installing-gcp.html[Review Google Cloud installation]
 ** link:task-installing-linux.html[Review Linux host installation]
 
-== Syncing NFS data using data-in-flight encryption
+== Sync NFS data using data-in-flight encryption
 
 Create a new sync relationship between two NFS servers or between Azure NetApp Files, enable the in-flight encryption option, and follow the prompts.
 
