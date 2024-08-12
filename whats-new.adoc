@@ -419,7 +419,7 @@ These options are supported when Azure Blob is the target and the source is eith
 
 A new *Sync Timeout* setting is now available for sync relationships. This setting enables you to define whether Cloud Sync should cancel a data sync if the sync hasn't completed in the specified number of hours or days.
 
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship[Learn more about changing the settings for a sync relationship].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#change-the-settings-for-a-sync-relationship[Learn more about changing the settings for a sync relationship].
 
 === Notifications
 
@@ -427,7 +427,7 @@ A new *Notifications* setting is now available for sync relationships. This sett
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-copy-sync/main/media/screenshot-notification-center.png[A screenshot that shows the Notification Center in BlueXP.]
 
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship[Learn more about changing the settings for a sync relationship].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#change-the-settings-for-a-sync-relationship[Learn more about changing the settings for a sync relationship].
 
 == 3 April 2022
 
@@ -549,7 +549,7 @@ You can now update Cloud Sync licenses that you extended.
 
 If you extended a Cloud Sync license that you purchased from NetApp, you can add the license again to refresh the expiration date.
 
-link:task-licensing.html#update-a-license[Learn how to update a license].
+link:task-licensing.html[Learn how to update a license].
 
 === Update Box credentials
 
@@ -684,7 +684,7 @@ A new *Compare by* setting is now available for each sync relationship.
 
 This advanced setting enables you to choose whether Cloud Sync should compare certain attributes when determining whether a file or directory has changed and should be synced again.
 
-link:task-managing-relationships.html#changing-the-settings-for-a-sync-relationship[Learn more about changing the settings for a sync relationship].
+link:task-managing-relationships.html#change-the-settings-for-a-sync-relationship[Learn more about changing the settings for a sync relationship].
 
 == 11 Apr 2021
 

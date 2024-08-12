@@ -17,8 +17,8 @@ BlueXP copy and sync can copy access control lists (ACLs) between SMB shares and
 
 .Choices
 
-* <<Setting up BlueXP copy and sync to copy ACLs from an SMB server,Set up BlueXP copy and sync to automatically copy ACLs>>
-* <<Manually copying ACLs between SMB shares,Manually copy the ACLs between SMB shares>>
+* <<Set up BlueXP copy and sync to copy ACLs from an SMB server,Set up BlueXP copy and sync to automatically copy ACLs>>
+* <<Manually copy ACLs between SMB shares,Manually copy the ACLs between SMB shares>>
 
 == Set up BlueXP copy and sync to copy ACLs
 

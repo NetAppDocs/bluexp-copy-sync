@@ -39,7 +39,7 @@ Here's how in-flight encryption works:
 
 . After the initial copy, the service syncs any changed data every 24 hours. If there is data to sync, the process starts with the initiator opening an encrypted connection with the other data broker.
 +
-If you prefer to sync data more frequently, link:task-managing-relationships.html#changing-the-settings-for-a-sync-relationship[you can change the schedule after you create the relationship].
+If you prefer to sync data more frequently, link:task-managing-relationships.html#change-the-settings-for-a-sync-relationship[you can change the schedule after you create the relationship].
 
 == Supported NFS versions
 
