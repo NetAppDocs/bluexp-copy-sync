@@ -16,6 +16,10 @@ summary: Learn what's new in BlueXP copy and sync.
 Learn what's new in BlueXP copy and sync.
 
 // tag::whats-new[]
+== 16 September 2024
+
+We updated the BlueXP copy and sync service and the data broker to fix a few bugs. The new data broker version is 1.0.55.
+
 == 11 August 2024
  
 We updated the BlueXP copy and sync service and the data broker to fix a few bugs. The new data broker version is 1.0.54.
@@ -24,11 +28,11 @@ We updated the BlueXP copy and sync service and the data broker to fix a few bug
 
 We updated the BlueXP copy and sync service and the data broker to fix a few bugs. The new data broker version is 1.0.53.
 
+// end::whats-new[]
+
 == 2 June 2024
 
 The BlueXP copy and sync service was updated to fix a few bugs. The data broker was also updated to apply security updates. The new data broker version is 1.0.52.
-
-// end::whats-new[]
 
 == 8 April 2024
 
