@@ -4,7 +4,6 @@ permalink: whats-new.html
 keywords: what's new, features, new, release notes, enhancements, fixes
 summary: Learn what's new in BlueXP copy and sync.
 ---
-
 = What's new with BlueXP copy and sync
 :hardbreaks:
 :nofooter:
@@ -15,23 +14,17 @@ summary: Learn what's new in BlueXP copy and sync.
 [.lead]
 Learn what's new in BlueXP copy and sync.
 
-// tag::whats-new[]
 == 16 September 2024
-
-We updated the BlueXP copy and sync service and the data broker to fix a few bugs. The new data broker version is 1.0.55.
+include::_whatsnew/2024-09-16.adoc[]
 
 == 11 August 2024
- 
-We updated the BlueXP copy and sync service and the data broker to fix a few bugs. The new data broker version is 1.0.54.
+include::_whatsnew/2024-08-11.adoc[]
 
 == 14 July 2024
-
-We updated the BlueXP copy and sync service and the data broker to fix a few bugs. The new data broker version is 1.0.53.
-
-// end::whats-new[]
+include::_whatsnew/2024-07-14.adoc[]
 
 == 2 June 2024
-
+=== Bug fixes
 The BlueXP copy and sync service was updated to fix a few bugs. The data broker was also updated to apply security updates. The new data broker version is 1.0.52.
 
 == 8 April 2024
