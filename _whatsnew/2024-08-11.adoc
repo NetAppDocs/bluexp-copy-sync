@@ -1,2 +1,2 @@
 === Bug fixes
-You can now link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-svm.html[add a We updated the BlueXP copy and sync service and the data broker to fix a few bugs. The new data broker version is 1.0.54.
+We updated the BlueXP copy and sync service and the data broker to fix a few bugs. The new data broker version is 1.0.54.
