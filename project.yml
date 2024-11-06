@@ -8,6 +8,7 @@ settings:
     pdf_enabled: true
     harmony_enabled: true
   rss_page: "whats-new.html"
+
 sidebar:
   entries:
     - title: BlueXP copy and sync docs
