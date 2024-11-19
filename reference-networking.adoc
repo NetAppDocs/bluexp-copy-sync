@@ -115,7 +115,7 @@ Where _storage-account_ is the user's source storage account.
 | To verify AWS credentials when the data broker is deployed in AWS or when it's deployed on your premises and AWS credentials are provided. The data broker contacts this endpoint during deployment, when it's updated, and when it's restarted.
 
 |
-\https://console.bluexp.netapp.com/
+\https://api.bluexp.netapp.com
 \https://netapp-cloud-account.auth0.com
 
 | To contact BlueXP classification  when you use classification to select the source files for a new sync relationship.

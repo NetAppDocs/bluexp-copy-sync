@@ -33,7 +33,7 @@ A Red Hat Enterprise Linux system must be registered with Red Hat Subscription M
 * *RAM*: 16 GB
 * *CPU*: 4 cores
 * *Free disk space*: 10 GB
-* *SELinux*: We recommend that you disable https://selinuxproject.org/[SELinux^] on the host.
+* *SELinux*: We recommend that you disable SELinux on the host.
 +
 SELinux enforces a policy that blocks data broker software updates and can block the data broker from contacting endpoints required for normal operation.
 
