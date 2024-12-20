@@ -35,7 +35,7 @@ AWS enables you to pay-as-you-go or to pay annually.
 
 . Select *Licensing*.
 
-. Select *AWS*
+. Select *AWS*.
 
 . Select *Subscribe* and then select *Continue*.
 
