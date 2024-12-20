@@ -31,7 +31,9 @@ AWS enables you to pay-as-you-go or to pay annually.
 
 .Steps to pay-as-you-go
 
-. Select *Sync > Licensing*.
+. From the BlueXP navigation menu, select *Mobility > Copy and sync*.
+
+. Select *Licensing*.
 
 . Select *AWS*
 
@@ -61,7 +63,9 @@ An Azure user account that has Contributor or Owner permissions in the relevant 
 
 .Steps
 
-. Select *Sync > Licensing*.
+. From the BlueXP navigation menu, select *Mobility > Copy and sync*.
+
+. Select *Licensing*.
 
 . Select *Azure*.
 
@@ -91,7 +95,9 @@ You'll need the serial number for your license and the user name and password fo
 
 . Purchase a license by mailto:ng-cloudsync-contact@netapp.com?subject=Cloud%20Sync%20Service%20-%20BYOL%20License%20Purchase%20Request[contacting NetApp].
 
-. In BlueXP, select *Sync > Licensing*.
+. From the BlueXP navigation menu, select *Mobility > Copy and sync*.
+
+. Select *Licensing*.
 
 . Select *Add License* and add the required information:
 
@@ -110,7 +116,9 @@ If you extended a BlueXP copy and sync license that you purchased from NetApp, t
 
 .Steps
 
-. In BlueXP, select *Sync > Licensing*.
+. From the BlueXP navigation menu, select *Mobility > Copy and sync*.
+
+. Select *Licensing*.
 
 . Select *Add License* and add the required information:
 
