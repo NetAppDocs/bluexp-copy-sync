@@ -184,7 +184,7 @@ NOTE: Hard links are only available for unsecured NFS to NFS relationships. User
 
 Exclude File Extensions:: Specify the regex or file extensions to exclude from the sync by typing the file extension and pressing *Enter*. For example, type _log_ or _.log_ to exclude *.log files. A separator isn't required for multiple extensions. The following video provides a short demo:
 +
-video::video_file_extensions.mp4[width=840, height=240]
+video::7f957dbf-9215-41ea-a705-b24c010b2212[panopto, title="Exclude file extensions for a sync relationship"]
 +
 NOTE: Regex, or regular expressions, differ from wildcards or glob expressions. This feature *only* works with regex.
 

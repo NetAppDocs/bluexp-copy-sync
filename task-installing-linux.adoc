@@ -95,6 +95,8 @@ You can install a data broker on a Linux host when you create a sync relationshi
 
 .Steps
 
+. From the BlueXP navigation menu, select *Mobility > Copy and sync*.
+
 . Select *Create New Sync*.
 
 . On the *Define Sync Relationship* page, choose a source and target and select *Continue*.
