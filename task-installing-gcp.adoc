@@ -91,6 +91,8 @@ There are a few ways to create a new data broker. These steps describe how to in
 
 .Steps
 
+. From the BlueXP navigation menu, select *Mobility > Copy and sync*.
+
 . Select *Create New Sync*.
 
 . On the *Define Sync Relationship* page, choose a source and target and select *Continue*.
