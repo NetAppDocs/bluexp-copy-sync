@@ -76,7 +76,7 @@ If you'd rather not provide access keys, select the link at the bottom of the pa
 +
 [[cft]]The following video shows how to launch the data broker instance using a CloudFormation template:
 +
-video::video_cloud_sync.mp4[width=848, height=480]
+video::abaf0898-ea15-4f84-938e-b24c010b21e8[panopto, title="Launch a data broker from an AWS CloudFormation template"]
 
 . If you entered an AWS access key, select a location for the instance, select a key pair, choose whether to enable a public IP address, and select an existing IAM role, or leave the field blank so BlueXP copy and sync creates the role for you. You also have the option of encrypting your data broker using a KMS key.
 +
