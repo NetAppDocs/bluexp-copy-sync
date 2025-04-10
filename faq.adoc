@@ -47,7 +47,7 @@ BlueXP copy and sync licenses are also available through your NetApp representat
 
 link:concept-licensing.html[Learn more about licenses].
 
-NOTE: BlueXP copy and sync relationships are free for Cloud Volumes Service and Azure NetApp Files.
+NOTE: BlueXP copy and sync relationships are free for Azure NetApp Files.
 
 *Resource charges*
 
@@ -263,11 +263,6 @@ Change the service level to Premium or Ultra to enhance the sync performance.
 
 https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-service-levels#throughput-limits[Learn more about Azure NetApp Files service levels and throughput^].
 
-=== Why am I experiencing low performance with Cloud Volumes Service for AWS?
-
-When you sync data to or from a cloud volume, you might experience failures and performance issues if the level of performance for the cloud volume is Standard.
-
-Change the Service level to Premium or Extreme to enhance the sync performance.
 
 === How many data brokers are required in a group?
 
