@@ -46,7 +46,6 @@ BlueXP copy and sync supports the following storage types:
 * Azure Data Lake Storage Gen2
 * Azure NetApp Files
 * Box (available as a preview)
-* Cloud Volumes Service
 * Cloud Volumes ONTAP
 * Google Cloud Storage
 * Google Drive
