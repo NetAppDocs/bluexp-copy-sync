@@ -253,7 +253,7 @@ The sync relationship shows the throughput of the data broker group's network ad
 
 If you have very large files (multiple TiBs each), it can take a long time to complete the transfer process and performance might be impacted.
 
-Limiting the number of concurrent transfers can help. mailto:ng-cloudsync-support@netapp.com[Contact us for help].
+Limiting the number of concurrent transfers can help. link:task-get-help.html[Contact us for help].
 
 === Why am I experiencing low performance with Azure NetApp Files?
 
